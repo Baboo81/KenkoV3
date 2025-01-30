@@ -9,8 +9,11 @@ class QuiSuisJeController extends Controller {
 
         //Défini le titre de la page
         $title = "Qui suis-je";
+        //Joindre les styles
+        $resetCss = 'reset.css';
+        $css = 'quiSuisJe.css';
 
         //Charger la vue et passer le titre
-        $this->View('quiSuis-je', compact('title'));
+        $this->View('quiSuis-je', compact('title', 'resetCss', 'css'));
     }
 }

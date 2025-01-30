@@ -1,0 +1,229 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+:root
+{
+    --vert : #536964;
+    --grisF : #8b9cb6;
+    --gris : #bfc1c2;
+    --beige : #f1efe9;
+    --brun : #e3c7af;
+    --noir : #282828;
+}
+
+
+
+body
+{
+    background-color: var(--beige);
+    width: 100% !important;
+    overflow-x: hidden;
+    font-family: "Bodoni Moda", serif;
+}
+
+p
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+h3
+{
+    color: white;
+    font-size: 6em;
+}
+
+.fontBeige
+{
+    color: var(--beige);
+}
+
+.fontBlack
+{
+  color: var(--noir);
+}
+
+.bg-grey
+{
+    background-color: var(--gris);
+}
+
+.bg-blue
+{
+    background-color: var(--grisF);
+}
+/*  Nav  */
+nav
+{
+    height: 150px;
+}
+
+nav .nav-link
+{
+    color: var(--noir);
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+nav .nav-link:hover
+{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bleu);
+}
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+}
+/* END Nav */
+
+/* Home */
+main .home
+{
+    height: 1200px;
+}
+
+main .mainContent
+{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+ /* Animation mainTitle */
+h1:after
+{
+    content: "";
+    animation: reveal 1.5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal 
+{
+    0% 
+    {
+        content: "K";
+    }
+
+    25%
+    {
+        content: "KE";
+    }
+
+    50%
+    {
+        content: "KEN";
+    }
+
+    75%
+    {
+        content: "KENK";
+    }
+
+    100%
+    {
+        content: "KENKO";
+    }
+}
+ /* END Animation mainTitle */
+
+.mainContent .mainTitle
+{
+    font-family: "Bodoni Moda", serif;
+    font-size: 16rem;
+    color: var(--noir);
+}
+
+.mainContent .secondTitle
+{
+    font-family: "Bodoni Moda", serif;
+    font-size: 4rem;
+    color: var(--noir);
+}
+
+    /* Logo animation */
+#logoAnimation
+{
+    position: absolute;
+    width: 600px;
+    z-index: -50;
+    animation: fadeIn 1.5s infinite;
+}
+
+@keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+        transform: opacity 1;
+    }
+
+}
+
+/* END Home */
+
+/* mainSection */
+
+.mainSection .part1
+{
+    background-color: var(--grisF);
+    height: 1000px;
+    background-image: url(../img/jpeg/Kenko-Ho/bgKenkoHo.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainSection .part2
+{
+    background-color: var(--gris);
+    height: 1000px;
+    background-image: url(../img/jpeg/Kenko-Web/pictos/bgKenkoWeb.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mainSection .card
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    opacity: 85%;
+}
+
+.mainSection .card:hover
+{
+  transform: scale(1.02);
+  transition: transform 330ms ease-in;
+}
+
+.button
+{
+  height: 50px;
+  width: 200px;
+  border: 1px solid var(--beige);
+  border-radius: 24px;
+  background-color: var(--vert);
+  color: var(--beige);
+}
+
+.button:hover
+{
+  background-color: var(--brun);
+  transition: 6300ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* END mainSection */
+
+/* Footer */
+footer
+{
+  background-color: var(--vert);
+  height: 700px;
+}
+
+#mapid
+{
+  height: 300px;
+  border-radius: 12px;
+}

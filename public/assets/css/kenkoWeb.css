@@ -1,0 +1,263 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+:root
+{
+    --vert : #536964;
+    --violet : #bd8bca;
+    --grisF : #8b9cb6;
+    --gris : #bfc1c2;
+    --beige : #f1efe9;
+    --brun : #e3c7af;
+    --noir : #282828;
+}
+
+body
+{
+    background-color: var(--beige);
+    width: 100% !important;
+    overflow-x: hidden;
+    font-family: "Bodoni Moda", serif;
+}
+
+p
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+
+h3
+{
+    color: white;
+    font-size: 6em;
+}
+
+.fontBeige
+{
+    color: var(--beige);
+}
+
+.fontBlack
+{
+  color: var(--noir);
+}
+
+.bg-grey
+{
+    background-color: var(--gris);
+}
+
+.bg-blue
+{
+    background-color: var(--grisF);
+}
+
+.fontBolded
+{
+    font-weight: bold;
+}
+/*  Nav  */
+nav
+{
+    height: 150px;
+}
+
+nav .nav-link
+{
+    color: var(--noir);
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+nav .nav-link:hover
+{
+    color: var(--bleu);
+    padding-bottom: 20px;
+    border-bottom-color: var(--bleu);
+}
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+}
+/* END Nav */
+
+/* section Home */
+
+section .sections
+{
+    padding: 20px 0;
+}
+
+section .overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.home
+{
+    height: 1200px;
+    background-image: url(../img/jpeg/Kenko-Web/KenkoWeb.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .homeContent
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .homeTitle
+{
+    color: #fff;
+    font-size: 6em;
+}
+
+.home .homeDesc
+{
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+/* END section Home */
+
+/* SectionFormule */
+section .sectionFormules
+{
+    height: 1000px;
+    background-image: url(/assets/img/jpeg/Kenko-Web/pictos/informatique.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card 
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* Btn */
+.button-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button
+{
+  height: 50px;
+  width: 250px;
+  border: 1px solid var(--beige);
+  border-radius: 24px;
+  background-color: var(--vert);
+  color: var(--beige);
+  cursor: pointer;
+}
+
+button:hover
+{
+  background-color: var(--brun);
+  transition: 6300ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media (max-width: 600px)
+{
+    button
+    {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Btn END */
+
+    /* Pop-up */
+
+/* Container pop-up */
+
+.popup-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Contenu pop-up */
+
+.popup
+{
+    background: var(--beige);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.popup button
+{
+    height: 50px;
+    width: 250px;
+    border: 1px solid var(--beige);
+    border-radius: 24px;
+    background-color: var(--vert);
+    color: var(--beige);
+}
+
+.pPopUp
+{
+    color: var(--vert);
+}
+
+    /* Pop-up END */
+
+/*  Section atouts */
+.pictoAtouts
+{
+    height: 5em;
+}
+
+.pictoAtoutsPerso
+{
+    height: 50em;
+}
+
+section .atoutsContent
+{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+footer
+{
+  background-color: var(--vert);
+  height: 700px;
+}
+
+#mapid
+{
+  height: 300px;
+  border-radius: 12px;
+}
