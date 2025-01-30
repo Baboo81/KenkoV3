@@ -1,0 +1,8 @@
+{
+    "name": "ton-projet/kenko",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}
