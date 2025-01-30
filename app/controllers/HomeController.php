@@ -9,8 +9,11 @@ class HomeController extends Controller {
 
         //Défini le titre de la page
         $title = "Accueil - Bienvenue sur le site Kenko";
+        //Joindre le style propre à cette page
+        $resetCss = 'reset.css';
+        $css = 'style.css';
 
         //Charger la vue et passer le titre
-        $this->View('home', compact('title'));
+        $this->View('home', compact('title','resetCss','css'));
     }
 }

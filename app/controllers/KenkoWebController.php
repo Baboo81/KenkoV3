@@ -8,9 +8,12 @@ class KenkoWebController extends Controller {
 
         //Défini le titre de la page
         $title = "KenkoWeb - Création de site web";
+        //Joindre les styles
+        $resetCss = 'reset.css';
+        $css = 'kenkoWeb.css';
 
         //Charge la vue et passe le titre
-        $this->View('kenko-web', compact('title'));
+        $this->View('kenko-web', compact('title', 'resetCss', 'css'));
 
     }
 }

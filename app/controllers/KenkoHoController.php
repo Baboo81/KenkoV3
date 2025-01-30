@@ -9,8 +9,11 @@ class KenkoHoController extends Controller {
 
         //Défini le titre de la page
         $title = "KenkoHo - Bien-être & huiles essentielles";
+        //Joindre les styles:
+        $resetCss = 'reset.css';
+        $css = 'kenkoHo.css'; 
 
         //Charge la vue et passer le titre
-        $this->View('kenko-ho', compact('title'));
+        $this->View('kenko-ho', compact('title', 'resetCss', 'css'));
     }
 }

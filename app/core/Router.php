@@ -33,16 +33,17 @@ class Router {
     // Appel du contrôleur et de l'action
     private function callAction($controllerAction) {
         list($controller, $action) = $controllerAction;
-        $controller = "App\\Controllers\\$controller"; // Ajouter le namespace
-        if (class_exists($controller)) {
-            $controllerInstance = new $controller();
-            if (method_exists($controllerInstance, $action)) {
-                $controllerInstance->$action();
-            } else {
-                echo "Erreur : Méthode $action non trouvée dans $controller";
-            }
-        } else {
-            echo "Erreur : Contrôleur $controller non trouvé";
+        
+        // Vérifier que le contrôleur existe avant de l'instancier
+        if (!class_exists($controller)) {
+            die("Erreur : Contrôleur $controller non trouvé");
         }
+    
+        $controllerInstance = new $controller(); // Instancier le contrôleur
+        if (!method_exists($controllerInstance, $action)) {
+            die("Erreur : Méthode $action introuvable dans $controller");
+        }
+        
+        $controllerInstance->$action(); // Appeler l'action
     }
 }
