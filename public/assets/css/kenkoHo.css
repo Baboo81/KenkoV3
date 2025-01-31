@@ -116,7 +116,7 @@ section .overlay
 .home
 {
     height: 1200px;
-    background-image: url(../img/jpeg/Kenko-Ho/kenko-ho.svg);
+    background-image: url(../img/services/Kenko-Ho/kenko-ho.svg);
     background-size: cover;
     background-position: center;
     position: relative;

@@ -170,7 +170,7 @@ h1:after
 {
     background-color: var(--grisF);
     height: 1000px;
-    background-image: url(../img/jpeg/Kenko-Ho/bgKenkoHo.svg);
+    background-image: url(../img/services/Kenko-Ho/bgKenkoHo.svg);
     background-size: cover;
     background-position: center;
 }
@@ -179,7 +179,7 @@ h1:after
 {
     background-color: var(--gris);
     height: 1000px;
-    background-image: url(../img/jpeg/Kenko-Web/pictos/bgKenkoWeb.svg);
+    background-image: url(../img/services/Kenko-Web/pictos/bgKenkoWeb.svg);
     background-size: cover;
     background-position: center;
 }

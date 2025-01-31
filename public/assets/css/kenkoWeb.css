@@ -105,7 +105,7 @@ section .overlay
 .home
 {
     height: 1200px;
-    background-image: url(../img/jpeg/Kenko-Web/KenkoWeb.svg);
+    background-image: url(../img/services/Kenko-Web/KenkoWeb.svg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -137,7 +137,7 @@ section .overlay
 section .sectionFormules
 {
     height: 1000px;
-    background-image: url(/assets/img/jpeg/Kenko-Web/pictos/informatique.svg);
+    background-image: url(/assets/img/services/Kenko-Web/pictos/informatique.svg);
     background-size: cover;
     background-position: center;
 }
