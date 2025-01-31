@@ -45,7 +45,7 @@
                                         <a class="nav-link" aria-current="page" href="/quiSuis-je">Qui suis-je ?</a>
                                     </li>
                                     <li class="nav-item mx-5">
-                                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                                        <a class="nav-link" aria-current="page" href="/contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
