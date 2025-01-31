@@ -46,4 +46,10 @@ class Router {
         
         $controllerInstance->$action(); // Appeler l'action
     }
+
+    public function post($url, $action) {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SERVER['REQUEST_URI'] === $url) {
+            $this->callAction($action);
+        }
+    }
 }
