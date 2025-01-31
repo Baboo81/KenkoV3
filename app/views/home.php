@@ -23,7 +23,7 @@
                                     <h5 class="card-title fs-2 text-center mb-3">Envie d'améliorer votre bien-être ?</h5>
                                     <p class="card-text">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que les besoins de votre famille.</p>
                                     <div class="text-center mt-3">
-                                        <button onclick="window.location.href='./assets/src/views/kenko-ho.html';" class="button">Visiter Kenko-Ho</button>
+                                        <button onclick="window.location.href='./kenko-ho.php';" class="button">Visiter Kenko-Ho</button>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                     <h5 class="card-title fs-2 text-center mb-3">Besoin d'un site web professionnel ?</h5>
                                     <p class="card-text">Vos compétences, votre expertise ainsi que vos valeurs seront mis en avant grâce à votre communication digitale.<br />Votre <strong>webmaster</strong> vous proposera un site sur mesure afin de satisfaire vos besoins.</p>
                                     <div class="text-center mt-3">
-                                        <button onclick="window.location.href='./assets/src/views/kenko-web.html';" class="button">Visiter Kenko-Web</button>
+                                        <button onclick="window.location.href='./kenko-web.php';" class="button">Visiter Kenko-Web</button>
                                     </div>
                                 </div>
                             </div>
