@@ -26,6 +26,13 @@ p
     line-height: 1.3em;
 }
 
+h1
+{
+    font-family: "Bodoni Moda", serif;
+    font-size: 4rem;
+    color: var(--noir);
+}
+
 h3
 {
     color: white;
@@ -76,4 +83,26 @@ nav .nav-link:hover
 {
     height: 5em;
     width: 5em;
+}
+
+/* mainSection */
+
+
+.mainSection
+{
+    height: 1500px;
+    margin-top: 20%;
+}
+
+/* Footer */
+footer
+{
+  background-color: var(--vert);
+  height: 700px;
+}
+
+#mapid
+{
+  height: 300px;
+  border-radius: 12px;
 }

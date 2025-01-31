@@ -105,3 +105,15 @@ section .box
     font-size: 1.3em;
 }
 
+/* Footer */
+footer
+{
+  background-color: var(--vert);
+  height: 700px;
+}
+
+#mapid
+{
+  height: 300px;
+  border-radius: 12px;
+}
