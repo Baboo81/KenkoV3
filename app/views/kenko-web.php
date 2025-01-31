@@ -16,17 +16,17 @@
                     <div class="row">
                         <h1 class="text-center my-5 fs-1 fontBlack">Ce que votre webmaster vous propose</h1>
                         <article class="col-md-4 text-center">
-                            <img src="/assets/img/jpeg/Kenko-Web/pictos/accompagnement.svg" alt="">
+                            <img src="/assets/img/services/Kenko-Web/pictos/accompagnement.svg" alt="">
                             <h4 class="fs-2 my-1">Un accompagnement de qualité</h4>
                             <p class="p-5">Je suis à votre écoute et je vous conseille tout au long de la vie du site</p>
                         </article>
                         <article class="col-md-4 text-center">
-                            <img src="/assets/img/jpeg/Kenko-Web/pictos/liberté.svg" alt="">
+                            <img src="/assets/img/services/Kenko-Web/pictos/liberté.svg" alt="">
                             <h4 class="fs-2 my-1">La liberté de choix</h4>
                             <p class="p-5">Votre site web vous appartient, modifiez-le à votre guise ou confiez-moi cette mission !</p>
                         </article>
                         <article class="col-md-4 text-center">
-                            <img src="/assets/img/jpeg/Kenko-Web/pictos/surMesure.svg" alt="">
+                            <img src="/assets/img/services/Kenko-Web/pictos/surMesure.svg" alt="">
                             <h4 class="fs-2 my-1">Un site sur-mesure</h4>
                             <p class="p-5">Je crée un site qui vous correspond</p>
                         </article>
@@ -48,7 +48,7 @@
                     <div class="row gy-3 my-5">
                         <div class="col-md-4">
                             <div class="card rounded-4">
-                                <img src="/assets/img/jpeg/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
+                                <img src="/assets/img/services/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
                                 <div class="card-body text-center">
                                   <h5 class="card-title text-center fs-3 my-4">Site simple</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 750€</h6>
@@ -61,7 +61,7 @@
                                  <div class="popup-container" id="popup1">
                                     <div class="popup">
                                         <h4 class="fs-3 my-3">Pourquoi choisir l'offre : site simple ?</h3>
-                                        <img src="/assets/img/jpeg/Kenko-Web/pictos/imgPopup.svg" alt="Image vectorisée d'un personnage">
+                                        <img src="/assets/img/services/Kenko-Web/pictos/imgPopup.svg" alt="Image vectorisée d'un personnage">
                                         <p class="text-start my-3">Vous désirez :</p>
                                         <ul class="text-start">
                                             <ol class="my-2">&#9679; &nbsp;Un site web qui contient simplement les informations essentielles</ol>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card rounded-4">
-                                <img src="/assets/img/jpeg/Kenko-Web/siteVitrine.jpg" class="card-img-top rounded-top-4" alt="Image représentant une vitrine de boulangerie">
+                                <img src="/assets/img/services/Kenko-Web/siteVitrine.jpg" class="card-img-top rounded-top-4" alt="Image représentant une vitrine de boulangerie">
                                 <div class="card-body text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site vitrine</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 1550€</h6>
@@ -92,7 +92,7 @@
                                     <div class="popup-container" id="popup2">
                                         <div class="popup">
                                             <h4 class="fs-3 my-3">Pourquoi choisir l'offre : site vitrine ?</h3>
-                                            <img src="/assets/img/jpeg/Kenko-Web/pictos/imgPopup.svg" alt="Image vectorisée d'un personnage">
+                                            <img src="/assets/img/services/Kenko-Web/pictos/imgPopup.svg" alt="Image vectorisée d'un personnage">
                                             <p class="text-start my-3">Vous désirez :</p>
                                             <ul class="text-start">
                                                 <ol class="my-2">&#9679; &nbsp;Mettre en avant un catalogue de produits, une galerie photos, vos partenaires, ...</ol>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card rounded-4 text">
-                                <img src="/assets/img/jpeg/Kenko-Web/siteXXL2.jpg" class="card-img-top rounded-top-4" alt="Image représentant des buissons">
+                                <img src="/assets/img/services/Kenko-Web/siteXXL2.jpg" class="card-img-top rounded-top-4" alt="Image représentant des buissons">
                                 <div class="card-body text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site XXL</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 2000€</h6>
@@ -121,7 +121,7 @@
                                     <div class="popup-container" id="popup3">
                                         <div class="popup">
                                             <h4 class="fs-3 my-3">Pourquoi choisir l'offre : site XXL ?</h3>
-                                            <img src="/assets/img/jpeg/Kenko-Web/pictos/imgPopup.svg" alt="Image vectorisée d'un personnage">
+                                            <img src="/assets/img/services/Kenko-Web/pictos/imgPopup.svg" alt="Image vectorisée d'un personnage">
                                             <p class="text-start my-3">Cette option est adaptée si :</p>
                                             <ul class="text-start">
                                                 <ol class="my-2">&#9679; &nbsp;Vous proposez un large panel d'activités.</ol>
@@ -141,18 +141,18 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <img src="/assets/img/jpeg/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="">
+                        <img src="/assets/img/services/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="">
                         <div class="d-flex my-5 atoutsContent">
                             <article class="col-md-4 text-center">
-                                <img src="/assets/img/jpeg/Kenko-Web/pictos/work.svg" class="pictoAtouts" alt="">
+                                <img src="/assets/img/services/Kenko-Web/pictos/work.svg" class="pictoAtouts" alt="">
                                 <p class="p-1">Mettre en avant et expliquez votre activité</p>
                             </article>
                             <article class="col-md-4 text-center">
-                                <img src="/assets/img/jpeg/Kenko-Web/pictos/partenaires.svg" class="pictoAtouts" alt="">
+                                <img src="/assets/img/services/Kenko-Web/pictos/partenaires.svg" class="pictoAtouts" alt="">
                                 <p class="p-1">Présentez vos partenaires</p>
                             </article>
                             <article class="col-md-4 text-center">
-                                <img src="/assets/img/jpeg/Kenko-Web/pictos/localiser.svg" class="pictoAtouts" alt="">
+                                <img src="/assets/img/services/Kenko-Web/pictos/localiser.svg" class="pictoAtouts" alt="">
                                 <p class="p-1">Donnez les informations pratiques de votre entreprise</p>
                             </article>
                         </div>

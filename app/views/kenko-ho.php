@@ -15,7 +15,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 position-relative">
-                            <img src="/assets/img/jpeg/Kenko-Ho/dōTERRAConsLogo.svg" alt="Logo de conséillère dōTERRA" class="doTERRA position-absolute top-50 my-5">
+                            <img src="/assets/img/services/Kenko-Ho/dōTERRAConsLogo.svg" alt="Logo de conséillère dōTERRA" class="doTERRA position-absolute top-50 my-5">
                         </div>
                         <div class="mainTitleContent mb-5">
                             <h2 class="mainSectionTitle text-muted text-center p-5">Que vous propose votre conséillère dōTERRA ?</h2>

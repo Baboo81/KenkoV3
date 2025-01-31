@@ -28,16 +28,16 @@
                             Réseaux Sociaux
                         </p>
                         <div class="text-center">
-                            <a href="https://www.facebook.com/badiane.green"><img class="icons" src="/assets/img/svg/facebook.svg" alt="Icône FaceBook"></a>
-                            <a href="https://www.instagram.com/chrisrodriguezperez"><img class="icons" src="/assets/img/svg/instagram.svg" alt="Icône Instagram"></a>
-                            <a href="https://www.linkedin.com/in/chris-rodriguez-perez-609716100/"><img class="icons" src="/assets/img/svg/linkedin.svg" alt="Icône Instagram"></a>
+                            <a href="https://www.facebook.com/badiane.green"><img class="icons" src="/assets/img/icons/facebook.svg" alt="Icône FaceBook"></a>
+                            <a href="https://www.instagram.com/chrisrodriguezperez"><img class="icons" src="/assets/img/icons/instagram.svg" alt="Icône Instagram"></a>
+                            <a href="https://www.linkedin.com/in/chris-rodriguez-perez-609716100/"><img class="icons" src="/assets/img/icons/linkedin.svg" alt="Icône Instagram"></a>
                         </div>
                   </div>
                   <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <p class="text-uppercase text-center fw-bold mb-4">Coordonnées</p>
                     <div class="text-center">
                         <p class="text-center">Envoyez-moi un mail en cliquant ci-dessous</p>
-                        <a href="mailto:chrisrodriguez@hotmail.be"><img class="icons" src="/assets/img/svg/email.svg" alt="Icône email"></a> 
+                        <a href="mailto:chrisrodriguez@hotmail.be"><img class="icons" src="/assets/img/icons/email.svg" alt="Icône email"></a> 
                     </div>
                     <p class="text-center">0470/35.05.87</p>
                   </div>

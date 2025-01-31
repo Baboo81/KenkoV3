@@ -14,19 +14,19 @@
                     <div class="row">
                         <div class="my-5 d-flex">
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/jpeg/quiSuis-je/informatique.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/informatique.svg" alt="">
                                 <h4 class="fs-4 my-1">L'informatique</h4>
                             </article>
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/jpeg/quiSuis-je/design.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/design.svg" alt="">
                                 <h4 class="fs-4 my-1">Le design</h4>
                             </article>
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/jpeg/quiSuis-je/photo.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/photo.svg" alt="">
                                 <h4 class="fs-4 my-5">La photo</h4>
                             </article>
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/jpeg/quiSuis-je/communication.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/communication.svg" alt="">
                                 <h4 class="fs-4">La communication</h4>
                             </article>
                         </div>
