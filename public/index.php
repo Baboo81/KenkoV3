@@ -21,7 +21,9 @@ $router->get('/kenko-ho', [KenkoHoController::class, 'show']);
 $router->get('/kenko-web', [KenkoWebController::class, 'show']);
 $router->get('/quiSuis-je', [QuiSuisJeController::class, 'show']);
 $router->get('/contact', [ContactController::class, 'show']);
+//Formulaire
 $router->post('/contact', [ContactController::class, 'handleForm']);
+$router->get('/message', [ContactController::class, 'listMessages']);
 
 // Lancer le routage
 $router->run();

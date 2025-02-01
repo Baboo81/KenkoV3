@@ -3,7 +3,8 @@
 namespace App\Controllers;
 
 use App\Core\Controller;
-
+use App\Core\Database;
+use PDO;
 
 class ContactController extends Controller {
     public function show() {
@@ -36,5 +37,21 @@ class ContactController extends Controller {
                 echo "Veuillez remplir tous les champs du formulaire !";
             }
         }
+    }
+
+    public function listMessages() {
+        $db = Database::getInstance();
+
+        //Récupère les messages de la base de données
+        $stmt = $db->query("SELECT * FROM contacts ORDER BY created_at DESC");
+        $message = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        //Définir les variables pour la vue
+        $title = "Messages reçus";
+        $resetCss = 'reset.css';
+        $css = 'messages.css';
+
+        //Charger la vue et lui passer les messages
+        $this->View('messages', compact('title', 'resetCss', 'css', 'messages'));
     }
 }
