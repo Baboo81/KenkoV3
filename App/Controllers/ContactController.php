@@ -25,23 +25,31 @@ class ContactController extends Controller {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //Récupère les donnéesdu form
             $name = $_POST['name'] ?? '';
-            $firstName = $_POST['firstName'] ?? '';
+            $firstName = $_POST['first_name'] ?? '';
             $email = $_POST['email'] ?? '';
             $message = $_POST['message'] ?? '';
 
             //Validation des données
             if ($name && $firstName && $email && $message) {
-                //Ici, je peux ajouter l'enregistrement en base de données
+                //Connexion à la DB
+                $db = Database::getInstance();
 
-                //Redirection vers la page de contact avec un paramètre de succès
-                header("Location: /contact?success=1");
-                    die("Redirection effectuée");
-                exit;
+                }
+
+            // Insérer les données avec une requête préparée
+            $stmt = $db->prepare("INSERT INTO contacts (name, first_name, email, message, created_at) VALUES (?, ?, ?, ?, NOW())");
+            $result = $stmt->execute([$name, $firstName, $email, $message]);
+
+            if ($result) {
+                echo "Message bien enregistré en base de données !";
             } else {
-                echo "Veuillez remplir tous les champs du formulaire !";
+                echo "Erreur lors de l'insertion.";
             }
+        } else {
+            echo "Veuillez remplir tous les champs du formulaire !";
         }
     }
+
 
     public function listMessages() {
         $db = Database::getInstance();
@@ -53,9 +61,9 @@ class ContactController extends Controller {
         //Définir les variables pour la vue
         $title = "Messages reçus";
         $resetCss = 'reset.css';
-        $css = 'messages.css';
+        $css = 'message.css';
 
         //Charger la vue et lui passer les messages
-        $this->View('messages', compact('title', 'resetCss', 'css', 'messages'));
+        $this->View('message', compact('title', 'resetCss', 'css', 'message'));
     }
 }
