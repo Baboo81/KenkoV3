@@ -1,5 +1,11 @@
 <?php include 'partials/header.php'; ?>
 
+<?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
+        <div class="alert alert-success text-center">
+            Votre message a bien été envoyé !
+        </div>
+<?php endif; ?>
+
 <main>
     <section class="mainSection">
         <div class="container">
@@ -16,7 +22,7 @@
                             <input type="text" class="form-control" id="firstName" name="firstName" required>
                         </div>
                         <div class="mb-3">
-                            <label for="eamil" class="form-label">Email</label>
+                            <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required> 
                         </div>
                         <div class="mb-3">

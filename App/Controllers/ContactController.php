@@ -31,8 +31,12 @@ class ContactController extends Controller {
 
             //Validation des données
             if ($name && $firstName && $email && $message) {
+                //Ici, je peux ajouter l'enregistrement en base de données
 
-                echo "Message envoyé : $name, $firstName, $email, $message";
+                //Redirection vers la page de contact avec un paramètre de succès
+                header("Location: /contact?success=1");
+                    die("Redirection effectuée");
+                exit;
             } else {
                 echo "Veuillez remplir tous les champs du formulaire !";
             }
