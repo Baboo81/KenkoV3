@@ -27,9 +27,28 @@
                             </div>
                         </article>
                     </div>
-                </div>
-                <div class="text-center mt-3">
-                    <button  class="button">Les 10 huiles de bases</button>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mainTitleContent mb-5">
+                                <h2 class="mainSectionTitle text-muted text-center p-5">Les thématiques & infos téléchargeables</h2>
+                                <div class="line"><span></span></div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button  class="button">Les 10 huiles de bases</button>
+                                <button  class="button">Les émotions & les H.E</button>
+                                <button  class="button">Les enfants & les H.E</button>
+                                <button  class="button">Le stress & les H.E</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center mt-3">
+                            <button onclick="window.location.href='../kenko-ho-themes/cuisine.php';"  class="button">Les H.E dans la cuisine</button>
+                            <button  class="button">Le sommeil & les HE</button>
+                            <button  class="button">La peau & les HE</button>
+                            <button  class="button">La douleur & les HE</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section>
