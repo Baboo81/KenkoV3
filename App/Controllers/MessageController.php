@@ -22,7 +22,7 @@ class MessageController extends Controller {
         $css = 'message.css';
 
         //Charger la vue en lui passant ceci
-        $this->View('message', compact('title', 'resetCss', 'css', 'message'));
+        $this->View('message', compact('title', 'resetCss', 'css', 'messages'));
     }
    
 

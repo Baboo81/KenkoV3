@@ -9,7 +9,6 @@ use App\Core\Router;
 use App\Controllers\HomeController;
 use App\Controllers\KenkoHoController;
 use App\Controllers\KenkoWebController;
-use App\Controllers\MessageController;
 use App\Controllers\QuiSuisJeController;
 
 
@@ -25,7 +24,7 @@ $router->get('/contact', [ContactController::class, 'show']);
 //Formulaire
 $router->post('/contact', [ContactController::class, 'handleForm']);
 $router->get('/message', [ContactController::class, 'listMessages']);
-$router->get('/message', [MessageController::class, 'showMessages']);
+
 
 // Lancer le routage
 $router->run();

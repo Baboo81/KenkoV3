@@ -7,13 +7,13 @@
                 <div class="col-md-12">
                     <?php if (!empty($messages)): ?>
                         <ul>
-                            <?php foreach ($messages as $message): ?>
+                            <?php foreach ($messages as $msg): ?>
                                 <li>
-                                    <strong>Nom:</strong><?php echo $message['name']; ?><br />
-                                    <strong>Prénom:</strong><?php echo $message['firstName']; ?><br />
-                                    <strong>Email:</strong><?php echo $message['email']; ?><br />
-                                    <strong>Message:</strong><?php echo $message['message']; ?><br />
-                                    <strong>Date:</strong><?php echo $message['created_at']; ?>
+                                    <strong>Nom:</strong><?php echo $msg['name']; ?><br />
+                                    <strong>Prénom:</strong><?php echo $msg['first_name']; ?><br />
+                                    <strong>Email:</strong><?php echo $msg['email']; ?><br />
+                                    <strong>Message:</strong><?php echo $msg['message']; ?><br />
+                                    <strong>Date:</strong><?php echo $msg['created_at']; ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
