@@ -14,8 +14,9 @@
         <link href="/assets/css/<?= $resetCss ?>" rel="stylesheet">
         <link href="/assets/css/<?= $css ?>" rel="stylesheet">
         <!-- Library Leaflet JS -->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="/assets/js/main.js" defer></script>
         <title><?= $title; ?></title>
     </head>

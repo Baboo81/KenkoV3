@@ -14,18 +14,6 @@ setInterval(() => {
 }, 3000);
 ////////////////////////////// END /////////////////////////
 
-
-//Footer; map :
-
-    //Create map:
-const centroid = [50.71036, 4.36889];
-const map = L.map('mapid').setView(centroid, 16.4);
-
-    //Add tiles & marker:
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-L.marker([50.71036, 4.36889]).addTo(map);
-////////////////////////////// END /////////////////////////
-
 //Pop-up :
 
     //Création de la fct pour afficher le pop-up :
@@ -38,3 +26,19 @@ L.marker([50.71036, 4.36889]).addTo(map);
         document.getElementById(popupId).style.display = "none";
     }
 ////////////////////////////// END /////////////////////////
+
+//Footer; map :
+
+    //Create map:
+    const centroid = [50.71036, 4.36889];
+    const map = L.map('mapid').setView(centroid, 16.4);
+    
+        //Add tiles & marker:
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([50.71036, 4.36889]).addTo(map);
+////////////////////////////// END /////////////////////////
+
+//Slider (Btn):
+
+
+

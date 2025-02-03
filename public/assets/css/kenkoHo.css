@@ -147,7 +147,8 @@ section .overlay
 /* section mainSection */
 .mainSection
 {
-    height: 2000px;
+    min-height: 800px;/*pour avoir une section qui s'adapte au contenu*/
+    padding-bottom: 50px;
 }
 
 .mainTitleContent
@@ -199,41 +200,59 @@ section .overlay
 
 .box1
 {
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider1.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider1.jpg);
 }
 
 .box2
 {
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider2.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider2.jpg);
 }
 
 .box3
 {
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider3.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider3.jpg);
 }
 
 .box4
 {
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider4.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider4.jpg);
 }
 
 .box5
 {
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider5.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider5.jpg);
 }
 
 .box6
 {
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider6.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider6.jpg);
+}
+
+.sliderSection
+{
+    position: relative; /* S'assure qu'il suit le flux normal */
+    margin-top: 50px; /* Ajoute un espacement entre mainSection et le slider */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
 }
 
 .sliderContent
 {
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 600px;
-    background-image: url(../img/jpeg/Kenko-Ho/slider/Slider8.jpg);
+    width: 80%;
+    max-width: 1000px;
+    height: 400px;
+    background-image: url(../img/services/Kenko-Ho/slider/Slider8.jpg);
     box-shadow: 0 30px 50px var(--blue);
+}
+
+.slide .item
+{
+    width: 100%; /* S'assure que chaque item occupe toute la largeur de son conteneur */
+    height: 100%; /* L'élément prendra la hauteur totale de .sliderContent */
+    background-position: center; /* Centrer l'image */
+    background-size: cover; /* L'image recouvre l'élément sans être déformée */
 }
 
 .sliderContent .slide .item
@@ -334,6 +353,7 @@ section .overlay
         filter: blur(0);
     }
 }
+
 /* END sliderSection */
 
 /* Footer */
