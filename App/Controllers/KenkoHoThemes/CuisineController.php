@@ -14,7 +14,7 @@ class CuisineController extends Controller {
         $css = "cuisine.css";
 
         //Charger la vue et passer le titre, les sytles
-        $this->View('kenko-ho-themes/cuisine.php', compact('title', 'resetCss', 'css'));
+        $this->View('kenko-ho-themes/cuisine', compact('title', 'resetCss', 'css'));
 
     }
 }

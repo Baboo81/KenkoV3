@@ -1,4 +1,4 @@
-<?php include 'partials/header.php'; ?>
+<?php include '../partials/header.php'; ?>
 
 <main>
     <section>
@@ -10,4 +10,4 @@
     </section>
 </main>
 
-<?php include 'partials/footer.php'; ?>
+<?php include '../partials/footer.php'; ?>
