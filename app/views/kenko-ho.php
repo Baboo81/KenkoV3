@@ -21,14 +21,14 @@
                             <h2 class="mainSectionTitle text-muted text-center p-5">Que vous propose votre conséillère dōTERRA ?</h2>
                             <div class="line"><span></span></div>
                         </div>
-                        <article class="col-md-12">
+                        <article class="col-md-12 my-5">
                             <div class="box rounded-5 p-4">
                                 <p class="text-muted">Grâce à votre adhésion à dōTERRA vous bénéficierez d'une ristourne de 25% sur les produits ainsi que d'un suivi personnalisé.<br />Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaire ainsi que des astuces qui vous guiderons sur la voie de l'autonomie et du bien-être.<br />Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
                             </div>
                         </article>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 my-5">
                             <div class="mainTitleContent mb-5">
                                 <h2 class="mainSectionTitle text-muted text-center p-5">Les thématiques & infos téléchargeables</h2>
                                 <div class="line"><span></span></div>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="row">
                         <div class="text-center mt-3">
-                            <button onclick="window.location.href='../kenko-ho-themes/cuisine.php';"  class="button">Les H.E dans la cuisine</button>
+                            <button onclick="window.location.href='../kenko-ho-themes/cuisine';"  class="button">Les H.E dans la cuisine</button>
                             <button  class="button">Le sommeil & les HE</button>
                             <button  class="button">La peau & les HE</button>
                             <button  class="button">La douleur & les HE</button>

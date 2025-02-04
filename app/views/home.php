@@ -21,7 +21,7 @@
                                 <img src="./assets/img/services/Kenko-Ho/kenko-ho.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
                                 <div class="card-body">
                                     <h5 class="card-title fs-2 text-center mb-3">Envie d'améliorer votre bien-être ?</h5>
-                                    <p class="card-text">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que les besoins de votre famille.</p>
+                                    <p class="card-text">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
                                     <div class="text-center mt-3">
                                         <button onclick="window.location.href='/kenko-ho';" class="button">Visiter Kenko-Ho</button>
                                     </div>
