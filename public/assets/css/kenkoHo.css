@@ -151,19 +151,20 @@ section .overlay
     padding-bottom: 50px;
 }
 
-.mainTitleContent
-{
-    padding: 100px;
-}
-
 .mainSectionTitle
 {
     font-size: 2.5em;
 }
 
+.mainTitleContent
+{
+    position: relative;
+}
+
 .line
 {
-    width: 900px;
+    position: absolute;
+    width: 100%;
     background: var(--vert);
     height: 3px;
     margin: auto;
@@ -173,12 +174,12 @@ section .overlay
 .line span
 {
     display: block;
-    width: 700px;
+    width: 70%;
     height: 4px;
     background: var(--violet);
     margin: auto;
     position: relative;
-    bottom: 0.5px;
+    bottom: 0.5px; 
 }
 
 .mainSection .box

@@ -1,13 +1,18 @@
-<?php include '../partials/header.php'; ?>
+<?php include __DIR__ . '/../partials/header.php'; ?>
 
 <main>
-    <section>
+    <section class="mainSection">
         <div class="container">
             <div class="row">
-                <h1>Comment utiliser les huiles essentielles en cuisine ?</h1>
+                <div class="col-md-12">
+                    <div class="mainTitleContent mb-5">
+                        <h2 class="text-muted text-center mb-5">Comment utiliser les huiles essentielles en cuisine ?</h2>
+                        <div class="line"><span></span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
 
-<?php include '../partials/footer.php'; ?>
+<?php include __DIR__ . '/../partials/footer.php'; ?>

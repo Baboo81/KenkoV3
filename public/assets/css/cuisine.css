@@ -29,8 +29,14 @@ p
 h1
 {
     font-family: "Bodoni Moda", serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--noir);
+}
+
+h2
+{
+    font-family: "Bodoni Moda", serif;
+    font-size: 3rem;
 }
 
 h3
@@ -86,13 +92,46 @@ nav .nav-link:hover
 }
 
 /* mainSection */
-
-
 .mainSection
 {
-    height: 1500px;
+    min-height: 1500px;
     margin-top: 20%;
+    padding-bottom: 50px;
 }
+
+.mainTitleContent
+{
+    position: relative;
+}
+
+.line
+{
+    position: absolute;
+    width: 100%;
+    background: var(--vert);
+    height: 3px;
+    margin: auto;
+    margin-top: -1%;
+}
+
+.line span
+{
+    display: block;
+    width: 70%;
+    height: 4px;
+    background: var(--violet);
+    margin: auto;
+    position: relative;
+    bottom: 0.5px; 
+}
+
+.mainSection .box
+{
+    background-color: var(--gris);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 1.3em;
+}
+
 
 /* Footer */
 footer
