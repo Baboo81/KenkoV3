@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="mainTitleContent mb-5">
-                        <h2 class="text-muted text-center mb-5">Présentation des 10 huiles de base</h2>
+                        <h2 class="text-muted text-center mb-5">Présentation des 10 huiles du kit famille</h2>
                         <div class="line"><span></span></div>
                     </div>
                 </div>
@@ -122,6 +122,104 @@
                             <div class="col-md-4 text-center">
                                 <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/ZenGest.jpg" alt="Image représantant une personne qui cuisine">
                             </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Lavande.jpg" alt="Image représantant une personne qui cuisine">
+                            </div>
+                            <article class="col-md-8">
+                                <div class="text-center mb-5">
+                                    <h3>La Lavande</h3>
+                                </div>
+                                <div class="text-start my-3">
+                                    <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : 1 à 2gttes dans un gel d'aloé-véra, à appliquer en cas de coup de soleil.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion, la lavande est calmante, relaxante.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Efficace contre les inconforts saisonnier en association avec la menthe poivrée et le citron.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Efficace pour calmer les irritations de la peau.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row d-flex align-items-center mt-5">
+                            <article class="col-md-8">
+                                <div class="text-center mb-5">
+                                    <h3>Le mélange : Deep Blue</h3>
+                                </div>
+                                <div class="text-start mb-3">
+                                    <h4>Composition :</h4>
+                                </div>
+                                <p class="text-muted">Gaulthérie (Wintergreen), Camphrier, Menthe poivrée, Ylang Ylang, Tanaisie annuelle (Blue Tansy), Camomille Matricaire, Hélichryse, Osmanthus.</p>
+                                <div class="text-start my-3">
+                                    <h4>Usages :<i class="circleT mx-2">T</i></h4>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Ce mélange est idéal pour soulager les tensions musculaires ou les articulations capricieuses.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En massage : 1 à 2gttes dans une HV, appliquer localement.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Idéale pour préparer les muscles des jambes avant le sport.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; Á éviter si il y a des allergies aux salicylés (aspirine).</p>
+                            </article>
+                            <div class="col-md-4 text-center">
+                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/DeepBlue.jpg" alt="Image représantant une personne qui cuisine">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Encen.jpg" alt="Image représantant une personne qui cuisine">
+                            </div>
+                            <article class="col-md-8">
+                                <div class="text-center mb-5">
+                                    <h3>L'Encens</h3>
+                                </div>
+                                <div class="text-start my-3">
+                                    <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien cellulaire et des déffenses naturelles.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion, se marie bien avec toutes les huiles, l'encens procure un effet anxiolytique.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique dans une crème permet d'éliminer les tâches, anti-rides (anti-oxydant).</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En interne : 1gtte en bouche pour un effet relaxant.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="row d-flex align-items-center mt-5">
+                            <article class="col-md-8">
+                                <div class="text-center mb-5">
+                                    <h3>Le Tea-tree</h3>
+                                </div>
+                                <div class="text-start my-3">
+                                    <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Le Trea-Tree est très efficace contre les maux de gorge et oreilles, dans le cadre de soucis bucco-dentaire.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : acné, boutons.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien les déffenses naturelles.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; En diffusion en présence de chats à éviter.</p>
+                            </article>
+                            <div class="col-md-4 text-center">
+                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/TeaTree.jpg" alt="Image représantant une personne qui cuisine">
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-4 text-center">
+                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Citron.jpg" alt="Image représantant une personne qui cuisine">
+                            </div>
+                            <article class="col-md-8">
+                                <div class="text-center mb-5">
+                                    <h3>Le Citron</h3>
+                                </div>
+                                <div class="text-start my-3">
+                                    <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
+                                </div>
+                                <div class="mb-5">
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien les déffenses naturelles, action détox sur le métabolisme.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Stimulant digestif.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : 1gtte dans de l'HV en massage sur les lobes d'oreilles pour un effet décongestionnant nasal.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion : donne un coup fouet avec la menthe poivrée.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; Photosensibilisant, dermocaustique.</p>
+                                </div>
+                            </article>
                         </div>
                         <div class="text-center my-5">
                             <a href="/../assets/pdf/pageDixHuilesDeBase/kitFamille.pdf" download="kitFamille.pdf">
