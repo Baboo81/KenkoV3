@@ -10,6 +10,7 @@ use App\Controllers\HomeController;
 use App\Controllers\KenkoHoController;
 use App\Controllers\KenkoHoThemes\CuisineController;
 use App\Controllers\KenkoHoThemes\DixHuilesDeBaseController;
+use App\Controllers\KenkoHoThemes\EmotionController;
 use App\Controllers\KenkoWebController;
 use App\Controllers\QuiSuisJeController;
 
@@ -25,6 +26,7 @@ $router->get('/quiSuis-je', [QuiSuisJeController::class, 'show']);
 $router->get('/contact', [ContactController::class, 'show']);
 $router->get('/kenko-ho-themes/cuisine', [CuisineController::class, 'show']);
 $router->get('/kenko-ho-themes/dix-huiles-de-base', [DixHuilesDeBaseController::class, 'show']);
+$router->get('/kenko-ho-themes/emotions', [EmotionController::class, 'show']);
 
 //Formulaire
 $router->post('/contact', [ContactController::class, 'handleForm']);
