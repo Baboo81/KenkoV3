@@ -35,7 +35,7 @@
                             </div>
                             <div class="text-center mt-3">
                                 <button onclick="window.location.href='../kenko-ho-themes/dix-huiles-de-base';"  class="button">Les 10 huiles de bases</button>
-                                <button  class="button">Les émotions & les H.E</button>
+                                <button onclick="window.location.href='../kenko-ho-themes/emotions';"  class="button">Les émotions & les H.E</button>
                                 <button  class="button">Les enfants & les H.E</button>
                                 <button  class="button">Le stress & les H.E</button>
                             </div>
