@@ -22,7 +22,7 @@ body
 
 p
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.3em;
 }
 
@@ -41,9 +41,58 @@ h2
 
 h3
 {
-    color: white;
-    font-size: 6em;
+    color: white !important;
+    font-size: 2em !important;
 }
+
+h4
+{
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Symboles: usages */
+
+.circleA
+{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid orange;
+    border-radius: 50%;
+    font-style: normal;
+    color: orange;
+}
+
+.circleT
+{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid rgb(84, 212, 244);
+    border-radius: 50%;
+    font-style: normal;
+    color: rgb(84, 212, 244);
+}
+
+.circleI
+{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid rgb(44, 235, 130);
+    border-radius: 50%;
+    font-style: normal;
+    color:rgb(44, 235, 130);
+}
+/* Symboles: usages END */
+
 
 .fontBeige
 {
@@ -142,8 +191,8 @@ nav .nav-link:hover
 .box img
 {
     border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
