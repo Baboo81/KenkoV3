@@ -21,16 +21,37 @@ class ContactController extends Controller {
 
     public function handleForm() {
 
+        //Démarrer une session : (une session permet de stocker des infos entre les requêtes HTTP, des variables utilisateur, des jetons CSRF ou des msg de confirmation)
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+
         //Vérifie que le form est bien envoyé
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            //Récupère les donnéesdu form
-            $name = $_POST['name'] ?? '';
-            $firstName = $_POST['firstName'] ?? '';
-            $email = $_POST['email'] ?? '';
-            $message = $_POST['message'] ?? '';
+            //Vérifie si le token CSRF : le token = signature du formulaire
+            if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+                die("Erreur CSRF !");
+            }
 
-            //Validation des données
-            if ($name && $firstName && $email && $message) {
+            //Récupèration + assainissement des données du form
+            //trim : supprime les espaces que l'utilisateur aurai mis
+            //strip_tags : supprime les balises HTML qu'un utilisateur malveillant aurait mis, évite les attaques de types : XSS
+            $name = trim(strip_tags( $_POST['name'] ?? ''));
+            $firstName = trim(strip_tags($_POST['firstName'] ?? ''));
+            $email = trim(filter_var($_POST['email'] ?? '', FILTER_VALIDATE_EMAIL));
+            $message = trim(strip_tags($_POST['message'] ?? ''));
+
+            //Validation supplémentaire pour les champs : nom et prénoms (nous voulons uniquement des lettres et espaces)
+            if (!preg_match("/^[a-zA-Z]*$/", $name) || !preg_match("/^[a-zA-Z]*$/",
+            $firstName)) {
+                die("Le nom ainsi que le prénom doivent contenir des lettres et des espaces !");
+            }
+
+            //Validation des données + vérification que les champs ne soit pas vides 
+            if (empty($name) || empty($firstName) || empty($email) || empty($message)) {
+                die("Tous les champs doivent être remplis");
+
                 //Connexion à la DB
                 $db = Database::getInstance();
 
