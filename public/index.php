@@ -13,7 +13,7 @@ use App\Controllers\KenkoHoThemes\DixHuilesDeBaseController;
 use App\Controllers\KenkoHoThemes\EmotionController;
 use App\Controllers\KenkoWebController;
 use App\Controllers\QuiSuisJeController;
-
+use App\Controllers\SignupController;
 
 // Initialisation du routeur
 $router = new Router();
@@ -28,10 +28,12 @@ $router->get('/kenko-ho-themes/cuisine', [CuisineController::class, 'show']);
 $router->get('/kenko-ho-themes/dix-huiles-de-base', [DixHuilesDeBaseController::class, 'show']);
 $router->get('/kenko-ho-themes/emotions', [EmotionController::class, 'show']);
 
-//Formulaire
+//Formulaire contact
 $router->post('/contact', [ContactController::class, 'handleForm']);
 $router->get('/message', [ContactController::class, 'listMessages']);
 
+//Formulaire s'inscrire
+$router->get('/signup', [SignupController::class, 'show']);
 
 // Lancer le routage
 $router->run();

@@ -48,6 +48,9 @@
                                     <li class="nav-item mx-5">
                                         <a class="nav-link" aria-current="page" href="/contact">Contact</a>
                                     </li>
+                                    <li class="nav-item mx-5">
+                                        <button onclick="window.location.href='/signup';"  class="button">S'inscrire</button>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
