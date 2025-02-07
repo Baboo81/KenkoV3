@@ -4,7 +4,7 @@
     <section class="mainContent">
         <div class="container">
             <div class="row">
-                <h1 class="text-center my-5">Inscription</h1>
+                <h1 class="text-center text-muted my-5">Inscription</h1>
                 <div class="col-md-12">
                     <form action="/signup" method="post" autocomplete="off">
                         <div class="mb-3">
@@ -20,7 +20,7 @@
                             <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
                         </div>
                         <div class="text-center my-5">
-                            <button type="submit">S'inscrire</button>
+                            <button type="submit" class="button">S'inscrire</button>
                         </div>
                     </form>
                 </div>

@@ -12,6 +12,8 @@ use App\Controllers\KenkoHoThemes\CuisineController;
 use App\Controllers\KenkoHoThemes\DixHuilesDeBaseController;
 use App\Controllers\KenkoHoThemes\EmotionController;
 use App\Controllers\KenkoWebController;
+use App\Controllers\LoginController;
+use App\Controllers\LogoutController;
 use App\Controllers\QuiSuisJeController;
 use App\Controllers\SignupController;
 
@@ -34,6 +36,13 @@ $router->get('/message', [ContactController::class, 'listMessages']);
 
 //Formulaire s'inscrire
 $router->get('/signup', [SignupController::class, 'show']);
+
+//Route pour la page de connexion
+$router->get('/login', [LoginController::class, 'show']);
+$router->post('/login', [LoginController::class, 'authenticate']);
+
+//Route pour la déconnexion
+$router->get('/logout', [LogoutController::class, 'logout']);
 
 // Lancer le routage
 $router->run();
