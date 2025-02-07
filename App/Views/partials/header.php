@@ -67,6 +67,10 @@
                                                     <li>
                                                         <a class="dropdown-item" href="/logout">Se déconnecter</a>
                                                     </li>
+                                                    <!-- Afficher le nom du user connecté  -->
+                                                    <li class="dropdown-item">
+                                                        <p class="user-name"><?= $_SESSION['user'] ?></p>
+                                                    </li>
                                                 <?php endif; ?>
                                             </ul>
                                         </li>
