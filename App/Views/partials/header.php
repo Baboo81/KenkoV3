@@ -48,9 +48,29 @@
                                     <li class="nav-item mx-5">
                                         <a class="nav-link" aria-current="page" href="/contact">Contact</a>
                                     </li>
-                                    <li class="nav-item mx-5">
-                                        <button onclick="window.location.href='/signup';"  class="button">S'inscrire</button>
-                                    </li>
+                                    <ul class="navbar-nav">
+                                        <?php if (!isset($_SESSION['user'])): ?>   
+                                        <li class="nav-item mx-3">                                    
+                                            <a class="nav-link" href="/signup">S'inscrire</a>
+                                        </li>
+                                        <?php endif; ?>
+                                        <li class="nav-item dropdown mx-3">
+                                            <a href="#" class="nav-link" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="/asset/img/user-icon.svg" alt="Img user" class="rounded-circle" width="40">
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="userMenu">
+                                                <?php if (!isset($_SESSION['user'])): ?>
+                                                    <li>
+                                                        <a class="dropdown-item" href="/login">Se connecter</a>
+                                                    </li>
+                                                <?php else: ?>
+                                                    <li>
+                                                        <a class="dropdown-item" href="/logout">Se déconnecter</a>
+                                                    </li>
+                                                <?php endif; ?>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </ul>
                             </div>
                         </div>
