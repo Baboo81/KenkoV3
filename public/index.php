@@ -1,5 +1,7 @@
 <?php
 
+session_start();//Démarrer la session
+
 require_once '../vendor/autoload.php';
 
 // Inclusion des classes nécessaires
@@ -36,6 +38,7 @@ $router->get('/message', [ContactController::class, 'listMessages']);
 
 //Formulaire s'inscrire
 $router->get('/signup', [SignupController::class, 'show']);
+$router->post('/signup', [SignupController::class, 'register']);
 
 //Route pour la page de connexion
 $router->get('/login', [LoginController::class, 'show']);

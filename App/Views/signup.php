@@ -7,6 +7,7 @@
                 <h1 class="text-center text-muted my-5">Inscription</h1>
                 <div class="col-md-12">
                     <form action="/signup" method="post" autocomplete="off">
+                        <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']; ?>">
                         <div class="mb-3">
                             <label for="username" class="form-label">Nom d'utilisateur :</label>
                             <input type="text" class="form-control" id="username" name="username" autocomplete="off" required>

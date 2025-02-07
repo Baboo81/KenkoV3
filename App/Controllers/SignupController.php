@@ -8,6 +8,14 @@ use App\Core\Database;
 
 class SignupController extends Controller {
     public function show() {
+        //Démarrer la session si elle ne l'est pas
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        //Générer un token CSRF unique et le stocker en session
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+
 
         //Définir le titre de la page
         $title = "Inscription";
@@ -29,6 +37,7 @@ class SignupController extends Controller {
             if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
                 die("Erreur CSRF !");
             }
+            unset($_SESSION['csrf_token']);//Supprime le token apès vérification
 
             //Récupération et nettoyage des données
             $username = trim(htmlspecialchars($_POST['username']));

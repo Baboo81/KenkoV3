@@ -8,6 +8,18 @@ use App\Core\Database;
 
 class LoginController extends Controller {
     public function show() {
+        // Démarrer la session si elle n'est pas déjà démarrée
+         if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        // Vérifier si l'utilisateur est déjà connecté, sinon afficher le formulaire de login
+        if (isset($_SESSION['user_id'])) {
+            // Rediriger vers la page d'accueil si l'utilisateur est déjà connecté
+            header('Location: /home');
+            exit();
+        }
+
         //Définir le title
         $title = "Login";
         //Joindre les styles
@@ -19,7 +31,8 @@ class LoginController extends Controller {
     }
 
     public function authenticate() {
-        if ($_SESSION['REQUEST_METHOD'] === 'POST') {
+       
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //Démarrer la session si elle n'est pas active
             if (session_status() === PHP_SESSION_NONE) {
                 session_start();
@@ -38,7 +51,7 @@ class LoginController extends Controller {
             $db = Database::getInstance();
 
             //Vérification de l'email dans la DB
-            $stmt = $db->prepare("SELECT id, username, password FROM users WHERE amail = ?");
+            $stmt = $db->prepare("SELECT id, username, password FROM users WHERE email = ?");
             $stmt->execute([$email]);
             $user = $stmt->fetch();
 
