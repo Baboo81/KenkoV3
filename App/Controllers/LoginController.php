@@ -62,7 +62,7 @@ class LoginController extends Controller {
                 $_SESSION['user_id'] = $user['id'];
 
                 //Redirection vers la page d'accueil
-                header("Location: /home");
+                header("Location: /");
                 exit();
             } else {
                 die("Identifiants incorrects !");

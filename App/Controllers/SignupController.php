@@ -74,7 +74,7 @@ class SignupController extends Controller {
 
             if ($success) {
                 //Redirection vers la page d'accueil
-                header("Location: /home");
+                header("Location: /");
                 exit();
             } else {
                 die("Erreur lors de l'inscription !");
