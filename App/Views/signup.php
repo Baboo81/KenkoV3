@@ -1,4 +1,4 @@
-<?php include 'partials/header.php'; ?>
+<?php include 'partials/headerWithModifiedNav.php'; ?>
 
 <main>
     <section class="mainContent">
