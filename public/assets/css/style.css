@@ -72,6 +72,19 @@ nav .nav-link:hover
     border-bottom-color: var(--bleu);
 }
 
+nav .dropdown-menu
+{
+    background-color: var(--vert);
+    border-radius: 14px;
+    height: 10rem;
+    width: 15rem;
+}
+
+nav .dropdown-item
+{
+    color: var(--beige);
+}
+
 #logo
 {
     height: 5em;
