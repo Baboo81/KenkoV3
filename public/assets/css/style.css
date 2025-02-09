@@ -76,6 +76,7 @@ nav .dropdown-menu
 {
     background-color: var(--vert);
     border-radius: 14px;
+    font-size: 1.7em;
     height: 10rem;
     width: 15rem;
 }

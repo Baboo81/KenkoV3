@@ -1,0 +1,109 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+:root
+{
+    --vert : #536964;
+    --violet : #bd8bca;
+    --grisF : #8b9cb6;
+    --gris : #bfc1c2;
+    --beige : #f1efe9;
+    --brun : #e3c7af;
+    --noir : #282828;
+}
+
+body
+{
+    background-color: var(--beige);
+    width: 100% !important;
+    overflow-x: hidden;
+    font-family: "Bodoni Moda", serif;
+}
+
+p
+{
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+h1
+{
+    font-family: "Bodoni Moda", serif;
+    font-size: 4rem;
+    color: var(--noir);
+}
+
+h3
+{
+    color: white;
+    font-size: 6em;
+}
+
+.fontBeige
+{
+    color: var(--beige);
+}
+
+.fontBlack
+{
+  color: var(--noir);
+}
+
+.bg-grey
+{
+    background-color: var(--gris);
+}
+
+.bg-blue
+{
+    background-color: var(--grisF);
+}
+/*  Nav  */
+nav
+{
+    height: 150px;
+}
+
+nav .nav-link
+{
+    color: var(--noir);
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+nav .nav-link:hover
+{
+    color: var(--bleu) !important;
+    padding-bottom: 20px;
+    border-bottom-color: var(--bleu);
+}
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+}
+/* END Nav */
+
+.button
+{
+  height: 50px;
+  width: 200px;
+  border: 1px solid var(--beige);
+  border-radius: 24px;
+  background-color: var(--vert);
+  color: var(--beige);
+}
+
+.button:hover
+{
+  background-color: var(--brun);
+  transition: 6300ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+main .mainContent
+{
+    margin-top: 15%;
+}
