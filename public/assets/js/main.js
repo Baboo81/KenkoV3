@@ -41,6 +41,17 @@ setInterval(() => {
     }
 ////////////////////////////// END /////////////////////////
 
+//Gestion des messages d'erreurs : disparition auto du msg
+setTimeout(() => {
+    let alert = document.querySelector(".alert");
+    if(alert) {
+        alert.classList.remove("show");
+        alert.classList.add("fade");
+        setTimeout(() => alert.remove(), 500);//Supprime du DOM après le fade
+    }
+}, 5000); //5sec
+////////////////////////////// END /////////////////////////
+
 //Footer; map :
 
     //Create map:
@@ -52,7 +63,6 @@ setInterval(() => {
     L.marker([50.71036, 4.36889]).addTo(map);
 ////////////////////////////// END /////////////////////////
 
-//Slider (Btn):
 
 
 

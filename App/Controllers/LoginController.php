@@ -44,7 +44,12 @@ class LoginController extends Controller {
 
             //Vérification des champs obligatoires
             if (empty($email) || empty($password)) {
-                die("Tous les champs doivent être remplis !");
+                $_SESSION['message'] = [
+                    'type' => 'danger',
+                    'text' => 'Tous les champs doivent être remplis !'
+                ];
+                header('Location: /login'); 
+                exit();
             }
 
             //Connexion à la DB
@@ -60,12 +65,24 @@ class LoginController extends Controller {
                 //L'authentification est réussie, démarrer la session
                 $_SESSION['user'] = $user['username'];
                 $_SESSION['user_id'] = $user['id'];
+                
+                //Ajouter un message de succès
+                $_SESSION['message'] = [
+                    'type' => 'success',
+                    'text' => 'Vous êtes bien connecté !'
+                ];
 
                 //Redirection vers la page d'accueil
                 header("Location: /");
                 exit();
             } else {
-                die("Identifiants incorrects !");
+                //Message d'erreur d'identification
+                $_SESSION['message'] = [
+                    'type' => 'danger',
+                    'text' => 'Identifiants incorrerct !'
+                ];
+                header("Location: /login");
+                exit();
             }
         }
     }

@@ -3,6 +3,15 @@
 <main>
     <section class="mainSection">
         <div class="container">
+            <!-- Affichage des messages d'erreurs et de success -->
+            <?php if (isset($_SESSION['message'])): ?>
+                <div class="alert alert-<?= $_SESSION['message']['type']; ?> alert-dismissible fade show text-center" role="alert">
+                    <?= $_SESSION['message']['text']; ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <?php unset($_SESSION['message']); ?> <!-- Supprimer le message après affichage -->
+            <?php endif; ?>
+
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-center text-muted mb-5">Login</h1>
                 <div class="col-md-6 my-5">
