@@ -67,10 +67,36 @@ nav .nav-link
 
 nav .nav-link:hover
 {
-    color: var(--bleu) !important;
     padding-bottom: 20px;
     border-bottom-color: var(--bleu);
 }
+
+nav .dropdown-menu
+{
+    display: block;
+    max-height: 10rem;
+    overflow: hidden;
+    background-color: var(--vert);
+    border-radius: 14px;
+    font-size: 1.7em;
+    width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease;
+}
+
+nav .dropdown-menu.show
+{
+    max-height: 500px;
+    opacity: 1;
+}
+
+nav .dropdown-item
+{
+    color: var(--beige);
+}
+
 
 #logo
 {
@@ -110,7 +136,7 @@ section .overlay
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .home
