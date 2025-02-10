@@ -14,7 +14,7 @@ class LogoutController {
         session_destroy();
 
         //Redirection vers la page d'accueil après la deconnexion
-        header("Location: /home");
+        header("Location: /");
         exit();
 
     }

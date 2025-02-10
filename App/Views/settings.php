@@ -67,6 +67,11 @@
                             <button type="submit" class="button">Sauvegarder</button>
                         </div>
                     </form>
+                    <div class="text-center my-5">
+                        <a href="/">
+                            <button class="button">Retour vers la page d'accueil</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

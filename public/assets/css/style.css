@@ -74,11 +74,24 @@ nav .nav-link:hover
 
 nav .dropdown-menu
 {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
     background-color: var(--vert);
     border-radius: 14px;
     font-size: 1.7em;
     height: 10rem;
     width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease;
+}
+
+nav .dropdown-menu.show
+{
+    max-height: 500px;
+    opacity: 1;
 }
 
 nav .dropdown-item

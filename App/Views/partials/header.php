@@ -54,9 +54,9 @@
                                                 <a class="nav-link" href="/signup">S'inscrire</a>
                                             </li>
                                         <?php endif; ?>
-                                        <li class="nav-item dropdown text-center mx-3">
-                                            <a href="#" class="nav-link" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="/assets/img/icons/user-icon.svg" alt="Img user" class="rounded-circle" width="40">
+                                        <li class="nav-item dropdown text-center mx-5">
+                                            <a href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="/assets/img/icons/user-icon.svg" alt="Img user" class="rounded-circle" width="50">
                                             </a>
                                             <ul class="dropdown-menu p-3" aria-labelledby="userMenu">
                                                 <li>    
