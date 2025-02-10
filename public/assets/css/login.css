@@ -111,6 +111,13 @@ nav .nav-link:hover
     padding-bottom: 50px;
 }
 
+form
+{
+    background-color: var(--violet);
+    color: var(--beige);
+    font-size: 1.2em;
+}
+
 /* Footer */
 footer
 {

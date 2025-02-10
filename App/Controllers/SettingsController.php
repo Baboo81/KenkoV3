@@ -7,7 +7,9 @@ use App\Core\Database;
 
 class SettingsController extends Controller {
     public function show(){
-        session_start();
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
 
         //Vérifie si le user est bien connecté
         if (!isset($_SESSION['user'])) {
