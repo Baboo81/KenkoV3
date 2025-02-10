@@ -1,4 +1,14 @@
 <?php include 'partials/header.php' ?>
+
+<!-- Affichage des messages de succès ou d'erreur -->
+<?php if (isset($_SESSION['message'])): ?>
+    <div class="alert alert-<?= $_SESSION['message']['type']; ?> alert-dismissible fade show text-center" role="alert">
+        <?= $_SESSION['message']['text']; ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <?php unset($_SESSION['message']); ?> <!-- Supprimer le message après affichage -->
+<?php endif; ?>
+
     <body>
         <main>
             <section class="home">
