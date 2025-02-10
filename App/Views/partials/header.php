@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,6 +59,9 @@
                                                 <img src="/assets/img/icons/user-icon.svg" alt="Img user" class="rounded-circle" width="40">
                                             </a>
                                             <ul class="dropdown-menu p-3" aria-labelledby="userMenu">
+                                                <li>    
+                                                    <a class="dropdown-item" href="/settings">Paramètres</a>
+                                                </li>
                                                 <?php if (!isset($_SESSION['user'])): ?>
                                                     <li>
                                                         <a class="dropdown-item" href="/login">Se connecter</a>

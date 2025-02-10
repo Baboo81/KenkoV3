@@ -17,6 +17,7 @@ use App\Controllers\KenkoWebController;
 use App\Controllers\LoginController;
 use App\Controllers\LogoutController;
 use App\Controllers\QuiSuisJeController;
+use App\Controllers\SettingsController;
 use App\Controllers\SignupController;
 
 // Initialisation du routeur
@@ -46,6 +47,10 @@ $router->post('/login', [LoginController::class, 'authenticate']);
 
 //Route pour la déconnexion
 $router->get('/logout', [LogoutController::class, 'logout']);
+
+//Route pour les paramètres
+$router->get('/settings', [SettingsController::class, 'show']);
+$router->post('/settings', [SettingsController::class, 'settings']);
 
 // Lancer le routage
 $router->run();
