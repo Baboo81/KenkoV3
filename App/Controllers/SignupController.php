@@ -46,12 +46,21 @@ class SignupController extends Controller {
 
             //Vérification des champs obligatoires
             if (empty($username) || empty($email) || empty($password)) {
-                die("Tous les champs doivent être remplis !");
+                $_SESSION['message'] = [
+                    'type' => 'danger',
+                    'text' => 'Tous les champs sont obligatoires !'
+                ];
+                header("Location: /signup");
+                exit();
             }
 
             //Vérification de la validité de l'email
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                die("Adresse email invalide !");
+            if (!$email) {
+               $_SESSION['message'] = [
+                    'type' => 'danger',
+                    'text' => 'Adresse email invalide !'
+               ];
+               header("Location: /signup");
             }
 
             //Hachage du mot de passe
@@ -65,20 +74,27 @@ class SignupController extends Controller {
             $stmt ->execute([$email]);
 
             if ($stmt->fetch()) {
-                die("Cet adresse est déjà utilisée !");
+                $_SESSION['message'] = [
+                    'type' => 'danger',
+                    'text' => 'Cet email est déjà utilisé !'
+                ];
+                header("Location: /signup");
+                exit();
             }
 
             //Insertion d'utilisateur en base données
             $stmt = $db->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
             $success = $stmt->execute([$username, $email, $hachedPassword]);
 
-            if ($success) {
-                //Redirection vers la page d'accueil
-                header("Location: /");
-                exit();
-            } else {
-                die("Erreur lors de l'inscription !");
-            }
+            //Ajouter un message de succès
+            $_SESSION['message'] = [
+                'type' => 'success',
+                'text' => 'Inscription réussie ! Vous pouvez à présent vous connecter !'
+            ];
+
+            //Redirection vers la page de connexion
+            header("Location: /login");
+            exit();
         }
     }
 }

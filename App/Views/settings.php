@@ -15,6 +15,14 @@
 
 <?php include 'partials/headerWithModifiedNav.php'; ?>
 
+<?php if (isset($_SESSION['message'])): ?>
+    <div class="alert alert-<?= $_SESSION['message']['type']; ?> alert-dismissible fade show text-center" role="alert">
+        <?= $_SESSION['message']['text']; ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <?php unset($_SESSION['message']); ?> <!-- Supprime le message après affichage -->
+<?php endif; ?>
+
 <main>
     <section class="mainContent">
         <div class="container">
