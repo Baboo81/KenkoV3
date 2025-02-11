@@ -25,12 +25,18 @@ p
 {
     font-size: 1.3em;
     line-height: 1.3em;
+    color: white;
 }
 
 h3
 {
     color: white;
     font-size: 6em;
+}
+
+h5
+{
+    color: white !important;
 }
 
 .fontBeige
@@ -195,7 +201,7 @@ h1:after
 .mainSection .part1
 {
     background-color: var(--grisF);
-    height: 1000px;
+    height: 1400px;
     background-image: url(../img/services/Kenko-Ho/bgKenkoHo.svg);
     background-size: cover;
     background-position: center;
@@ -204,7 +210,7 @@ h1:after
 .mainSection .part2
 {
     background-color: var(--gris);
-    height: 1000px;
+    height: 1400px;
     background-image: url(../img/services/Kenko-Web/pictos/bgKenkoWeb.svg);
     background-size: cover;
     background-position: center;
@@ -214,6 +220,7 @@ h1:after
 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     opacity: 85%;
+    min-height: 50rem;
 }
 
 .mainSection .card:hover
