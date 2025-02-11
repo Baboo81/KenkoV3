@@ -5,8 +5,64 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="homeContent">
-                            <h1 class="homeTitle p-5">Kenko-Ho</h1>
-                            <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
+                             <!-- Slider doTERRA  -->
+                             <div class="sliderContent">
+                                        <div class="slide">
+                                            <div class="item box1">
+                                                <div class="content">
+                                                    <h1 class="homeTitle p-5">Kenko-Ho</h1>
+                                                    <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
+                                                    <div class="name">Spider1</div>
+                                                    <div class="description">Dorem ipsum dolor sit amet consectetur.</div>
+                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                </div>
+                                            </div>
+                                            <div class="item box2">
+                                                <div class="content">
+                                                    <div class="name">Spider2</div>
+                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                </div>
+                                            </div>
+                                            <div class="item box3">
+                                                <div class="content">
+                                                    <div class="name">Reiki</div>
+                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                </div>
+                                            </div>
+                                            <div class="item box4">
+                                                <div class="content">
+                                                    <div class="name">Reiki</div>
+                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                </div>
+                                            </div>
+                                            <div class="item box5">
+                                                <div class="content">
+                                                    <div class="name">Reiki</div>
+                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                </div>
+                                            </div>
+                                            <div class="item box6">
+                                                <div class="content">
+                                                    <div class="name">Reiki</div>
+                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                       <div class="btn-prev-next justify-content-center">
+                                            <div class="mx-5">
+                                                <button class="button prev"><</button>
+                                            </div>
+                                            <div class="mx-5">
+                                                <button class="button next">></button>
+                                            </div>
+                                       </div>
+                                </div>
+                            <!-- Slider doTERRA END -->
                         </div>
                     </div>
                 </div>
@@ -33,20 +89,22 @@
                                 <h2 class="mainSectionTitle text-muted text-center p-5">Les thématiques & infos téléchargeables</h2>
                                 <div class="line"><span></span></div>
                             </div>
-                            <div class="text-center mt-3">
+                            <div class="text-center">
                                 <button onclick="window.location.href='../kenko-ho-themes/dix-huiles-de-base';"  class="button">Les 10 huiles de bases</button>
                                 <button onclick="window.location.href='../kenko-ho-themes/emotions';"  class="button">Les émotions & les H.E</button>
                                 <button  class="button">Les enfants & les H.E</button>
                                 <button  class="button">Le stress & les H.E</button>
+                                <button  class="button">Le Reiki</button>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="text-center mt-3">
+                        <div class="text-center">
                             <button onclick="window.location.href='../kenko-ho-themes/cuisine';"  class="button">Les H.E dans la cuisine</button>
                             <button  class="button">Le sommeil & les HE</button>
                             <button  class="button">La peau & les HE</button>
                             <button  class="button">La douleur & les HE</button>
+                            <button  class="button">Établir de bonnes bases</button>
                         </div>
                     </div>
                 </div>
@@ -57,62 +115,7 @@
                         <div class="sliderSection">
                             <div class="container">
                                 <div class="row">
-                                    <!-- Slider doTERRA  -->
-                                    <div class="col-md-12 sliderContent">
-                                        <div class="slide">
-                                            <div class="item box1">
-                                                <div class="content">
-                                                    <div class="name">Spider1</div>
-                                                    <div class="description">Dorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-light">See more</button>
-                                                </div>
-                                            </div>
-                                            <div class="item box2">
-                                                <div class="content">
-                                                    <div class="name">Spider2</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-light">See more</button>
-                                                </div>
-                                            </div>
-                                            <div class="item box3">
-                                                <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-light">See more</button>
-                                                </div>
-                                            </div>
-                                            <div class="item box4">
-                                                <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-light">See more</button>
-                                                </div>
-                                            </div>
-                                            <div class="item box5">
-                                                <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-light">See more</button>
-                                                </div>
-                                            </div>
-                                            <div class="item box6">
-                                                <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-light">See more</button>
-                                                </div>
-                                            </div>
-                                        </div>  
-                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                          </a>
-                                          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                          </a>
-                                    </div>
-                                    <!-- Slider doTERRA END -->
+                                   
                                 </div>
                             </div>
                         </div>

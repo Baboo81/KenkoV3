@@ -14,7 +14,9 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <h1 class="text-center my-5 fs-1 fontBlack">Ce que votre webmaster vous propose</h1>
+                        <div class="my-5">
+                            <h1 class="text-center my-5 fs-1 fontBlack">Ce que votre webmaster vous propose</h1>
+                        </div>
                         <article class="col-md-4 text-center">
                             <img src="/assets/img/services/Kenko-Web/pictos/accompagnement.svg" alt="">
                             <h4 class="fs-2 my-1">Un accompagnement de qualité</h4>
@@ -37,9 +39,9 @@
                 <div class="container mw-100">
                     <div class="row">
                         <div class="sectionFormules"></div>
-                        <article>
+                        <div class="my-5">
                             <h1 class="text-center my-5 fs-1 fontBlack">Les offres personnalisables sur devis</h1>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -49,11 +51,11 @@
                         <div class="col-md-4">
                             <div class="card rounded-4">
                                 <img src="/assets/img/services/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
-                                <div class="card-body text-center">
+                                <div class="card-body d-flex flex-column text-center">
                                   <h5 class="card-title text-center fs-3 my-4">Site simple</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 750€</h6>
                                   <p class="card-text">Un site simple est constitué d'une page sur laquelle figurera une présentation de vos prestations, tarifs, informations pratiques. SEO inclus.</p>
-                                  <div class="button-container justify-content-center">
+                                  <div class="button-container mt-auto justify-content-center">
                                     <button onclick="showPopup('popup1')" class="my-3">Á qui s'adresse cette offre ?</button>
                                   </div>
                                 </div>
@@ -80,11 +82,11 @@
                         <div class="col-md-4">
                             <div class="card rounded-4">
                                 <img src="/assets/img/services/Kenko-Web/siteVitrine.jpg" class="card-img-top rounded-top-4" alt="Image représentant une vitrine de boulangerie">
-                                <div class="card-body text-center">
+                                <div class="card-body d-flex flex-column text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site vitrine</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 1550€</h6>
                                   <p class="card-text">Un site vitrine comprend 5 à 7 pages grâce auxquelles les internautes pourront découvrir votre activité.<br />Avec un site vitrine vous dévoilerez plus de détails sur les différentes facettes de votre activité.</p>
-                                  <div class="button-container justify-content-center">
+                                  <div class="button-container mt-auto justify-content-center">
                                     <button onclick="showPopup('popup2')" class="my-3">Á qui s'adresse cette offre ?</button>
                                   </div>
                                 </div>
@@ -109,11 +111,11 @@
                         <div class="col-md-4">
                             <div class="card rounded-4 text">
                                 <img src="/assets/img/services/Kenko-Web/siteXXL2.jpg" class="card-img-top rounded-top-4" alt="Image représentant des buissons">
-                                <div class="card-body text-center">
+                                <div class="card-body d-flex flex-column text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site XXL</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 2000€</h6>
                                   <p class="card-text">Un site XXL se composera 8 à 12 pages. Les internautes auront une vision approfondie de vos activités.</p>
-                                  <div class="button-container justify-content-center">
+                                  <div class="button-container mt-auto justify-content-center">
                                     <button onclick="showPopup('popup3')" class="my-3">Á qui s'adresse cette offre ?</button>
                                   </div>
                                 </div>
@@ -139,26 +141,30 @@
                 </div>
             </section>
             <section>
-                <div class="container">
-                    <div class="row">
-                        <img src="/assets/img/services/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="">
-                        <div class="d-flex my-5 atoutsContent">
-                            <article class="col-md-4 text-center">
-                                <img src="/assets/img/services/Kenko-Web/pictos/work.svg" class="pictoAtouts" alt="">
-                                <p class="p-1">Mettre en avant et expliquez votre activité</p>
-                            </article>
-                            <article class="col-md-4 text-center">
-                                <img src="/assets/img/services/Kenko-Web/pictos/partenaires.svg" class="pictoAtouts" alt="">
-                                <p class="p-1">Présentez vos partenaires</p>
-                            </article>
-                            <article class="col-md-4 text-center">
-                                <img src="/assets/img/services/Kenko-Web/pictos/localiser.svg" class="pictoAtouts" alt="">
-                                <p class="p-1">Donnez les informations pratiques de votre entreprise</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div class="container">
+        <div class="row align-items-center"> <!-- Ajout de align-items-center pour aligner verticalement -->
+            <!-- Image -->
+            <div class="col-md-6 text-center">
+                <img src="/assets/img/services/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="">
+            </div>
+            <!-- Bloc articles -->
+            <div class="col-md-6 d-flex flex-column atoutsContent mb-5">
+                <article class="text-center mb-3">
+                    <img src="/assets/img/services/Kenko-Web/pictos/work.svg" class="pictoAtouts" alt="">
+                    <p class="p-1">Mettre en avant et expliquez votre activité</p>
+                </article>
+                <article class="text-center mb-3">
+                    <img src="/assets/img/services/Kenko-Web/pictos/partenaires.svg" class="pictoAtouts" alt="">
+                    <p class="p-1">Présentez vos partenaires</p>
+                </article>
+                <article class="text-center">
+                    <img src="/assets/img/services/Kenko-Web/pictos/localiser.svg" class="pictoAtouts" alt="">
+                    <p class="p-1">Donnez les informations pratiques de votre entreprise</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
         </main>
 
 <?php include 'partials/footer.php'; ?>
