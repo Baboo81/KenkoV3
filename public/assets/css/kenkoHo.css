@@ -150,15 +150,17 @@ section .overlay
 
 .home .homeTitle
 {
-    color: #fff;
+    color: var(--vert);
     font-size: 8em;
+    font-family: "Bodoni Moda", serif;
 }
 
 .home .homeDesc
 {
-    color: #fff;
-    font-size: 3em;
+    color: var(--vert);
+    font-size: 2em;
     line-height: 1.2em;
+    font-family: "Bodoni Moda", serif;
 }
 /* END section Home */
 
@@ -182,7 +184,7 @@ section .overlay
 .line
 {
     position: absolute;
-    width: 100%;
+    width: 80%;
     background: var(--vert);
     height: 3px;
     margin: auto;

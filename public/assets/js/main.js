@@ -52,6 +52,17 @@ setTimeout(() => {
 }, 5000); //5sec
 ////////////////////////////// END /////////////////////////
 
+//Footer; map :
+
+    //Create map:
+    const centroid = [50.71036, 4.36889];
+    const map = L.map('mapid').setView(centroid, 16.4);
+    
+        //Add tiles & marker:
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.marker([50.71036, 4.36889]).addTo(map);
+////////////////////////////// END /////////////////////////
+
 //Slider :
 let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
@@ -65,20 +76,6 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
-
 ////////////////////////////// END /////////////////////////
-
-//Footer; map :
-
-    //Create map:
-    const centroid = [50.71036, 4.36889];
-    const map = L.map('mapid').setView(centroid, 16.4);
-    
-        //Add tiles & marker:
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-    L.marker([50.71036, 4.36889]).addTo(map);
-////////////////////////////// END /////////////////////////
-
-
 
 
