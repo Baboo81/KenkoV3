@@ -52,6 +52,84 @@ setTimeout(() => {
 }, 5000); //5sec
 ////////////////////////////// END /////////////////////////
 
+//Gestion des avis du caroussel, animation étoile ...
+document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll(".rating i");
+    const ratingInput = document.querySelector("#ratingValue");
+    const reviewForm = document.querySelector("#reviewForm");
+    const reviewList = document.querySelector("#reviewList");
+
+    let selectedRating = 0;
+
+    // Gestion du survol des étoiles
+    stars.forEach((star, index) => {
+        star.addEventListener("mouseover", () => {
+            highlightStars(index);
+        });
+
+        star.addEventListener("mouseleave", () => {
+            highlightStars(selectedRating - 1);
+        });
+
+        star.addEventListener("click", () => {
+            selectedRating = index + 1;
+            ratingInput.value = selectedRating;
+            highlightStars(index);
+        });
+    });
+
+    function highlightStars(index) {
+        stars.forEach((star, i) => {
+            star.classList.toggle("active", i <= index);
+        });
+    }
+
+    // Gestion de la soumission du formulaire
+    reviewForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.querySelector("#name").value.trim();
+        const message = document.querySelector("#message").value.trim();
+        const rating = ratingInput.value;
+
+        if (name === "" || message === "" || rating === "0") {
+            alert("Merci de remplir tous les champs et d’attribuer une note !");
+            return;
+        }
+
+        // Création d'un nouvel avis dynamique
+        const newReview = document.createElement("div");
+        newReview.classList.add("carousel-item");
+        if (reviewList.children.length === 0) {
+            newReview.classList.add("active");
+        }
+
+        newReview.innerHTML = `
+            <p>"${message}"</p>
+            <div class="rating">
+                ${generateStars(rating)}
+            </div>
+            <h5>- ${name}</h5>
+        `;
+
+        reviewList.appendChild(newReview);
+
+        // Réinitialisation du formulaire
+        reviewForm.reset();
+        selectedRating = 0;
+        highlightStars(-1);
+    });
+
+    function generateStars(rating) {
+        let starsHtml = "";
+        for (let i = 0; i < 5; i++) {
+            starsHtml += `<i class="fas fa-star ${i < rating ? 'active' : ''}"></i>`;
+        }
+        return starsHtml;
+    }
+});
+////////////////////////////// END /////////////////////////
+
 //Footer; map :
 
     //Create map:
