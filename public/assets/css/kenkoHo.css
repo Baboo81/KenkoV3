@@ -28,8 +28,8 @@ p
 
 h3
 {
-    color: white;
-    font-size: 6em;
+    color: var(--vert);
+    font-size: 3em;
 }
 
 .fontBeige
@@ -123,6 +123,15 @@ nav .dropdown-item
 }
 
 /* section Home */
+section .overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
 
 .home
 {
@@ -146,6 +155,11 @@ nav .dropdown-item
     font-size: 2em;
     line-height: 1.2em;
     font-family: "Bodoni Moda", serif;
+}
+
+.homeContent
+{
+    margin-top: 10%;
 }
 /* END section Home */
 
@@ -190,6 +204,11 @@ nav .dropdown-item
     margin: auto;
     position: relative;
     bottom: 0.5px; 
+}
+
+.bloc1
+{
+    margin-top: 40% !important;
 }
 
 .mainSection .box
@@ -374,10 +393,57 @@ nav .dropdown-item
     bottom: 20px;
     font-size: 2rem;
 }
-
-
-
 /* END sliderSection */
+
+/* Section : testimonials */
+#testimonials
+{
+    background-color: var(--gris);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating
+{
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.rating i
+{
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.rating i.active,
+.rating i:hover,
+.rating i:hover ~ i
+{
+    color: gold;
+}
+
+/*Caroussel*/
+.carousel-inner
+{
+    text-align: center;
+}
+
+.carousel-item
+{
+    padding: 20px;
+    font-size: italic;
+}
+
+.carousel-item h5
+{
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* END Section : testimonials */
+
 
 /* Footer */
 footer
