@@ -135,11 +135,28 @@
                 <h2 class="mainSectionTitle text-muted text-center p-5">Avis & Témoingnages</h2>
                 <div class="container my-5" id="testimonials">
                     <!--  Affichage des avis -->
+                   
                     <div class="row">
                         <div class="col-md-8 mx-auto">
                             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <!-- Avis dynamiques ici -->
+                                    <?php foreach ($testimonials as $index => $testimonial): ?>
+                                        <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
+                                            <div class="testimonial p-3 mb-3 border rounded shadow-sm">
+                                                <div class="testimonial-rating">
+                                                    <!-- Affichage des étoiles -->
+                                                    <?php for ($i = 1; $i <= 5; $i++): ?>
+                                                        <span class="star <?php echo $i <= $testimonial['rating'] ? 'filled' : ''; ?>">★</span>
+                                                    <?php endfor; ?>
+                                                </div>
+                                                <div class="testimonial-comment">
+                                                    <p class="mb-1"><strong><?php echo $testimonial['name']; ?></strong></p>
+                                                    <p><?php echo $testimonial['comment']; ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -154,10 +171,18 @@
                     <div class="row mt-5">
                         <div class="col-md-8 mx-auto">
                             <h3 class="text-center">Laissez votre avis</h3>
-                            <form id="testimonialForm">
+                            <!-- Bloc msg Bootstrap -->
+                            <?php if (!empty($message)): ?>
+                                <div class="alert alert-<?php echo $message['type']; ?> alert-dismissible fade show text-center" role="alert">
+                                    <?php echo $message['text']; ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            <?php endif; ?>
+                            <!-- Bloc msg Bootstrap END -->
+                            <form id="testimonialForm" method="POST" action="/kenko-ho">
                                 <div class="mb-3">
                                     <label for="userName" class="form-label">Votre Nom</label>
-                                    <input type="text" class="form-control" id="userName" required>
+                                    <input type="text" class="form-control" id="userName" name="userName" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Votre Note</label>
@@ -173,7 +198,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="testimonialMessage" class="form-label">Votre Témoignage</label>
-                                    <textarea class="form-control" id="testimonialMessage" rows="3" required></textarea>
+                                    <textarea class="form-control" id="testimonialMessage" name="testimonialsMessage" rows="3" required></textarea>
                                 </div>
                                 <button type="submit" class="button w-100">Envoyer</button>
                             </form>
