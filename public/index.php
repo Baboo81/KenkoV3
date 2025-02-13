@@ -41,16 +41,20 @@ $router->get('/message', [ContactController::class, 'listMessages']);
 $router->get('/signup', [SignupController::class, 'show']);
 $router->post('/signup', [SignupController::class, 'register']);
 
-//Route pour la page de connexion
+//Routes pour la page de connexion
 $router->get('/login', [LoginController::class, 'show']);
 $router->post('/login', [LoginController::class, 'authenticate']);
 
-//Route pour la déconnexion
+//Routes pour la déconnexion
 $router->get('/logout', [LogoutController::class, 'logout']);
 
-//Route pour les paramètres
+//Routes pour les paramètres
 $router->get('/settings', [SettingsController::class, 'show']);
 $router->post('/settings', [SettingsController::class, 'settings']);
+
+//Routes pour les témoignages
+$router->get('/kenko-ho/testimonials', [KenkoHoController::class, 'getTestimonials']);
+$router->post('/kenko-ho/testimonilas', [KenkoHoController::class, 'submitTestimonials']);
 
 // Lancer le routage
 $router->run();

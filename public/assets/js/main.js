@@ -20,12 +20,18 @@ let logo = document.getElementById('logoAnimation');
 let largeurEcran = window.innerWidth - 50;
 let hauteurEcran = window.innerHeight - 50;
 
-setInterval(() => {
-     const x = Math.random() * largeurEcran;
-     const y = Math.random() * hauteurEcran;
-     logo.style.left = x + 'px';
-     logo.style.top = y + 'px';
-}, 3000);
+if (logo) {
+
+    setInterval(() => {
+        const x = Math.random() * largeurEcran;
+        const y = Math.random() * hauteurEcran;
+        logo.style.left = x + 'px';
+        logo.style.top = y + 'px';
+   }, 3000);
+
+}
+
+
 ////////////////////////////// END /////////////////////////
 
 //Pop-up :
@@ -56,8 +62,8 @@ setTimeout(() => {
 document.addEventListener("DOMContentLoaded", function () {
     const stars = document.querySelectorAll(".rating i");
     const ratingInput = document.querySelector("#ratingValue");
-    const reviewForm = document.querySelector("#reviewForm");
-    const reviewList = document.querySelector("#reviewList");
+    const reviewForm = document.querySelector("#testimonialForm");
+    const reviewList = document.querySelector(".testimonials-list");
 
     let selectedRating = 0;
 
@@ -88,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
     reviewForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const name = document.querySelector("#name").value.trim();
-        const message = document.querySelector("#message").value.trim();
+        const name = document.querySelector("#userName").value.trim(); 
+        const message = document.querySelector("#testimonialMessage").value.trim();
         const rating = ratingInput.value;
 
         if (name === "" || message === "" || rating === "0") {
@@ -99,11 +105,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Création d'un nouvel avis dynamique
         const newReview = document.createElement("div");
-        newReview.classList.add("carousel-item");
-        if (reviewList.children.length === 0) {
-            newReview.classList.add("active");
-        }
-
+        newReview.classList.add("testimonial", "p-3", "mb-3", "border", "rounded", "shadow-sm");
+        
         newReview.innerHTML = `
             <p>"${message}"</p>
             <div class="rating">
@@ -112,7 +115,20 @@ document.addEventListener("DOMContentLoaded", function () {
             <h5>- ${name}</h5>
         `;
 
-        reviewList.appendChild(newReview);
+        // Ajout de l'avis dans le conteneur des témoignages
+        if (reviewList) {
+            reviewList.appendChild(newReview);
+        } else {
+            console.log("Le conteneur des témoignages n'a pas été trouvé.");
+        }
+
+        // Ajout de l'avis au carousel
+        const carouselInner = document.querySelector("#testimonialCarousel .carousel-inner");
+        if (carouselInner) {
+            carouselInner.appendChild(newReview);
+        } else {
+            console.log("Le carousel n'a pas été trouvé.");
+        }
 
         // Réinitialisation du formulaire
         reviewForm.reset();
@@ -123,11 +139,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function generateStars(rating) {
         let starsHtml = "";
         for (let i = 0; i < 5; i++) {
-            starsHtml += `<i class="fas fa-star ${i < rating ? 'active' : ''}"></i>`;
+            starsHtml += `<i class="bi bi-star-fill ${i < rating ? 'active' : ''}"></i>`;
         }
         return starsHtml;
     }
 });
+
 ////////////////////////////// END /////////////////////////
 
 //Footer; map :
