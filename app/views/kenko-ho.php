@@ -19,18 +19,25 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 bloc1 my-5">
-                            <div class="mainTitleContent my-5">
+                        <div class="bloc1 my-5">
+                            <div class="mainTitleContent">
                                 <h2 class="mainSectionTitle text-muted text-center p-5">Que vous propose votre conséillère dōTERRA ?</h2>
                                 <div class="underLine">   
                                     <div class="line"><span></span></div>
                                 </div>
                             </div>
-                            <article class="col-md-12 my-5">
-                                <div class="box rounded-5 p-4">
-                                    <p class="text-muted">Grâce à votre adhésion à dōTERRA vous bénéficierez d'une ristourne de 25% sur les produits ainsi que d'un suivi personnalisé.<br />Mon but est de vous aider à retrouver votre énergie en construisant de nouvelles bases et en installant certaines routines.<br />Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaire ainsi que des astuces qui vous guiderons sur la voie de l'autonomie et du bien-être.<br />Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
+                            <section class="d-flex myself">
+                                <article class="col-md-6 my-5">
+                                    <div class="box rounded-5 p-5">
+                                        <p class="text-muted">Grâce à votre adhésion à dōTERRA vous bénéficierez d'une ristourne de 25% sur les produits ainsi que d'un suivi personnalisé.<br />Mon but est de vous aider à retrouver votre énergie en construisant de nouvelles bases et en installant certaines routines.</p>
+                                        <p class="text-muted my-2">Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaire ainsi que des astuces qui vous guiderons sur la voie de l'autonomie et du bien-être.</p>
+                                        <p class="text-muted my-2">Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
+                                    </div>
+                                </article>
+                                <div class="col-md-6 mx-5">   
+                                    <img src="/assets/img/services/Kenko-Ho/Chris.jpg" alt="Photo de moi-même dans un labyrinthe de maîs" class="img-fluid rounded-5">
                                 </div>
-                            </article>
+                            </section>
                         </div>
                     </div>
                     <div class="row">
@@ -38,34 +45,34 @@
                                 <h2 class="mainSectionTitle text-muted text-center p-5">Les thématiques & infos téléchargeables</h2>
                                 <div class="line"><span></span></div>
                             </div>
-                            <div class="text-center">
-                                <button onclick="window.location.href='../kenko-ho-themes/dix-huiles-de-base';"  class="button">Les 10 huiles de bases</button>
-                                <button onclick="window.location.href='../kenko-ho-themes/emotions';"  class="button">Les émotions & les H.E</button>
-                                <button  class="button">Les enfants & les H.E</button>
-                                <button  class="button">Le stress & les H.E</button>
-                                <button  class="button">Le Reiki</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <button onclick="window.location.href='../kenko-ho-themes/cuisine';"  class="button">Les H.E dans la cuisine</button>
-                            <button  class="button">Le sommeil & les HE</button>
-                            <button  class="button">La peau & les HE</button>
-                            <button  class="button">La douleur & les HE</button>
-                            <button  class="button">Établir de bonnes bases</button>
+                            <section class="my-5 btnBloc">
+                                <div class="col-md-12 text-center">
+                                    <button onclick="window.location.href='../kenko-ho-themes/dix-huiles-de-base';"  class="button">Les 10 huiles de bases</button>
+                                    <button onclick="window.location.href='../kenko-ho-themes/emotions';"  class="button">Les émotions & les H.E</button>
+                                    <button  class="button">Les enfants & les H.E</button>
+                                    <button  class="button">Le stress & les H.E</button>
+                                    <button  class="button">Le Reiki</button>
+                                </div>
+                                <div class=" col-md-12 text-center">
+                                    <button onclick="window.location.href='../kenko-ho-themes/cuisine';"  class="button">Les H.E dans la cuisine</button>
+                                    <button  class="button">Le sommeil & les HE</button>
+                                    <button  class="button">La peau & les HE</button>
+                                    <button  class="button">La douleur & les HE</button>
+                                    <button  class="button">Établir de bonnes bases</button>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="sliderSection">
-                            <div class="container">
-                                <div class="row">
+            <section class="w-100 slider">
+                <div class="w-100">
+                    <div class="row w-100">
+                        <div class="sliderSection w-100">
+                            <div class="w-100">
+                                <div class="row w-100">
                                     <!-- Slider doTERRA  -->
-                                    <div class="sliderContent">
+                                    <div class="sliderContent w-100">
                                         <div class="slide">
                                             <div class="item box1">
                                                 <div class="content">
@@ -131,12 +138,9 @@
                     </div>
                 </div>
             </section>
-            <section class="my-5">
-                <h2 class="mainSectionTitle text-muted text-center p-5">Avis & Témoingnages</h2>
+            <section class="my-5 commentsBox">
                 <div class="container my-5" id="testimonials">
-                    <!--  Affichage des avis -->
-                   
-                    <div class="row">
+                   <div class="row">
                         <div class="col-md-8 mx-auto">
                             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">

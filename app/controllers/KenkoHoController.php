@@ -77,7 +77,7 @@ class KenkoHoController extends Controller {
 
             try {
                 // Préparer l'insertion dans la DB
-                $sql = "INSERT INTO testimonials (name, rating, comment) VALUES (:name, :rating, :comment)";
+                $sql = "INSERT INTO testimonials (name, rating, comment, created_at) VALUES (:name, :rating, :comment, NOW())";
                 $stmt = $db->prepare($sql);
     
                 // Exécuter la requête

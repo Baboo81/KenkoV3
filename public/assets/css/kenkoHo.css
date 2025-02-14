@@ -413,6 +413,11 @@ section .overlay
 /* END sliderSection */
 
 /* Section : testimonials */
+.commentsBox
+{
+    margin-bottom: 10% !important;
+}
+
 #testimonials
 {
     background-color: var(--gris);
