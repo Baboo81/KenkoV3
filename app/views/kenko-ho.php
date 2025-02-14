@@ -179,7 +179,7 @@
                                 </div>
                             <?php endif; ?>
                             <!-- Bloc msg Bootstrap END -->
-                            <form id="testimonialForm" method="POST" action="/kenko-ho">
+                            <form id="testimonialForm" method="POST" action="/kenko-ho/testimonials">
                                 <div class="mb-3">
                                     <label for="userName" class="form-label">Votre Nom</label>
                                     <input type="text" class="form-control" id="userName" name="userName" required>
@@ -188,13 +188,17 @@
                                     <label class="form-label">Votre Note</label>
                                     <div class="rating">
                                         <!-- Étoiles cliquables -->
-                                        <i class="bi bi-star-fill" data-value="1"></i>
-                                        <i class="bi bi-star-fill" data-value="2"></i>
-                                        <i class="bi bi-star-fill" data-value="3"></i>
-                                        <i class="bi bi-star-fill" data-value="4"></i>
-                                        <i class="bi bi-star-fill" data-value="5"></i>
+                                        <input type="radio" id="star1" name="rating" value="1" required>
+                                        <label for="star1">★</label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2">★</label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3">★</label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4">★</label>
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5">★</label>
                                     </div>
-                                    <input type="hidden" id="ratingValue" name="rating" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="testimonialMessage" class="form-label">Votre Témoignage</label>

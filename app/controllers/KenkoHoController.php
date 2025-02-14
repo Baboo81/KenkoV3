@@ -1,11 +1,16 @@
 <?php 
 
+
 namespace App\Controllers;//Indique que ce controller fait partie de l'espace noms App\Controllers
 
 use App\Core\Controller;
 use App\Core\Database;
 use PDO;
+use PDOException;
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 class KenkoHoController extends Controller {
     public function show() {
         
@@ -14,6 +19,11 @@ class KenkoHoController extends Controller {
         //Joindre les styles:
         $resetCss = 'reset.css';
         $css = 'kenkoHo.css'; 
+
+        //Vérifie si un témoignage a été soumis
+        if ($_SERVER['REQUEST_METHOD'] === "POST") {
+            $this->submitTestimonials();
+        }
 
         //Récupérer les témoignages depuis la DB
         $testimonials = $this->getTestimonials();
@@ -43,7 +53,11 @@ class KenkoHoController extends Controller {
 
     //Méthode pour ajouter un témoignage
     public function submitTestimonials() {
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+            var_dump($_POST);
+           
+
             $db = Database::getInstance();
 
             //Récupération des données du form
@@ -61,26 +75,31 @@ class KenkoHoController extends Controller {
                 exit();
             }
 
-            //Préparer l'insertion dans la DB
-            $sql = "INSERT INTO testimonials (name, rating, comment, created_at) VALUES (:name, :rating, :comment, NOW())";
-            $stmt = $db->prepare($sql);
-
-            //Exècuter la requête
-            if ($stmt->execute(['name' => $name,
-                                'rating' => $rating,
-                                'comment' => $comment])) {
-
+            try {
+                // Préparer l'insertion dans la DB
+                $sql = "INSERT INTO testimonials (name, rating, comment) VALUES (:name, :rating, :comment)";
+                $stmt = $db->prepare($sql);
+    
+                // Exécuter la requête
+                $stmt->execute([
+                    ':name' => $name,
+                    ':rating' => $rating,
+                    ':comment' => $comment
+                ]);
+    
+                // Message de succès
                 $_SESSION['message'] = [
-                    'type' => 'succes',
+                    'type' => 'success',
                     'text' => 'Merci pour votre témoignage !'
-                ];             
-            } else {
+                ];
+    
+            } catch (PDOException $e) {
+                // En cas d'erreur, afficher l'erreur SQL
                 $_SESSION['message'] = [
-                    'type' => 'Échec',
-                    'text' => 'Une erreur est survenue ! Veuillez réessayer !'
+                    'type' => 'danger',
+                    'text' => 'Une erreur est survenue : ' . $e->getMessage()
                 ];
             }
-
             //Redirection vers la page
             header("Location: /kenko-ho");
             exit();
