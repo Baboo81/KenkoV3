@@ -54,7 +54,7 @@ $router->post('/settings', [SettingsController::class, 'settings']);
 
 //Routes pour les témoignages
 $router->get('/kenko-ho/testimonials', [KenkoHoController::class, 'getTestimonials']);
-$router->post('/kenko-ho/testimonilas', [KenkoHoController::class, 'submitTestimonials']);
+$router->post('/kenko-ho/testimonials', [KenkoHoController::class, 'submitTestimonials']);
 
 // Lancer le routage
 $router->run();
