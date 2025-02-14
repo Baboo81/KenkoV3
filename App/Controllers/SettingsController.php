@@ -29,7 +29,13 @@ class SettingsController extends Controller {
     }
 
     public function settings() {
-        session_start();
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (!isset($_SESSION['user']) || !is_array($_SESSION['user'])) {
+            $_SESSION['user'] = [];
+        }
 
     // Vérifie si l'utilisateur est connecté
     if (!isset($_SESSION['user'])) {
@@ -54,18 +60,19 @@ class SettingsController extends Controller {
         }
 
         // Connexion à la BD
-        $db = new Database();
-        $pdo = $db->getInstance();
+        $db = Database::getInstance();
+        
+        
 
         // Récupérer les données du formulaire
         $lastname = htmlspecialchars($_POST['lastname']);
         $firstname = htmlspecialchars($_POST['firstname']);
-        $adress = htmlspecialchars($_POST['adress']);
+        $address = htmlspecialchars($_POST['address']);
         $city = htmlspecialchars($_POST['city']);
-        $postal_code = htmlspecialchars($_POST['postal_code']);
+        $postal_code = isset($_POST['postal_code']) ? htmlspecialchars($_POST['postal_code']) : ''; 
         $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
         $country = htmlspecialchars($_POST['country']);
-        $userId = $_SESSION['user']['id'];
+        //$userId = $_SESSION['user']['id'];
 
         if (!$email) {
             $_SESSION['message'] = [
@@ -76,9 +83,9 @@ class SettingsController extends Controller {
             exit();
         }
 
-        // Correction de la requête SQL (problème de virgule après 'country')
-        $stmt = $pdo->prepare("UPDATE users SET lastname = ?, firstname = ?, adress = ?, city = ?, postal_code = ?, email = ?, country = ? WHERE id = ?");
-        $stmt->execute([$lastname, $firstname, $adress, $city, $postal_code, $email, $country, $userId]);
+        //Requête SQL 
+        $stmt = $db->prepare("UPDATE user_settings SET lastname = ?, firstname = ?, address = ?, city = ?, postal_code = ?, email = ?, country = ?");
+        $stmt->execute([$lastname, $firstname, $address, $city, $postal_code, $email, $country]);
 
         // Gestion de l'upload de l'avatar
         if (!empty($_FILES['avatar']['name'])) {
@@ -90,8 +97,8 @@ class SettingsController extends Controller {
             $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
             if (in_array($_FILES['avatar']['type'], $allowedTypes)) {
                 if (move_uploaded_file($_FILES['avatar']['tmp_name'], $uploadFile)) {
-                    $stmt = $pdo->prepare("UPDATE users SET avatar = ? WHERE id = ?");
-                    $stmt->execute([$uploadFile, $userId]);
+                    $stmt = $db->prepare("UPDATE user_settings SET avatar = ? WHERE id = ?");
+                    $stmt->execute([$uploadFile]);
 
                     // Mettre à jour la session avec le nouvel avatar
                     $_SESSION['user']['avatar'] = $uploadFile;
@@ -114,15 +121,15 @@ class SettingsController extends Controller {
         }
 
         // Mettre à jour la session avec les nouvelles informations utilisateur
-        $_SESSION['user'] = array_merge($_SESSION['user'], [
+        $_SESSION['user'] = [
             'lastname' => $lastname,
             'firstname' => $firstname,
-            'adress' => $adress,
+            'address' => $address,
             'city' => $city,
             'postal_code' => $postal_code,
             'email' => $email,
             'country' => $country
-        ]);
+        ];
 
         // Ajouter un message de succès
         $_SESSION['message'] = [
