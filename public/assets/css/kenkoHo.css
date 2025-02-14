@@ -206,6 +206,11 @@ section .overlay
     bottom: 0.5px; 
 }
 
+.mainSection .doTERRA
+{
+    opacity: 15%;
+}
+
 .bloc1
 {
     margin-top: 40% !important;
@@ -225,10 +230,17 @@ section .overlay
     margin-bottom: 15%;
 }
 
-.mainSection .doTERRA
+.mainSection .btnBloc
 {
-    opacity: 15%;
+    margin-top: 10% !important;
 }
+
+.slider
+{
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+}
+
 /* END section mainSection */
 
 
@@ -277,8 +289,7 @@ section .overlay
 {
     position: relative;
     width: 100% !important;
-    max-width: 800px;
-    height: 400px;
+    height: 800px;
     background-image: url(../img/services/Kenko-Ho/slider/Slider9.jpg);
     margin: 0 auto;
 }
