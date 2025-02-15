@@ -5,8 +5,8 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="homeContent">
-                            <h1 class="homeTitle p-5">Kenko-Ho</h1>
-                            <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
+                            <h1 class="homeTitle text-muted p-5">Kenko-Ho</h1>
+                            <p class="homeDesc text-muted p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
                         </div>
                     </div>
                 </div>
