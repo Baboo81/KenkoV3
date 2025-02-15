@@ -72,7 +72,13 @@ class SettingsController extends Controller {
         $postal_code = isset($_POST['postal_code']) ? htmlspecialchars($_POST['postal_code']) : ''; 
         $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
         $country = htmlspecialchars($_POST['country']);
-        //$userId = $_SESSION['user']['id'];
+        $avatar = ''; //Valeur par défaut de  l'avatar
+
+        if ($_FILES['avatar']['name']) {
+            //Gestion des upload de l'avatar
+        }
+        
+        $userId = $_SESSION['user']['id'];
 
         if (!$email) {
             $_SESSION['message'] = [
@@ -85,7 +91,7 @@ class SettingsController extends Controller {
 
         //Requête SQL 
         $stmt = $db->prepare("UPDATE user_settings SET lastname = ?, firstname = ?, address = ?, city = ?, postal_code = ?, email = ?, country = ?");
-        $stmt->execute([$lastname, $firstname, $address, $city, $postal_code, $email, $country]);
+        $stmt->execute([$lastname, $firstname, $address, $city, $postal_code, $email, $country, $userId]);
 
         // Gestion de l'upload de l'avatar
         if (!empty($_FILES['avatar']['name'])) {
