@@ -10,7 +10,7 @@
     <section class="mainSection">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <h1 class="text-center mb-5">Formulaire de contact</h1>
+                <h1 class="text-center text-muted mb-5">Formulaire de contact</h1>
                 <div class="col-md-12">
                     <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/contact" method="POST">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">

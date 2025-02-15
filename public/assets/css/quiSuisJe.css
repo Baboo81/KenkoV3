@@ -38,6 +38,11 @@ h3
     color: var(--beige);
 }
 
+.fontWhite
+{
+    color: white;
+}
+
 .fontBlack
 {
   color: var(--noir);
