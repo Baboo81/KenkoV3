@@ -184,31 +184,38 @@
                             <?php endif; ?>
                             <!-- Bloc msg Bootstrap END -->
                             <form id="testimonialForm" method="POST" action="/kenko-ho/testimonials">
-                                <div class="mb-3">
-                                    <label for="userName" class="form-label">Votre Nom</label>
-                                    <input type="text" class="form-control" id="userName" name="userName" required>
+                                <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                    <img src="/assets/img/form/commentsBox.svg" alt="Illustration commentsBox" class="img-fluid w-100" style="object-fit:cover;">
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Votre Note</label>
-                                    <div class="rating">
-                                        <!-- Étoiles cliquables -->
-                                        <input type="radio" id="star1" name="rating" value="1" required>
-                                        <label for="star1">★</label>
-                                        <input type="radio" id="star2" name="rating" value="2">
-                                        <label for="star2">★</label>
-                                        <input type="radio" id="star3" name="rating" value="3">
-                                        <label for="star3">★</label>
-                                        <input type="radio" id="star4" name="rating" value="4">
-                                        <label for="star4">★</label>
-                                        <input type="radio" id="star5" name="rating" value="5">
-                                        <label for="star5">★</label>
+                               <div class="col-md-12">
+                                    <div class="my-4">
+                                        <label for="userName" class="form-label mb-3">Votre Nom</label>
+                                        <input type="text" class="form-control" id="userName" name="userName" required>
+                                    </div>
+                                    <div class="my-4">
+                                        <label class="form-label mb-3">Votre Note</label>
+                                        <div class="rating">
+                                            <!-- Étoiles cliquables -->
+                                            <input type="radio" id="star1" name="rating" value="1" required>
+                                            <label for="star1">★</label>
+                                            <input type="radio" id="star2" name="rating" value="2">
+                                            <label for="star2">★</label>
+                                            <input type="radio" id="star3" name="rating" value="3">
+                                            <label for="star3">★</label>
+                                            <input type="radio" id="star4" name="rating" value="4">
+                                            <label for="star4">★</label>
+                                            <input type="radio" id="star5" name="rating" value="5">
+                                            <label for="star5">★</label>
+                                        </div>
+                                    </div>
+                                    <div class="my-4">
+                                        <label for="testimonialMessage" class="form-label mb-3">Votre Témoignage</label>
+                                        <textarea class="form-control" id="testimonialMessage" name="testimonialsMessage" rows="3" required></textarea>
+                                    </div>
+                                    <div class="my-5">
+                                        <button type="submit" class="button w-100">Envoyer</button>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="testimonialMessage" class="form-label">Votre Témoignage</label>
-                                    <textarea class="form-control" id="testimonialMessage" name="testimonialsMessage" rows="3" required></textarea>
-                                </div>
-                                <button type="submit" class="button w-100">Envoyer</button>
                             </form>
                         </div>
                     </div>
