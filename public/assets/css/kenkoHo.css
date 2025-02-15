@@ -149,17 +149,16 @@ section .overlay
 
 .home .homeTitle
 {
-    color: var(--vert);
     font-size: 8em;
     font-family: "Bodoni Moda", serif;
 }
 
 .home .homeDesc
 {
-    color: var(--vert);
     font-size: 2em;
     line-height: 1.2em;
     font-family: "Bodoni Moda", serif;
+    font-weight: bold;
 }
 
 .homeContent
