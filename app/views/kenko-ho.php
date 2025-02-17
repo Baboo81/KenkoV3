@@ -55,7 +55,7 @@
                                 </div>
                                 <div class=" col-md-12 text-center">
                                     <button onclick="window.location.href='../kenko-ho-themes/cuisine';"  class="button">Les H.E dans la cuisine</button>
-                                    <button  class="button">Le sommeil & les HE</button>
+                                    <button onclick="window.location.href='../kenko-ho-themes/sommeil';"  class="button">Le sommeil & les HE</button>
                                     <button  class="button">La peau & les HE</button>
                                     <button  class="button">La douleur & les HE</button>
                                     <button  class="button">Établir de bonnes bases</button>

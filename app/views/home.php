@@ -9,6 +9,14 @@
     <?php unset($_SESSION['message']); ?> <!-- Supprimer le message après affichage -->
 <?php endif; ?>
 
+<?php if (isset($_SESSION['message_logout'])): ?>
+    <div class="alert alert-<?= $_SESSION['message_logout']['type']; ?> alert-dismissible fade show text-center" role="alert">
+        <?= $_SESSION['message_logout']['text']; ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <?php unset($_SESSION['message_logout']); ?> <!-- Supprimer le message après affichage -->
+<?php endif; ?>
+
     <body>
         <main>
             <section class="home">
