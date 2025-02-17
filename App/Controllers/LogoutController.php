@@ -10,8 +10,8 @@ class LogoutController {
         }
 
         //Ajouter un message de succès avant de détruire la session
-        $_SESSION['message'] = [
-            'type' => "succes",
+        $_SESSION['message_logout'] = [
+            'type' => "success",
             'text' => "Vous êtes bien déconnecté !"
         ];
 
