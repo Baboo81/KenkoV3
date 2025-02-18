@@ -50,7 +50,7 @@
                                     <button onclick="window.location.href='../kenko-ho-themes/dix-huiles-de-base';"  class="button">Les 10 huiles de bases</button>
                                     <button onclick="window.location.href='../kenko-ho-themes/emotions';"  class="button">Les émotions & les H.E</button>
                                     <button onclick="window.location.href='../kenko-ho-themes/enfants';"  class="button">Les enfants & les H.E</button>
-                                    <button onclick="window.location.href='../kenko-ho-themes/stress';"  class="button">Le stress & les H.E</button>
+                                    <button onclick="window.location.href='../kenko-ho-themes/microbiome';"  class="button">Le Microbiome</button>
                                     <button  class="button">Le Reiki</button>
                                 </div>
                                 <div class=" col-md-12 text-center">
