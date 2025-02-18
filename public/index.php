@@ -14,9 +14,9 @@ use App\Controllers\KenkoHoThemes\CuisineController;
 use App\Controllers\KenkoHoThemes\DixHuilesDeBaseController;
 use App\Controllers\KenkoHoThemes\EmotionController;
 use App\Controllers\KenkoHoThemes\EnfantsController;
+use App\Controllers\KenkoHoThemes\MicrobiomeController;
 use App\Controllers\KenkoHoThemes\PeauController;
 use App\Controllers\KenkoHoThemes\SommeilController;
-use App\Controllers\KenkoHoThemes\StressController;
 use App\Controllers\KenkoWebController;
 use App\Controllers\LoginController;
 use App\Controllers\LogoutController;
@@ -39,7 +39,7 @@ $router->get('/kenko-ho-themes/emotions', [EmotionController::class, 'show']);
 $router->get('/kenko-ho-themes/sommeil', [SommeilController::class, 'show']);
 $router->get('/kenko-ho-themes/enfants', [EnfantsController::class, 'show']);
 $router->get('/kenko-ho-themes/peau', [PeauController::class, 'show']);
-$router->get('/kenko-ho-themes/stress', [StressController::class, 'show']);
+$router->get('/kenko-ho-themes/microbiome', [MicrobiomeController::class, 'show']);
 
 //Formulaire contact
 $router->post('/contact', [ContactController::class, 'handleForm']);
