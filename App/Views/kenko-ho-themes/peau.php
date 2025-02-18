@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="mainTitleContent mb-5">
-                        <h2 class="text-muted text-center mb-5">Les enfants & les huiles essentielles</h2>
+                        <h2 class="text-muted text-center mb-5">La peau & les huiles essentielles</h2>
                         <div class="line"><span></span></div>
                     </div>
                 </div>
@@ -16,11 +16,13 @@
                     <div class="box rounded-5 p-4 my-5">
                         <div class="row">
                             <article class="col-md-6">
-                                <p class="text-muted">Les huiles essentielles seront à vos côtés pour vous aider à soulager vos bambins dans diverses situations telles que : poussées dentaires, pour soutenir le systeme immunitaire, pour les coliques, pour mieux dormir, ...<br />Seulement certaines huiles pourront être utilisées et avec des dilutions précises, vous trouverez toutes les informations dans le guide au format pdf ci-dessous.</p>
+                                <p class="text-muted">La peau est l'organe le plus étendu du corps humain, notre peau possède plusieurs fonctions, elle joue le rôle de barrière (chocs, pollution, U.V, germes, ...), elle joue un rôle de régulation thermique, de synthèse hormonale (vit-D,...).</p>
+                                <p class="text-muted">La peau possède des fonctions au niveau immunitaire aussi. Qu'elle soit blanche ou noire, chaque peau est unique et réagira de façon différente. Avec les huiles essentielles vous pourrez aider votre peau dans différentes situations : (rougeurs, brûlures légères, sécheresse cutanée, taches de pigmentation, ...).
+                                </p>
                                 <div class="text-center my-4">
-                                    <h3>Guide des huiles essentielles pour améliorer son sommeil</h3>
+                                    <h3>Guide des huiles essentielles pour aider la peau</h3>
                                 </div>
-                                <p class="text-muted">Téléchargez notre guide sur les enfants et les huilles essentielles.</p>
+                                <p class="text-muted">Téléchargez notre guide sur la peau et les huilles essentielles.</p>
                             </article>
                             <div class="col-md-6">
                                 <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pagePeau/peau.png" alt="Image représantant une personne qui cuisine">
