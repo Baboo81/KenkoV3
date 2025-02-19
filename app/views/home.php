@@ -67,4 +67,5 @@
                 </div>
             </section>
         </main>
+    <?php include 'partials/cookie-banner.php' ?>
 <?php include 'partials/footer.php' ?>
