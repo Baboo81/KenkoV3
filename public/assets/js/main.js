@@ -49,13 +49,14 @@ if (logo) {
 
 //Gestion des messages d'erreurs : disparition auto du msg
 setTimeout(() => {
-    let alert = document.querySelector(".alert");
-    if(alert) {
-        alert.classList.remove("show");
-        alert.classList.add("fade");
-        setTimeout(() => alert.remove(), 500);//Supprime du DOM après le fade
-    }
-}, 5000); //5sec
+    document.querySelectorAll(".alert").forEach(alert => {
+        if (!alert.classList.contains("cookie-banner")) { // Ignore la bannière des cookies
+            alert.classList.remove("show");
+            alert.classList.add("fade");
+            setTimeout(() => alert.remove(), 500); // Supprime du DOM après le fade
+        }
+    });
+}, 5000); // Cache les alertes après 5 secondes
 ////////////////////////////// END /////////////////////////
 
 //Footer; map :

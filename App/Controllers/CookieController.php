@@ -15,9 +15,12 @@ class CookieController extends Controller
 
     public function savePreferences()
     {
-        session_start();
+        //Vérifie si la session est déjà démarrée
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
 
-        if ($_SESSION["REQUEST_METHOD"] === "POST") {
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $preferences = [
                 'analytics' => isset($_POST['analytics']) ? true : false,
                 'marketing' => isset($_POST['marketing']) ? true : false
@@ -28,7 +31,7 @@ class CookieController extends Controller
                 $db = new Database();
                 $pdo = $db->getInstance();
 
-                $stmt = $db->prepare("UPDATE users SET cookie_preferences = :preferences WHERE id = :id");
+                $stmt = $pdo->prepare("UPDATE users SET cookie_preferences = :preferences WHERE id = :id");
                 $stmt->execute([
                     'preferences' => json_encode($preferences),
                     'id' => $_SESSION['user_id']
@@ -37,6 +40,10 @@ class CookieController extends Controller
                 //Sinon, on stocke les préférences dans un cookie
                 setcookie('cookie_preferences', json_encode($preferences), time() + 365 * 24 * 60 * 60, "/");
             }
+
+            //Redirection après enregistrement des préférences
+            header("Location: cookie-preferences.php?success=1");
+            exit();
         }
     }
 }
