@@ -21,19 +21,6 @@ class ContactController extends Controller {
 
     public function handleForm() {
 
-        //Démarrer une session : (une session permet de stocker des infos entre les requêtes HTTP, des variables utilisateur, des jetons CSRF ou des msg de confirmation)
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start([
-                'cookie_lifetime' => 86400, //Durée de vie du cookie de session = à un jour 
-                'cookie_secure' => true, //Le cookie sera transmis uniquement en HTTPS
-                'cookie_httponly' => true, //Empêche l'acces au cookie via JS
-                'use_strict_mode' => true, //Oblige la régénération de l'ID de session pour éviter les attaques de fixation de session
-            ]);
-            //Regénérérer l'ID de session pour éviter les attaques par fixation de session
-            session_regenerate_id(true);
-        }
-
-
         //Vérifie que le form est bien envoyé
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //Vérifie si le token CSRF : le token = signature du formulaire

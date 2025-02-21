@@ -9,15 +9,27 @@ class CookieController extends Controller
 {
     public function showBanner() 
     {
-        //Afficher le banner des cookies
-        $this->View('cookie-banner');
+        //Joindre les styles
+        $resetCss = 'reset.css';
+        $css = 'cookie-banner.css';
+
+        //Charger la vue ainsi que les styles
+        $this->View('cookie-banner', compact('resetCss', 'css'));
     }
 
     public function savePreferences()
     {
-        //Vérifie si la session est déjà démarrée
+      
+        //Démarrer une session : (une session permet de stocker des infos entre les requêtes HTTP, des variables utilisateur, des jetons CSRF ou des msg de confirmation)
         if (session_status() === PHP_SESSION_NONE) {
-            session_start();
+        session_start([
+                'cookie_lifetime' => 86400, //Durée de vie du cookie de session = à un jour 
+                'cookie_secure' => true, //Le cookie sera transmis uniquement en HTTPS
+                'cookie_httponly' => true, //Empêche l'acces au cookie via JS
+                'use_strict_mode' => true, //Oblige la régénération de l'ID de session pour éviter les attaques de fixation de session
+            ]);
+        //Regénérérer l'ID de session pour éviter les attaques par fixation de session
+        session_regenerate_id(true);
         }
 
         if ($_SERVER["REQUEST_METHOD"] === "POST") {

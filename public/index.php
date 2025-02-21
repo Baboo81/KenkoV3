@@ -7,6 +7,8 @@ require_once '../vendor/autoload.php';
 // Inclusion des classes nécessaires
 
 use App\Controllers\ContactController;
+use App\Controllers\CookieController;
+use App\Controllers\CookiePreferencesController;
 use App\Core\Router;
 use App\Controllers\HomeController;
 use App\Controllers\KenkoHoController;
@@ -20,6 +22,7 @@ use App\Controllers\KenkoHoThemes\SommeilController;
 use App\Controllers\KenkoWebController;
 use App\Controllers\LoginController;
 use App\Controllers\LogoutController;
+use App\Controllers\PolitiquesCookiesController;
 use App\Controllers\QuiSuisJeController;
 use App\Controllers\SettingsController;
 use App\Controllers\SignupController;
@@ -63,6 +66,11 @@ $router->post('/settings', [SettingsController::class, 'settings']);
 //Routes pour les témoignages
 $router->get('/kenko-ho/testimonials', [KenkoHoController::class, 'getTestimonials']);
 $router->post('/kenko-ho/testimonials', [KenkoHoController::class, 'submitTestimonials']);
+
+//Routes pour la gestion des cookies
+$router->get('/politiquesCookies', [PolitiquesCookiesController::class, 'show']);
+$router->get('/cookie-preferences', [CookiePreferencesController::class, 'show']);
+$router->get('/partials/cookie-banner', [CookieController::class, 'showBanner']);
 
 // Lancer le routage
 $router->run();
