@@ -1,4 +1,6 @@
-<?php include 'partials/header.php'; ?>
+<?php
+     include 'partials/header.php'; 
+?>
 
 <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
         <div class="alert alert-success text-center">
@@ -13,6 +15,7 @@
                 <h1 class="text-center text-muted mb-5">Formulaire de contact</h1>
                 <div class="col-md-12">
                     <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/contact" method="POST">
+                        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/form/contact.svg" alt="Illustration contact" class="img-fluid w-100" style="object-fit:cover;">
                         </div>

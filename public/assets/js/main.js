@@ -59,6 +59,24 @@ setTimeout(() => {
 }, 5000); // Cache les alertes après 5 secondes
 ////////////////////////////// END /////////////////////////
 
+//Gestion des btn : cookie-banner
+document.addEventListener("DOMContentLoaded", function() {
+    // Vérifie si le cookie existe déjà
+    if (document.cookie.indexOf('cookie-preferences=accepted') !== -1) {
+        document.getElementById('cookie-banner').style.display = 'none'; // Cache la bannière si le cookie existe
+    }
+
+    // Action du bouton "Accepter"
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+        // Crée un cookie pour enregistrer l'acceptation
+        document.cookie = "cookie-preferences=accepted; path=/; max-age=" + 60 * 60 * 24 * 365; // Valable 1 an
+        
+        // Cache la bannière après l'acceptation
+        document.getElementById('cookie-banner').style.display = 'none';
+    });
+});
+
+////////////////////////////// END /////////////////////////
 //Footer; map :
 
     //Create map:

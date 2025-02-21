@@ -8,52 +8,63 @@ use PDO;
 
 class ContactController extends Controller {
     public function show() {
+        // Démarrer la session si elle n'est pas déjà démarrée
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
 
-        //Défini le titre de la page
+        // Générer un token CSRF sécurisé s'il n'existe pas encore
+        if (!isset($_SESSION['csrf_token'])) {
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        }
+
+        // Définir le titre de la page et les styles
         $title = "Contactez-moi";
-        //Joindre les styles
         $resetCss = 'reset.css';
         $css = 'contact.css';
+        $csrf_token = $_SESSION['csrf_token']; // Assigner le token à une variable
 
-        //Charger les vue et passer le titre, css
-        $this->View('contact', compact('title', 'resetCss', 'css'));
+        // Charger la vue et passer les variables
+        $this->View('contact', compact('title', 'resetCss', 'css', 'csrf_token'));
     }
 
     public function handleForm() {
+        // Démarrer la session si elle n'est pas déjà démarrée
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
 
-        //Vérifie que le form est bien envoyé
+        // Vérifie si le formulaire est bien envoyé
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            //Vérifie si le token CSRF : le token = signature du formulaire
+            // Vérifier le token CSRF
             if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
                 die("Erreur CSRF détectée !");
             }
 
-            //Récupèration + assainissement des données du form
-            //trim : supprime les espaces que l'utilisateur aurai mis
-            //strip_tags : supprime les balises HTML qu'un utilisateur malveillant aurait mis, évite les attaques de types : XSS
-            $name = trim(strip_tags( $_POST['name'] ?? ''));
+            // Régénérer l'ID de session pour plus de sécurité
+            session_regenerate_id(true);
+
+            // Récupération et assainissement des données
+            $name = trim(strip_tags($_POST['name'] ?? ''));
             $firstName = trim(strip_tags($_POST['firstName'] ?? ''));
-            $email = trim(filter_var($_POST['email'] ?? '', FILTER_VALIDATE_EMAIL));
+            $email = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
             $message = trim(strip_tags($_POST['message'] ?? ''));
 
-            //Validation supplémentaire pour les champs : nom et prénoms (nous voulons uniquement des lettres et espaces)
-            if (!preg_match("/^[a-zA-Z]*$/", $name) || !preg_match("/^[a-zA-Z]*$/",
-            $firstName)) {
-                die("Le nom ainsi que le prénom doivent contenir des lettres et des espaces !");
+            // Validation du nom et prénom (uniquement lettres et espaces)
+            if (!preg_match("/^[a-zA-Z\s]+$/", $name) || !preg_match("/^[a-zA-Z\s]+$/", $firstName)) {
+                die("Le nom et le prénom doivent contenir uniquement des lettres et des espaces !");
             }
 
-            //Validation des données + vérification que les champs ne soit pas vides 
+            // Vérification que les champs ne sont pas vides
             if (empty($name) || empty($firstName) || empty($email) || empty($message)) {
-                die("Tous les champs doivent être remplis");
+                die("Tous les champs doivent être remplis !");
+            }
 
-                //Connexion à la DB
-                $db = Database::getInstance();
-
-                //Vérifie si la connexion est établie
-                if (!$db) {
-                    die("Erreur de connexion !");
-                }
-            
+            // Connexion à la base de données
+            $db = Database::getInstance();
+            if (!$db) {
+                die("Erreur de connexion à la base de données !");
+            }
 
             // Insérer les données avec une requête préparée
             $stmt = $db->prepare("INSERT INTO contacts (name, first_name, email, message, created_at) VALUES (?, ?, ?, ?, NOW())");
@@ -61,30 +72,27 @@ class ContactController extends Controller {
 
             if ($result) {
                 header("Location: /message");
-                echo "Message bien enregistré en base de données !";
+                exit;
             } else {
-                echo "Erreur lors de l'insertion.";
+                die("Erreur lors de l'enregistrement du message.");
             }
-        } else {
-            echo "Veuillez remplir tous les champs du formulaire !";
         }
     }
-}
 
     public function listMessages() {
+        // Connexion à la base de données
         $db = Database::getInstance();
 
-        //Récupère les messages de la base de données
+        // Récupérer les messages de la base de données
         $stmt = $db->query("SELECT * FROM contacts ORDER BY created_at DESC");
         $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    
-        //Définir les variables pour la vue
+        // Définir les variables pour la vue
         $title = "Messages reçus";
         $resetCss = 'reset.css';
         $css = 'message.css';
 
-        //Charger la vue et lui passer les messages
+        // Charger la vue et lui passer les messages
         $this->View('message', compact('title', 'resetCss', 'css', 'messages'));
     }
 }

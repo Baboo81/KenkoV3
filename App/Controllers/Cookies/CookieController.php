@@ -14,7 +14,7 @@ class CookieController extends Controller
         $css = 'cookie-banner.css';
 
         //Charger la vue ainsi que les styles
-        $this->View('cookie-banner', compact('resetCss', 'css'));
+        $this->View('partials/cookie-banner', compact('resetCss', 'css'));
     }
 
     public function savePreferences()
