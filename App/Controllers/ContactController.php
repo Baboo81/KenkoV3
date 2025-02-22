@@ -5,6 +5,10 @@ namespace App\Controllers;
 use App\Core\Controller;
 use App\Core\Database;
 use PDO;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 class ContactController extends Controller {
     public function show() {
@@ -75,6 +79,45 @@ class ContactController extends Controller {
                 exit;
             } else {
                 die("Erreur lors de l'enregistrement du message.");
+            }
+
+            // 📩 2. Envoyer l'email avec PHPMailer
+            $mail = new PHPMailer(true);
+
+            try {
+                // Configuration SMTP
+                $mail->isSMTP();
+                $mail->Host = 'smtp.office365.com'; // SMTP de ton fournisseur (Gmail, Outlook...)
+                $mail->SMTPAuth = true;
+                $mail->Username = 'chrisrodriguez@hotmail.be'; // Ton adresse email
+                $mail->Password = 'Roswell2012'; // Mot de passe ou clé API (⚠️ Ne jamais l'exposer publiquement)
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // TLS ou SSL selon ton serveur
+                $mail->Port = 587; // 465 pour SSL, 587 pour TLS
+
+                // Destinataire et expéditeur
+                $mail->setFrom($email, "$name $firstName"); // Expéditeur (l'utilisateur qui remplit le formulaire)
+                $mail->addAddress('chrisrodriguez@hotmail.be'); // Ton adresse pour recevoir le message
+                $mail->ReplyTo($email); // Répondre directement à l'utilisateur
+
+                // Contenu du mail
+                $mail->isHTML(false);
+                $mail->Subject = "📬 Nouveau message de contact";
+                $mail->Body = "👤 Nom: $name $firstName\n📧 Email: $email\n\n💬 Message:\n$message\n";
+
+        
+                // Envoi du mail
+                $mail->send();
+                    if ($mail->send()) {
+                        error_log("Message envoyé avec succès");
+                        header('Location: /?success=1');
+                        exit();
+                    } else {
+                        var_dump($mail->ErrorInfo);
+                        error_log("erreur d'envoi : " . $mail->ErrorInfo); 
+                    }
+
+                } catch (Exception $e) {
+                    die("Erreur lors de l'envoi du mail : " . $mail->ErrorInfo);
             }
         }
     }

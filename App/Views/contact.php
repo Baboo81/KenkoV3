@@ -1,5 +1,7 @@
+
 <?php
      include 'partials/header.php'; 
+     require_once __DIR__ . '/../config/config.php';
 ?>
 
 <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>

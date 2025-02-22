@@ -3,6 +3,7 @@
 session_start();//Démarrer la session
 
 require_once '../vendor/autoload.php';
+//require_once __DIR__ . '/../App/config/config.php';
 
 // Inclusion des classes nécessaires
 
