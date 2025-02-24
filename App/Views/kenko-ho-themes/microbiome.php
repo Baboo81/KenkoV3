@@ -16,15 +16,24 @@
                     <div class="box rounded-5 p-4 my-5">
                         <div class="row">
                             <article class="col-md-6">
-                                <p class="text-muted">La peau est l'organe le plus étendu du corps humain, notre peau possède plusieurs fonctions, elle joue le rôle de barrière (chocs, pollution, U.V, germes, ...), elle joue un rôle de régulation thermique, de synthèse hormonale (vit-D,...).</p>
+                                <p class="text-muted">Le microbiote est un ensemble de micro organismes vivant en symbiose avec nous. Ce microbiote se compose de virus, de bactéries, de levures, ...</p>
+                                <p class="text-muted">Par exemple avoir un microbiote intestinal bien équilibré contribue au bon fonctionnement du système immunitaire, le microbiote influence aussi nos émotions et donc notre système nerveux.<br />Nos différents micriobiotes forme un réseau interconnecté entre intestins, poumons, peau, bouche, voies urinaires et génitales.
+                                </p>
+                            </article>
+                            <div class="col-md-6">
+                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageMicrobiome/microbiome.png" alt="Image représantant une personne qui cuisine" style="height: 27rem;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1é my-5">
+                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageMicrobiome/microbiote2.png" alt="Image représantant une personne qui cuisine">
+                            </div>
+                            <article>
                                 <div class="text-center my-4">
                                     <h3>Guide pour potentialiser son microbiote</h3>
                                 </div>
-                                <p class="text-muted">Téléchargez notre guide sur le microbiome.</p>
+                                <p class="text-muted text-center">Téléchargez notre guide sur le microbiome.</p>
                             </article>
-                            <div class="col-md-6">
-                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageMicrobiome/microbiome.png" alt="Image représantant une personne qui cuisine">
-                            </div>
                         </div>
                         <div class="text-center my-5">
                             <a href="/../assets/pdf/pageMicrobiome/microbiome.pdf" download="Le microbiome.pdf">
