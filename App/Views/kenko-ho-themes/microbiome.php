@@ -20,14 +20,14 @@
                                 <div class="text-center my-4">
                                     <h3>Guide pour potentialiser son microbiote</h3>
                                 </div>
-                                <p class="text-muted">Téléchargez notre guide sur le stress et les huilles essentielles.</p>
+                                <p class="text-muted">Téléchargez notre guide sur le microbiome.</p>
                             </article>
                             <div class="col-md-6">
-                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageMicrobiome/microbiome.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageMicrobiome/microbiome.png" alt="Image représantant une personne qui cuisine">
                             </div>
                         </div>
                         <div class="text-center my-5">
-                            <a href="/../assets/pdf/pageEnfants/enfants.pdf" download="Les HE & les enfants.pdf">
+                            <a href="/../assets/pdf/pageMicrobiome/microbiome.pdf" download="Le microbiome.pdf">
                                 <button class="button">Télécharger le PDF</button>
                             </a>
                         </div>
