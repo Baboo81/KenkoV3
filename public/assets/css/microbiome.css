@@ -92,6 +92,27 @@ nav .nav-link:hover
     border-bottom-color: var(--bleu);
 }
 
+nav .dropdown-menu
+{
+    display: block;
+    max-height: 10rem;
+    overflow: hidden;
+    background-color: var(--vert);
+    border-radius: 14px;
+    font-size: 1.7em;
+    width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease;
+}
+
+nav .dropdown-menu.show
+{
+    max-height: 500px;
+    opacity: 1;
+}
+
 #logo
 {
     height: 5em;
