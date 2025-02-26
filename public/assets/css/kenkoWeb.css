@@ -267,19 +267,23 @@ button:hover
     /* Pop-up END */
 
 /*  Section atouts */
+.blocAtouts
+{
+    margin-top: 10%;
+}
+
 .pictoAtouts
 {
-    height: 5em;
+    height: 4em;
 }
 
 .pictoAtoutsPerso
 {
-    height: 40em;
+    height: 30em;
 }
 
 section .atoutsContent
 {
-    height: 200px;
     background-size: cover;
     background-position: center;
 }
