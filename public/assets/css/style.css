@@ -258,9 +258,9 @@ h1:after
 
 section .trustBox
 {
-    width: 50%;
+    width: 70%;
     background-color: var(--grisF);
-    border-radius: 200px;
+    border-radius: 500px;
     margin-top: 12% !important;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     gap: 0px;
