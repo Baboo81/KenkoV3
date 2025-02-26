@@ -2,9 +2,13 @@
 
         <main>
             <section class="whoIam">
-                <div class="container">
-                    <div class="row">
-                       
+                <div class="container text-center mt-5">
+                    <div class="row justify-content-center">
+                       <div class="col-md-12">
+                            <div class="blob-container mx-auto">
+                                <img src="/assets/img/services/quiSuis-je/QuiSuisJe.png" alt="Photo me représentant" class="img-fluid">
+                            </div>
+                       </div>
                     </div>
                 </div>
             </section>
@@ -14,19 +18,19 @@
                     <div class="row">
                         <div class="my-5 d-flex">
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/services/quiSuis-je/informatique.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/informatique.svg" alt="Picto représentant un ordinateur">
                                 <h4 class="fs-4 my-1">L'informatique</h4>
                             </article>
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/services/quiSuis-je/design.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/design.svg" alt="Picto représentant l'outil plume dans illustrator">
                                 <h4 class="fs-4 my-1">Le design</h4>
                             </article>
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/services/quiSuis-je/photo.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/photo.svg" alt="Picto représentant un appareil photo">
                                 <h4 class="fs-4 my-5">La photo</h4>
                             </article>
                             <article class="col-md-3 text-center">
-                                <img src="/assets/img/services/quiSuis-je/communication.svg" alt="">
+                                <img src="/assets/img/services/quiSuis-je/communication.svg" alt="Picto représentant un personnage relié à d'autres personnes">
                                 <h4 class="fs-4">La communication</h4>
                             </article>
                         </div>

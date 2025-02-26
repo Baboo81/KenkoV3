@@ -140,31 +140,30 @@
                     </div>
                 </div>
             </section>
-            <section>
-    <div class="container">
-        <div class="row align-items-center"> <!-- Ajout de align-items-center pour aligner verticalement -->
+    <div class="container blocAtouts">
+        <div class="row align-items-center"> 
             <!-- Image -->
             <div class="col-md-6 text-center">
-                <img src="/assets/img/services/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="">
+                <img src="/assets/img/services/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="Picto représentant deux personnages tenant un panneau">
             </div>
             <!-- Bloc articles -->
-            <div class="col-md-6 d-flex flex-column atoutsContent mb-5">
+            <div class="col-md-6 d-flex flex-column atoutsContent">
                 <article class="text-center mb-3">
-                    <img src="/assets/img/services/Kenko-Web/pictos/work.svg" class="pictoAtouts" alt="">
+                    <img src="/assets/img/services/Kenko-Web/pictos/work.svg" class="pictoAtouts" alt="Picto représentant un écran d'ordinateur">
                     <p class="p-1">Mettre en avant et expliquez votre activité</p>
                 </article>
                 <article class="text-center mb-3">
-                    <img src="/assets/img/services/Kenko-Web/pictos/partenaires.svg" class="pictoAtouts" alt="">
+                    <img src="/assets/img/services/Kenko-Web/pictos/partenaires.svg" class="pictoAtouts" alt="Picto représentant des personnages en réseau">
                     <p class="p-1">Présentez vos partenaires</p>
                 </article>
                 <article class="text-center">
-                    <img src="/assets/img/services/Kenko-Web/pictos/localiser.svg" class="pictoAtouts" alt="">
+                    <img src="/assets/img/services/Kenko-Web/pictos/localiser.svg" class="pictoAtouts" alt="Picto représentant deux points géographiques">
                     <p class="p-1">Donnez les informations pratiques de votre entreprise</p>
                 </article>
             </div>
         </div>
     </div>
-</section>
-        </main>
+  </section>
+</main>
 
 <?php include 'partials/footer.php'; ?>
