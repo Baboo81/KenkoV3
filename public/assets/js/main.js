@@ -47,6 +47,20 @@ if (logo) {
     }
 ////////////////////////////// END /////////////////////////
 
+//trustSection : logo animation
+document.addEventListener("DOMContentLoaded", function() {
+    let logos = document.querySelectorAll(".logo");
+    let index = 0;
+
+    setInterval(() => {
+        logos[index].classList.remove("active"); // Masquer le logo actuel
+        index = (index + 1) % logos.length; // Passer au suivant
+        logos[index].classList.add("active"); // Afficher le nouveau logo
+    }, 3000); // Changement toutes les 3 secondes
+});
+
+////////////////////////////// END /////////////////////////
+
 //Gestion des messages d'erreurs : disparition auto du msg
 setTimeout(() => {
     document.querySelectorAll(".alert").forEach(alert => {

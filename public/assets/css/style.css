@@ -258,7 +258,33 @@ h1:after
 
 section .trustBox
 {
-    background-color: var(--noir);
+    width: 50%;
+    background-color: var(--grisF);
+    border-radius: 200px;
+    margin-top: 12% !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    gap: 0px;
+}
+
+.logo-container 
+{
+    width: 300px; /* Ajuste la largeur du conteneur */
+    height: 250px; /* Ajuste la hauteur du conteneur */
+    position: relative;
+}
+
+.logo 
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.logo.active 
+{
+    opacity: 1;
 }
 /* END trustSection */
 
