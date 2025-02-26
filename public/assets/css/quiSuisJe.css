@@ -9,6 +9,7 @@
     --gris : #bfc1c2;
     --beige : #f1efe9;
     --brun : #e3c7af;
+    --orange : #ff515a;
     --noir : #282828;
 }
 
@@ -18,6 +19,7 @@ body
     width: 100% !important;
     overflow-x: hidden;
     font-family: "Bodoni Moda", serif;
+    min-height: 500px;
 }
 
 p
@@ -134,9 +136,15 @@ article img
     height: max-content;
 }
 
+.pictoBloc
+{
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+}
+
 section .box
 {
-    background-color: var(--gris);
+    background-color: var(--orange);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-size: 1.3em;
 }

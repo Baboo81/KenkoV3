@@ -19,6 +19,7 @@ body
     width: 100% !important;
     overflow-x: hidden;
     font-family: "Bodoni Moda", serif;
+    min-height: 500px;
 }
 
 p
@@ -247,6 +248,19 @@ h1:after
 }
 
 /* END mainSection */
+
+/* trustSection */
+.trustSection
+{
+    height: 600px;
+    background-color: var(--beige);
+}
+
+section .trustBox
+{
+    background-color: var(--noir);
+}
+/* END trustSection */
 
 /* Footer */
 footer
