@@ -50,6 +50,11 @@ h3
   color: var(--noir);
 }
 
+.fontOrange
+{
+    color: var(--orange);
+}
+
 .bg-grey
 {
     background-color: var(--gris);
@@ -144,7 +149,7 @@ article img
 
 section .box
 {
-    background-color: var(--orange);
+    background-color: var(--grisF);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-size: 1.3em;
 }
