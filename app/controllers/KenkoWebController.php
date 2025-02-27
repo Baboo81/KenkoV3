@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\Controller;
+
 class KenkoWebController extends Controller {
     public function show() {
 
@@ -12,7 +13,7 @@ class KenkoWebController extends Controller {
         $resetCss = 'reset.css';
         $css = 'kenkoWeb.css';
 
-        //Charge la vue et passe le titre
+        //Charge la vue et passer le titre
         $this->View('kenko-web', compact('title', 'resetCss', 'css'));
 
     }

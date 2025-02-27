@@ -63,11 +63,14 @@
                     <div class="row">
                         <h1 class="text-center fs-1 fontBlack my-5 p-5">Mon parcours en quelques mots</h1>
                         <article class="col-md-8 my-5 p-5">
-                            <div class="box rounded-5 p-4">
-                                <p class="text-muted">Après 15 années passées en pharmacie, j'ai décidé de réorienter ma carrière professionnelle pour aller vers une passion de longue date; l'informatique.<br />Après m'être formée au développement web, j'ai décidé de me lancer comme webmaster freelance.</p>
-                                <p class="text-muted">La découverte de dōTERRA il y a quelques années et ma passion pour la santé m'ont donnés envie d'aider les personnes à retrouver leur bien-être avec d'une part les huiles essentielles et d'autre part le Reiki.</p>
+                            <div class="box rounded-5 p-5">
+                                <p class="fontWhite mb-3">Après 15 années passées en pharmacie, j'ai décidé de réorienter ma carrière professionnelle pour aller vers une passion de longue date; l'informatique.<br />Après m'être formée au développement web, j'ai décidé de me lancer comme webmaster freelance.</p>
+                                <p class="fontWhite">La découverte de dōTERRA il y a quelques années et ma passion pour la santé m'ont donnés envie d'aider les personnes à retrouver leur bien-être avec d'une part les huiles essentielles et d'autre part le Reiki.</p>
                             </div>
                         </article>
+                        <div class="col-md-4">
+                            <img src="/assets/img/services/quiSuis-Je/parcours.svg" alt="Picto représentant un personnage montant des escaliers">
+                        </div>
                     </div>
                 </div>
             </section>

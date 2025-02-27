@@ -164,6 +164,26 @@
         </div>
     </div>
   </section>
+  <section class="trustSection">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="trustBox d-flex justify-content-center align-items-center">
+                    <!-- Texte à gauche -->
+                    <div class="col-md-3 d-flex flex-column align-items-start text-md-start text-center mx-5">
+                        <article class="text-center">
+                            <p class="fs-4 fontWhite mb-3">Ils font confiance à</p>
+                            <p class="fs-3 fontWhite">KENKO-WEB</p>
+                        </article>
+                    </div>
+                    <!-- Logos à droite (superposés) -->
+                    <div class="col-md-3 d-flex justify-content-center align-items-center position-relative logo-container">
+                        <img id="logo1" class="logo active" src="./assets/img/logo/soinsDeSoie.svg" alt="Logo Soins de soie" style="height: 10rem;">
+                        <img id="logo2" class="logo" src="./assets/img/logo/souffleDequilibre.svg" alt="Logo Souffle d'équilibre" style="height: 10rem;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php include 'partials/footer.php'; ?>
