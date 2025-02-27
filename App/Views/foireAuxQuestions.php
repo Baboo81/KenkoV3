@@ -18,7 +18,7 @@
                         <h1 class="text-center my-5 fs-1 fontBlack">Des questions vous taraudes ?</h1>
                     </div>
                     <div class="row text-center my-5">
-                        <div>
+                        <div class="my-5">
                             <h1 class="text-center my-5 fs-1 fontBlack">FAQ KENKO-WEB</h1>
                         </div>
                             <div class="accordion" id="accordionExample">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="row text-center my-5">
-                        <div>
+                        <div class="my-5">
                             <h1 class="text-center my-5 fs-1 fontBlack">FAQ KENKO-HO</h1>
                         </div>
                             <div class="accordion" id="accordionExample">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div>
+                        <div class="my-5">
                             <h1 class="text-center my-5 fs-1 fontBlack">N'hésitez pas à me contacter</h1>
                         </div>
                         <section class="rounded-5 p-5 d-flex align-center justify-items-center contactUs">
