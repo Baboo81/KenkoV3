@@ -10,6 +10,7 @@ require_once '../vendor/autoload.php';
 use App\Controllers\ContactController;
 use App\Controllers\CookieController;
 use App\Controllers\CookiePreferencesController;
+use App\Controllers\FoireAuxQuestionsController;
 use App\Core\Router;
 use App\Controllers\HomeController;
 use App\Controllers\KenkoHoController;
@@ -44,6 +45,7 @@ $router->get('/kenko-ho-themes/sommeil', [SommeilController::class, 'show']);
 $router->get('/kenko-ho-themes/enfants', [EnfantsController::class, 'show']);
 $router->get('/kenko-ho-themes/peau', [PeauController::class, 'show']);
 $router->get('/kenko-ho-themes/microbiome', [MicrobiomeController::class, 'show']);
+$router->get('/foireAuxQuestions', [FoireAuxQuestionsController::class, 'show']);
 
 //Formulaire contact
 $router->post('/contact', [ContactController::class, 'handleForm']);
