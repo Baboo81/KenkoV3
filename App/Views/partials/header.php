@@ -58,7 +58,7 @@
                                             </li>
                                         <?php endif; ?>
                                         <li class="nav-item mx-5">
-                                            <a class="nav-link" aria-current="page" href="/contact">FAQ</a>
+                                            <a class="nav-link" aria-current="page" href="/foireAuxQuestions">FAQ</a>
                                         </li>
                                         <li class="nav-item dropdown text-center mx-5">
                                             <a href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
