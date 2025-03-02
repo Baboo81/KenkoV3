@@ -94,6 +94,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Quels sont les délais pour la création d'un site web ? 
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       Le délai de création d'un site web dépend de plusieurs facteurs, notamment la complexité du projet, et des fonctionnalités souhaités et de la réactivité du client pour valider les étapes.
+                                       <ul class="text-start my-3">
+                                            <li>@ Pour un site vitrine simple (1 à 5 pages) : 2 à 4 semaines.</li>
+                                            <li class="my-3">@ Pour un site avec des fonctionnalités spécifiques (blog, formulaire avancés, ...) 4 à 8 semaines.</li>
+                                            <li class="my-3">@ Pour un site e-commerce(boutique en ligne avec paiement, gestion de stock, ...) 6 à 12 semaines.</li>
+                                            <li class="my-3">@ Site sur-mesure (dévelopement spécifique, intégrations complexes, ...) 3 à 6 mois.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row text-center my-5">
