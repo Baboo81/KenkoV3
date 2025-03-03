@@ -28,7 +28,7 @@
                                             Quels services propose Kenko-Web ?
                                         </button>
                                     </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>Kenko-Web pour propose un service de création de site web.</strong> La création d'un site web, repose tout d'abord sur la création d'une maquette. La maquette c'est une reproduction du visuel du site, grâce à cela vous aurez l'aspect visuel du site, cela va permettre de se mettre d'accord sur ce que souhaite le client. Nous mettrons en place la charte graphique à ce moment là.
                                     </div>
@@ -125,7 +125,7 @@
                                             Accordion Item #1
                                         </button>
                                     </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                     </div>
