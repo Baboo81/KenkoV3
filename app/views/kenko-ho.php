@@ -64,7 +64,14 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section><!-- Fin de la section : mainSection -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </section><!-- Fin de la section : HE search -->
             <section class="w-100 slider">
                 <div class="w-100">
                     <div class="row w-100">
