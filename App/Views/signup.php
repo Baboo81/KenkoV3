@@ -23,7 +23,10 @@
                             <section class="my-5">
                                 <div class="mb-4">
                                     <label for="username" class="form-label mb-3">Nom d'utilisateur :</label>
-                                    <input type="text" class="form-control" id="username" name="username" autocomplete="off" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="username" name="username" autocomplete="off" required>
+                                    </div>
                                 </div>
                                 <div class="mb-4">
                                     <label for="password" class="form-label mb-3">Mot de passe :</label>
@@ -37,6 +40,7 @@
                                     <button type="submit" class="button">S'inscrire</button>
                                 </div>
                             </section>
+                            <i class="bi bi-star-fill"></i>
                         </div>
                     </form>
                     <div class="text-center my-5">
