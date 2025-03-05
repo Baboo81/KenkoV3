@@ -84,7 +84,7 @@ nav .dropdown-menu
     display: block;
     max-height: 10rem;
     overflow: hidden;
-    background-color: var(--vert);
+    background-color: var(--grisF);
     border-radius: 14px;
     font-size: 1.7em;
     width: 15rem;
