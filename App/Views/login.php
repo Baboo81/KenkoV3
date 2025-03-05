@@ -22,11 +22,17 @@
                             <section class="my-5">
                                 <div class="mb-3">
                                     <label for="email" class="form-label mb-3">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email" required> 
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email" required> 
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="password" class="form-label mb-3">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe" required> 
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe" required> 
+                                    </div>
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="button">Se connecter</button>

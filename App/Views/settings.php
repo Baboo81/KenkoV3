@@ -37,35 +37,59 @@
                             <div class="col-md-6">
                                 <div class="mb-5">
                                     <label for="lastname" class="form-label mb-3">Nom :</label>
-                                    <input type="text" class="form-control" id="lastname" name="lastname" value="<?= $_SESSION['user']['lastname'] ?? ''; ?>" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="lastname" name="lastname" value="<?= $_SESSION['user']['lastname'] ?? ''; ?>" required>
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="firstname" class="form-label mb-3">Prénom :</label>
-                                    <input type="text" class="form-control" id="firstname" name="firstname" value="<?= $_SESSION['user']['firstname'] ?? ''; ?>" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="firstname" name="firstname" value="<?= $_SESSION['user']['firstname'] ?? ''; ?>" required>
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="email" class="form-label mb-3">Adresse email:</label>
-                                    <input type="email" class="form-control" id="email" name="email" value="<?= $_SESSION['user']['email'] ?? ''; ?>" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email" value="<?= $_SESSION['user']['email'] ?? ''; ?>" required>
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="address" class="form-label mb-3">Adresse :</label> <!-- Changement ici -->
-                                    <input type="text" class="form-control" id="address" name="address" value="<?= $_SESSION['user']['address'] ?? ''; ?>" required> <!-- Changement ici -->
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-house-door"></i></span>
+                                        <input type="text" class="form-control" id="address" name="address" value="<?= $_SESSION['user']['address'] ?? ''; ?>" required> <!-- Changement ici -->
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="city" class="form-label mb-3">Ville :</label>
-                                    <input type="text" class="form-control" id="city" name="city" value="<?= $_SESSION['user']['city'] ?? ''; ?>" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-buildings"></i></span>
+                                        <input type="text" class="form-control" id="city" name="city" value="<?= $_SESSION['user']['city'] ?? ''; ?>" required>
+                                    </div>
                                 </div>
                                 <div class="mb-5">
-                                    <label for="postal_code" class="form-label mb-3">Code Postal :</label> <!-- Correction ici -->
-                                    <input type="text" class="form-control" id="postal_code" name="postal_code" value="<?= $_SESSION['user']['postal_code'] ?? ''; ?>" required> <!-- Correction ici -->
+                                    <label for="postal_code" class="form-label mb-3">Code Postal :</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-123"></i></span>
+                                        <input type="text" class="form-control" id="postal_code" name="postal_code" value="<?= $_SESSION['user']['postal_code'] ?? ''; ?>" required> <!-- Correction ici -->
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="country" class="form-label mb-3">Pays :</label>
-                                    <input type="text" class="form-control" id="country" name="country" value="<?= $_SESSION['user']['country'] ?? ''; ?>" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                                        <input type="text" class="form-control" id="country" name="country" value="<?= $_SESSION['user']['country'] ?? ''; ?>" required>
+                                    </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="avatar" class="form-label mb-3">Avatar :</label>
-                                    <input type="file" class="form-control" id="avatar" name="avatar">
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-image"></i></span>
+                                        <input type="file" class="form-control" id="avatar" name="avatar">
+                                    </div>
                                     <?php if (!empty($_SESSION['user']['avatar'])): ?>
                                         <img src="<?= $_SESSION['user']['avatar']; ?>" alt="Avatar de l'utilisateur" class="mt-3 rounded-circle" width="100">
                                     <?php endif; ?>

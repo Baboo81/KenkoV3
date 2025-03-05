@@ -22,8 +22,9 @@ class SignupController extends Controller {
         //Joindre le style de cette page
         $resetCss = 'reset.css';
         $css = 'signup.css';
+        $icons = 'bootstrap-icons.css';
         //Charger la vue et passer le titre et le style
-        $this->View('signup', compact('title', 'resetCss', 'css'));
+        $this->View('signup', compact('title', 'resetCss', 'css', 'icons'));
     }
 
     public function register() {

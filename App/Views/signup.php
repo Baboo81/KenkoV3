@@ -30,17 +30,22 @@
                                 </div>
                                 <div class="mb-4">
                                     <label for="password" class="form-label mb-3">Mot de passe :</label>
-                                    <input type="password" class="form-control" id="password" name="password" autocomplete="off" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="password" name="password" autocomplete="off" required>
+                                    </div>
                                 </div>
                                 <div class="mb-4">
                                     <label for="email" class="form-label mb-3">Email :</label>
-                                    <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                                    </div>
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="button">S'inscrire</button>
                                 </div>
                             </section>
-                            <i class="bi bi-star-fill"></i>
                         </div>
                     </form>
                     <div class="text-center my-5">
