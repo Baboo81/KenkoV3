@@ -84,10 +84,10 @@ nav .dropdown-menu
     display: block;
     max-height: 10rem;
     overflow: hidden;
-    background-color: var(--grisF);
-    border-radius: 14px;
+    background-color: white;
+    border-radius: 10px;
     font-size: 1.7em;
-    width: 15rem;
+    width: 20rem;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -102,7 +102,8 @@ nav .dropdown-menu.show
 
 nav .dropdown-item
 {
-    color: var(--beige);
+    color: var(--noir);
+    text-align: start;
 }
 
 #logo
