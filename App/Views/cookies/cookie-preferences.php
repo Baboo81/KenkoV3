@@ -35,7 +35,7 @@ if (isset($_SESSION['user_id'])) {
                 <?php endif; ?>
                 <h1 class="text-center text-muted my-5">Gérer mes préférences pour les cookies </h1>
                 <div class="col-md-12 my-5">
-                    <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/cookie-preferences" method="post" autocomplete="off">
+                    <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/cookies/cookie-preferences/save" method="post" autocomplete="off">
                         <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']; ?>">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/icons/cookies.svg" alt="Illustration cookie-préférences" class="img-fluid w-100" style="object-fit:cover;">

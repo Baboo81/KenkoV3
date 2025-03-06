@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Cookies;
 
 use App\Core\Controller;
 
