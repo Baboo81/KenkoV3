@@ -9,7 +9,7 @@ require_once '../vendor/autoload.php';
 
 use App\Controllers\ContactController;
 use App\Controllers\CookieController;
-use App\Controllers\CookiePreferencesController;
+use App\Controllers\Cookies\CookiePreferencesController;
 use App\Controllers\FoireAuxQuestionsController;
 use App\Core\Router;
 use App\Controllers\HomeController;
@@ -24,7 +24,7 @@ use App\Controllers\KenkoHoThemes\SommeilController;
 use App\Controllers\KenkoWebController;
 use App\Controllers\LoginController;
 use App\Controllers\LogoutController;
-use App\Controllers\PolitiquesCookiesController;
+use App\Controllers\Cookies\PolitiquesCookiesController;
 use App\Controllers\QuiSuisJeController;
 use App\Controllers\SettingsController;
 use App\Controllers\SignupController;

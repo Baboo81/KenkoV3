@@ -15,6 +15,6 @@ class PolitiquesCookiesController extends Controller
         $css = 'politiquesCookies.css';
 
         //Charger la vues et passer le titre ainsi que les styles
-        $this->View('politiquesCookies', compact('title', 'resetCss', 'css'));
+        $this->View('cookies/politiquesCookies', compact('title', 'resetCss', 'css'));
     }
 }

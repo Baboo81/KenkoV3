@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Cookies;
 
 use App\Core\Controller;
 
@@ -12,9 +12,9 @@ class CookiePreferencesController extends Controller
         $title = "Gestion des cookies";
         //Joindre les styles
         $resetCss = 'reset.css';
-        $css = 'politiquesCookies.css';
+        $css = 'cookiePreferences.css';
 
         //Charger la vue et passer le titre ainsi que les styles
-        $this->View('politiquesCookies', compact('title', 'resetCss', 'css'));
+        $this->View('cookies/cookie-preferences', compact('title', 'resetCss', 'css'));
     }
 }
