@@ -1,6 +1,5 @@
-<?php
+<?php include __DIR__ . '/../partials/headerWithModifiedNav.php'; 
 
-session_start();
 
 //Vérifier si l'utilisateur est connecté
 if (isset($_SESSION['user_id'])) {
@@ -59,8 +58,7 @@ if (isset($_SESSION['user_id'])) {
                                     </label>
                                 </div>
                                 <div class="d-flex justify-content-between mt-4">
-                                    <button type="submit" class="btn btn-primary">💾 Enregistrer mes préférences</button>
-                                    <a href="/" class="btn btn-outline-secondary">🏠 Retour à l'accueil</a>
+                                    <button type="submit" class="button">💾 Enregistrer mes préférences</button>
                                 </div>
                             </section>
                         </div>

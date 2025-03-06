@@ -12,7 +12,7 @@
             </article>
             <div>
                 <button id="accept-cookies" class="button">Accepter</button>
-                <button onclick="window.location.href='/cookie-preferences.php';"  class="button">Gérer mes préférences</button>
+                <button onclick="window.location.href='/cookies/cookie-preferences';"  class="button">Gérer mes préférences</button>
             </div>
         </div>
         <?php endif; ?>

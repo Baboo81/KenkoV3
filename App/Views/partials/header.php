@@ -66,20 +66,27 @@
                                                 <img src="/assets/img/icons/user-icon.svg" alt="Img user" class="rounded-circle" width="50">
                                             </a>
                                             <ul class="dropdown-menu p-3" aria-labelledby="userMenu">
+                                                <p class="fs-5 text-muted my-3 text-center">Compte utilisateur</p>
                                                 <li>    
-                                                    <a class="dropdown-item" href="/settings">Paramètres</a>
+                                                    <a class="dropdown-item my-2" href="/settings">
+                                                        <i class="bi bi-gear"></i>&nbsp;Paramètres
+                                                    </a>
                                                 </li>
                                                 <?php if (!isset($_SESSION['user'])): ?>
                                                     <li>
-                                                        <a class="dropdown-item" href="/login">Se connecter</a>
+                                                        <a class="dropdown-item" href="/login">
+                                                            <i class="bi bi-box-arrow-in-right"></i>&nbsp;Se connecter
+                                                        </a>
                                                     </li>
                                                 <?php else: ?>
                                                     <li>
-                                                        <a class="dropdown-item" href="/logout">Se déconnecter</a>
+                                                        <a class="dropdown-item" href="/logout">
+                                                            <i class="bi bi-box-arrow-right"></i>&nbsp;Se déconnecter
+                                                        </a>
                                                     </li>
                                                     <!-- Afficher le nom du user connecté  -->
                                                     <li class="dropdown-item">
-                                                        <p class="user-name"><?= $_SESSION['user'] ?></p>
+                                                        <i class="bi bi-person-circle"></i><p class="user-name"><?= $_SESSION['user'] ?></p>
                                                     </li>
                                                 <?php endif; ?>
                                             </ul>
