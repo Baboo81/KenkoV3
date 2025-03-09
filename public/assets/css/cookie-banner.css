@@ -4,7 +4,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #f8f8f8;
+    background-color: #f8f8f8 !important;
     width: auto;
     padding: 10px 20px;
     border-radius: 5px 5px 0 0;
@@ -17,15 +17,12 @@
   .cookie-icon-container 
   {
     position: absolute;
-    left: -20px; /* Icône qui dépasse sur la gauche */
-    top: 50%;
-    transform: translateY(-50%);
   }
   
   .cookie-icon 
   {
-    width: 40px; /* Ajuste la taille de l'icône */
-    height: auto;
+    left: -60% !important; /* Icône qui dépasse sur la gauche */
+    top: 80% !important;
   }
   
   article 
