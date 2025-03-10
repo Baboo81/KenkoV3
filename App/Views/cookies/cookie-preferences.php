@@ -4,7 +4,8 @@
 //Vérifier si l'utilisateur est connecté
 if (isset($_SESSION['user_id'])) {
     //Connexion à la DB ses préférences
-    require_once 'App/Core/Database.php';
+    require_once __DIR__ .  '/../../Core/Database.php';
+
     $db = new \App\Core\Database();
     $pdo = $db->getInstance();
 
@@ -35,30 +36,31 @@ if (isset($_SESSION['user_id'])) {
                 <?php endif; ?>
                 <h1 class="text-center text-muted my-5">Gérer mes préférences pour les cookies </h1>
                 <div class="col-md-12 my-5">
-                    <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/cookies/cookie-preferences/save" method="post" autocomplete="off">
+                    <form class="rounded-5 p-5 d-flex align-center justify-items-center" action="/cookies/cookie-preferences/save" method="post" autocomplete="off">
                         <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']; ?>">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/icons/cookies.svg" alt="Illustration cookie-préférences" class="img-fluid w-100" style="object-fit:cover;">
                         </div>
                         <div class="col-md-6 my-5">
                             <section class="my-5">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="analytics" id="analytics"
-                                    <?= $preferences['analytics'] ? 'checked' : '' ?>>
-                                    <label class="form-check-label" for="analytics">
-                                    Autoriser les cookies analytiques 📊
-                                    </label>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="analytics" id="analytics"
+                                        <?= $preferences['analytics'] ? 'checked' : '' ?>>
+                                        <label class="form-check-label" for="analytics">
+                                        Autoriser les cookies analytiques
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="marketing" id="marketing"
+                                        <?= $preferences['marketing'] ? 'checked' : '' ?>>
+                                        <label class="form-check-label" for="marketing">
+                                        Autoriser les cookies marketing 
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="form-check mt-2">
-                                    <input class="form-check-input" type="checkbox" name="marketing" id="marketing"
-                                    <?= $preferences['marketing'] ? 'checked' : '' ?>>
-                                    <label class="form-check-label" for="marketing">
-                                    Autoriser les cookies marketing 🎯
-                                    </label>
-                                </div>
-                                <div class="d-flex justify-content-between mt-4">
-                                    <button type="submit" class="button">💾 Enregistrer mes préférences</button>
+                                <div class="d-flex justify-content-center my-5">
+                                    <button type="submit" class="button">Enregistrer mes préférences</button>
                                 </div>
                             </section>
                         </div>

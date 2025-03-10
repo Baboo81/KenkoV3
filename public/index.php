@@ -73,6 +73,7 @@ $router->post('/kenko-ho/testimonials', [KenkoHoController::class, 'submitTestim
 //Routes pour la gestion des cookies
 $router->get('/cookies/politiquesCookies', [PolitiquesCookiesController::class, 'show']);
 $router->get('/cookies/cookie-preferences', [CookiePreferencesController::class, 'show']);
+$router->post('/cookies/cookie-preferences/save', [CookiePreferencesController::class, 'save']);
 $router->get('/partials/cookie-banner', [CookieController::class, 'showBanner']);
 
 // Lancer le routage

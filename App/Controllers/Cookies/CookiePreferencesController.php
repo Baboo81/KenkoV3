@@ -14,6 +14,12 @@ class CookiePreferencesController extends Controller
         $resetCss = 'reset.css';
         $css = 'cookiePreferences.css';
 
+        //Générer un token CSRF 
+        if (!isset($_SESSION['csrf_token']))
+        {
+            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        }
+
         //Charger la vue et passer le titre ainsi que les styles
         $this->View('cookies/cookie-preferences', compact('title', 'resetCss', 'css'));
     }
