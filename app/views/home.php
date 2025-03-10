@@ -1,4 +1,5 @@
 <?php include 'partials/header.php' ?>
+<?php include 'partials/navBar.php' ?>
 
 <!-- Affichage des messages de succès ou d'erreur -->
 <?php if (isset($_SESSION['message'])): ?>

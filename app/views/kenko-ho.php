@@ -1,4 +1,5 @@
 <?php include 'partials/header.php'; ?>
+<?php include 'partials/navBar.php'; ?>
         
         <main>
             <section class="sections home text-center">

@@ -1,4 +1,5 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
+<?php include __DIR__ . '/../partials/navBar.php'; ?>
 
 <main>
     <section class="mainSection">
@@ -40,6 +41,9 @@
                                 <button class="button">Télécharger le PDF</button>
                             </a>
                         </div>
+                    </div>
+                    <div class="text-center mt-auto">
+                        <button onclick="window.location.href='/kenko-ho';" class="button">Retourner vers Kenko-Ho</button>
                     </div>
                 </div>
             </div>

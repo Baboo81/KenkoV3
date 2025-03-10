@@ -15,7 +15,7 @@
         <link href="/assets/css/<?= $resetCss ?>" rel="stylesheet">
         <link href="/assets/css/<?= $css ?>" rel="stylesheet">
         <!-- Lien CSS : navbar -->
-        <link href="/assets/css/navbar.css" rel="stylessheet">
+        <link href="/assets/css/navbar.css" rel="stylesheet">
         <!-- Slick.js -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>

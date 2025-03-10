@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/../partials/headerWithModifiedNav.php'; 
+<?php include __DIR__ . '/../partials/header.php'; 
 
 
 //Vérifier si l'utilisateur est connecté
