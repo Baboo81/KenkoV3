@@ -1,4 +1,4 @@
-<?php include 'partials/headerWithModifiedNav.php'; ?>
+<?php include 'partials/header.php'; ?>
   <!-- Affichage des messages d'erreurs et de success -->
   <?php if (isset($_SESSION['message'])): ?>
         <div class="alert alert-<?= $_SESSION['message']['type']; ?> alert-dismissible fade show text-center" role="alert">

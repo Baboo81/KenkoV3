@@ -20,12 +20,12 @@ nav
 
 .navbar
 {
-    background-color: var(--vert) !important;
+    background-color: var(--grisF);
 }
 
 .navbar a.active
 {
-    color: var(--grisF) !important;
+    color: var(--vert);
     font-weight: bold;
 }
 

@@ -8,7 +8,7 @@
                 <div class="row">
                     <nav class="navbar navbar-expand-lg fixed-top">
                         <div class="container-fluid">
-                            <img src="/assets/img/logo/logo.svg" alt="Logo du site" id="logo">
+                            <img src="/assets/img/logo/logoBc.svg" alt="Logo du site" id="logo">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
