@@ -58,36 +58,8 @@ h3
 {
     background-color: var(--grisF);
 }
-/*  Nav  */
-nav
-{
-    height: 150px;
-}
-
-nav .nav-link
-{
-    color: var(--noir);
-    font-size: 1.5em;
-    border-bottom: 1px solid transparent;
-    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
-}
-
-nav .nav-link:hover
-{
-    color: var(--bleu) !important;
-    padding-bottom: 20px;
-    border-bottom-color: var(--bleu);
-}
-
-#logo
-{
-    height: 5em;
-    width: 5em;
-}
 
 /* mainSection */
-
-
 .mainSection
 {
     height: 1500px;

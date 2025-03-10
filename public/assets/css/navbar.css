@@ -1,0 +1,71 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">');
+
+:root
+{
+    --vert : #536964;
+    --grisF : #8b9cb6;
+    --gris : #bfc1c2;
+    --beige : #f1efe9;
+    --brun : #e3c7af;
+    --noir : #282828;
+}
+
+nav
+{
+    height: 150px;
+}
+
+.navbar
+{
+    background-color: var(--vert) !important;
+}
+
+nav .nav-link
+{
+    color: var(--noir);
+    font-size: 1.5em;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+
+nav .nav-link:hover
+{
+    padding-bottom: 20px;
+    border-bottom-color: var(--bleu);
+}
+
+nav .dropdown-menu
+{
+    display: block;
+    max-height: 10rem;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1.7em;
+    width: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease;
+}
+
+nav .dropdown-menu.show
+{
+    max-height: 500px;
+    opacity: 1;
+}
+
+nav .dropdown-item
+{
+    color: var(--noir);
+    text-align: start;
+}
+
+#logo
+{
+    height: 5em;
+    width: 5em;
+}
+/* END Nav */
+
