@@ -222,6 +222,13 @@
                             <p>Déploiement du site, tests finaux et suivi post-lancement.</p>
                         </div>
                     </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">8. Suivi durant un mois</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/suivi.svg" alt="Picto représentant une loupe scrutant un écran d'ordinateur avec un oeil à côté" class="me-3" width="60">
+                            <p>Corrections des éventuels bugs et ajustements.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
