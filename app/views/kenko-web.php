@@ -165,6 +165,62 @@
         </div>
     </div>
   </section>
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="my-5">
+                <h1 class="text-center my-5 fs-1 fontBlack">Les étapes de la création de votre site web</h1>
+            </div>
+            <section class="container py-5">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/rdv.svg" alt="Prise de contact" class="me-3" width="50">
+                            <h4>1. Prise de contact</h4>
+                            <p>Discussion initiale pour comprendre vos besoins et objectifs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2. Devis</h4>
+                            <p>Élaboration d'un devis détaillé en fonction de votre projet.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>3. Création de la maquette</h4>
+                            <p>Conception du design et des wireframes pour visualiser le site.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>4. Validation de la maquette</h4>
+                            <p>Ajustements et validation finale du design avant développement.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>5. Développement du site</h4>
+                            <p>Intégration du design et développement des fonctionnalités.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>6. Hébergement</h4>
+                            <p>Configuration du serveur et mise en place de l'hébergement.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>7. Mise en ligne</h4>
+                            <p>Déploiement du site, tests finaux et suivi post-lancement.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+  </section>
   <section class="trustSection">
         <div class="container">
             <div class="row align-items-center">
