@@ -174,45 +174,51 @@
             <section class="container py-5">
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <img src="/assets/img/services/Kenko-Web/pictos/frise/rdv.svg" alt="Prise de contact" class="me-3" width="50">
-                            <h4>1. Prise de contact</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">1. Prise de contact</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/rdv.svg" alt="Picto représentant deux personnes assisent à une table" class="me-3" width="50">
                             <p>Discussion initiale pour comprendre vos besoins et objectifs.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>2. Devis</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">2. Devis</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/devis.svg" alt="Picto représentant un devis papier" class="me-3" width="50">
                             <p>Élaboration d'un devis détaillé en fonction de votre projet.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>3. Création de la maquette</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">3. Création de la maquette</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/maquette.svg" alt="Picto représentant un crayon et une latte" class="me-3" width="50">
                             <p>Conception du design et des wireframes pour visualiser le site.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>4. Validation de la maquette</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">4. Validation de la maquette</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/validationMaquette.svg" alt="Picto représentant un v en vert" class="me-3" width="50">
                             <p>Ajustements et validation finale du design avant développement.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>5. Développement du site</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">5. Développement du site</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/developpement.svg" alt="Picto représentant un ordinateur" class="me-3" width="50">
                             <p>Intégration du design et développement des fonctionnalités.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>6. Hébergement</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">6. Hébergement</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/hebergement.svg" alt="Picto représentant un serveur et un nuage" class="me-3" width="50">
                             <p>Configuration du serveur et mise en place de l'hébergement.</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h4>7. Mise en ligne</h4>
+                        <div class="timeline-content text-center">
+                            <h4 class="fw-bold">7. Mise en ligne</h4>
+                            <img src="/assets/img/services/Kenko-Web/pictos/frise/miseEnLigne.svg" alt="Picto représentant une sphère avec les 3 W" class="me-3" width="50">
                             <p>Déploiement du site, tests finaux et suivi post-lancement.</p>
                         </div>
                     </div>
