@@ -1,3 +1,7 @@
+<?php
+    $currentPage = basename($_SERVER['PHP_SELF'], ".php"); //Récupère le nom de la page san l'extension .php
+?>
+ 
  <!-- Header -->
         <header>
             <div class="container">
@@ -11,28 +15,28 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mb-lg-0">
                                     <li class="nav-item mx-5">
-                                        <a class="nav-link" aria-current="page" href="/">Accueil</a>
+                                        <a class="nav-link <?= ($currentPage == '' || $currentPage == 'index') ? 'active' : '' ?>"  href="/">Accueil</a>
                                     </li>
                                     <li class="nav-item mx-5">
-                                        <a class="nav-link" aria-current="page" href="/kenko-ho">Kenko-Ho</a>
+                                        <a class="nav-link <?= ($currentPage == 'kenko-ho') ? 'active' : '' ?>"  href="/kenko-ho">Kenko-Ho</a>
                                     </li>
                                     <li class="nav-item mx-5">
-                                        <a class="nav-link" href="/kenko-web">Kenko-Web</a>
+                                        <a class="nav-link <?= ($currentPage == 'kenko-web') ? 'active' : '' ?>" href="/kenko-web">Kenko-Web</a>
                                     </li>
                                     <li class="nav-item mx-5">
-                                        <a class="nav-link" aria-current="page" href="/quiSuis-je">Qui suis-je ?</a>
+                                        <a class="nav-link <?= ($currentPage == 'quiSuis-je') ? 'active' : '' ?>" aria-current="page" href="/quiSuis-je">Qui suis-je ?</a>
                                     </li>
                                     <li class="nav-item mx-5">
-                                        <a class="nav-link" aria-current="page" href="/contact">Contact</a>
+                                        <a class="nav-link <?= ($currentPage == 'contact') ? 'active' : '' ?>" aria-current="page" href="/contact">Contact</a>
                                     </li>
                                     <ul class="navbar-nav">
                                         <?php if (!isset($_SESSION['user'])): ?>   
                                             <li class="nav-item mx-3">                                    
-                                                <a class="nav-link" href="/signup">S'inscrire</a>
+                                                <a class="nav-link <?= ($currentPage == 'signup') ? 'active' : '' ?>" href="/signup">S'inscrire</a>
                                             </li>
                                         <?php endif; ?>
                                         <li class="nav-item mx-5">
-                                            <a class="nav-link" aria-current="page" href="/foireAuxQuestions">FAQ</a>
+                                            <a class="nav-link <?= ($currentPage == 'foireAuxQuestions') ? 'active' : '' ?>" aria-current="page" href="/foireAuxQuestions">FAQ</a>
                                         </li>
                                         <li class="nav-item dropdown text-center mx-5">
                                             <a href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
