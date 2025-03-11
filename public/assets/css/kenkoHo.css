@@ -419,17 +419,3 @@ section .overlay
     margin-top: 10px;
 }
 /* END Section : testimonials */
-
-
-/* Footer */
-footer
-{
-  background-color: var(--vert);
-  height: 700px;
-}
-
-#mapid
-{
-  height: 300px;
-  border-radius: 12px;
-}

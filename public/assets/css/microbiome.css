@@ -136,17 +136,3 @@ button:hover
     transition: 6300ms;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-
-
-/* Footer */
-footer
-{
-  background-color: var(--vert);
-  height: 700px;
-}
-
-#mapid
-{
-  height: 300px;
-  border-radius: 12px;
-}

@@ -193,43 +193,6 @@ h1:after
   transition: 6300ms;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-
 /* END mainSection */
 
 
-/* Footer */
-footer
-{
-  background-color: var(--vert);
-  height: 700px;
-  padding: 20px 0;
-}
-
-#containerFooter .row
-{
-    gap: 20px;
-}
-
-#mapid
-{
-  width: 100%;
-  height: 250px;
-  z-index: 0;
-  border-radius: 12px;
-}
-
-/* Media Queries */
-
-@media (max-width : 658px)
-{
-    #containerFooter .row
-    {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .icons
-    {
-        width: 25px;
-    }
-}

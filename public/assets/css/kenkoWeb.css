@@ -333,18 +333,6 @@ section .trustBox
 }
 /* END trustSection */
 
-/* Footer */
-footer
-{
-  background-color: var(--vert);
-  height: 700px;
-}
-
-#mapid
-{
-  height: 300px;
-  border-radius: 12px;
-}
 
 /* media queries */
 /* Ajustement pour les petits écrans */

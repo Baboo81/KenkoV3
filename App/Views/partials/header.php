@@ -16,6 +16,8 @@
         <link href="/assets/css/<?= $css ?>" rel="stylesheet">
         <!-- Lien CSS : navbar -->
         <link href="/assets/css/navbar.css" rel="stylesheet">
+        <!-- Lien CSS : Footer --->
+        <link href="/assets/css/footer.css" rel="stylesheet">
         <!-- Slick.js -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
