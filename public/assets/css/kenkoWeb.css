@@ -250,11 +250,12 @@ section .atoutsContent
     content: "";
     position: absolute;
     width: 4px;
-    background-color: var(--vert);
+    background-color: var(--grisF);
     top: 0;
     bottom: 0;
     left: 50%;
     margin-left: -2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .timeline-item 
@@ -277,30 +278,19 @@ section .atoutsContent
     text-align: left;
 }
 
-.timeline-item::before 
-{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border-radius: 50%;
-    top: 20px;
-    left: calc(50% - 10px);
-    z-index: 1;
-}
-
 .timeline-content 
 {
-    background: #f8f9fa;
+    background: var(--gris);
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .timeline-content h4 
 {
     margin-bottom: 5px;
     color: var(--vert);
+    font-size: 1.6rem;
 }
 
 /*  END Section : Déroulement de la création du site */
