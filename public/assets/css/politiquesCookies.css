@@ -33,15 +33,27 @@ h1
     color: var(--noir);
 }
 
+h2
+{
+    font-family: "Bodoni Moda", serif;
+    font-size: 2rem;
+    color: var(--vert);
+}
+
 h3
 {
-    color: white;
-    font-size: 6em;
+    color: var(--violet);
+    font-size: 2.3em;
 }
 
 .fontBeige
 {
     color: var(--beige);
+}
+
+.fontWhite
+{
+    color: white;
 }
 
 .fontBlack
