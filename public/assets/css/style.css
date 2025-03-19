@@ -13,13 +13,14 @@
 
 
 
-body
+html, body
 {
     background-color: var(--beige);
     width: 100% !important;
     overflow-x: hidden;
     font-family: "Bodoni Moda", serif;
     min-height: 500px;
+    min-width: 320px;
 }
 
 p
@@ -70,20 +71,16 @@ main .home
     text-align: center;
 }
 
-main .mainContent
-{
-    max-width: 80%;
-}
-
 main .mainTitle 
 {
-    font-size: 20rem !important; /* Ajuste la taille du titre */
+    font-size: 15rem; /* Ajuste la taille du titre */
+    width: 100%;
 }
 
 main .secondTitle 
 {
-    margin-left: 15%;
-    font-size: 3rem !important;
+    font-size: 4rem;
+    width: 100%;
 }
 
  /* Animation mainTitle */
@@ -210,13 +207,8 @@ h1:after
 /* END mainSection */
 
 /* Media queries */
-@media (max-width: 768px) 
+@media only screen and (min-width: 1000px) and (max-width : 1300px) 
 {
-    main .home 
-    {
-        flex-direction: column; /* Place le contenu en colonne */
-    }
-
     main .mainContent 
     {
         max-width: 100%;
@@ -224,13 +216,65 @@ h1:after
 
     main .mainTitle 
     {
-        font-size: 2rem;
+        font-size: 12rem !important;
     }
 
     main .secondTitle 
     {
-        font-size: 1.2rem;
+        font-size: 3rem !important;
     }
 }
 
+@media only screen and (min-width: 500px) and (max-width : 999px) 
+{
+    main .mainContent 
+    {
+        max-width: 100%;
+    }
 
+    main .mainTitle 
+    {
+        font-size: 8.5rem !important;
+    }
+
+    main .secondTitle 
+    {
+        font-size: 1.9rem !important;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width : 500px) 
+{
+    main .mainContent 
+    {
+        max-width: 100%;
+    }
+
+    main .mainTitle 
+    {
+        font-size: 7rem !important;
+    }
+
+    main .secondTitle 
+    {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width : 499px) 
+{
+    main .mainContent 
+    {
+        max-width: 100%;
+    }
+
+    main .mainTitle 
+    {
+        font-size: 5rem !important;
+    }
+
+    main .secondTitle 
+    {
+        font-size: 1.3rem !important;
+    }
+}
