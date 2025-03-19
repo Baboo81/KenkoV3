@@ -49,7 +49,6 @@
                     <article>
                         <h2 class="my-3">Durée de conservation des cookies</h2>
                         <p class="text-muted">Nous conservons vos préférences pendant <b>13 mois</b>.</p>
-
                         <h2 class="my-3">Contact</h2>
                         <p class="text-muted">Pour toute question, contactez-moi en cliquant ci-dessous.</p>
                         <div class="text-center my-4">

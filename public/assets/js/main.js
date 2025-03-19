@@ -1,19 +1,4 @@
 "use strict";
-//Dropdown-menu : effect
-$(document).ready(function() {
-    $('#userMenu').on('click', function (e) {
-        let $menu = $(this).next('.dropdowmn-menu');
-
-        //Si le menu est déjà ouvert, on le ferme
-        if ($menu.hasClass('show')) {
-            $menu.removeClass('show');
-        } else {
-            //Sinon on ouvre l'animation
-            $menu.addClass('show');
-        }
-    });
-});
-////////////////////////////// END /////////////////////////
 
 //logo animation :
 let logo = document.getElementById('logoAnimation');

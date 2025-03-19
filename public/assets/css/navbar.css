@@ -21,6 +21,12 @@ nav
 .navbar
 {
     background-color: var(--grisF);
+    padding: 10px 20px;
+}
+
+nav .nav-item
+{
+    margin: 0 15px;/* Réduction des marges sur mobile */
 }
 
 .navbar a.active
@@ -33,41 +39,36 @@ nav .nav-link
 {
     color: var(--blanc);
     font-size: 1.5em;
-    border-bottom: 1px solid transparent;
-    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+    transition: border-bottom 0.3s ease, padding-bottom 0.3s ease;
 }
 
 nav .nav-link:hover
 {
-    padding-bottom: 20px;
-    border-bottom-color: var(--bleu);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--noir);
 }
 
 nav .dropdown-menu
 {
     display: block;
-    max-height: 10rem;
+    max-height: 0;
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
     font-size: 1.7em;
     width: 20rem;
     left: 50%;
-    transform: translateX(-50%);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-out, max-height 0.3s ease-out, opacity 0.3s ease-out;
     opacity: 0;
-    transition: max-height 0.5s ease-out, opacity 0.3s ease;
 }
 
 nav .dropdown-menu.show
 {
     max-height: 500px;
+    transform: scaleY(1);
     opacity: 1;
-}
-
-nav .dropdown-item
-{
-    color: var(--noir);
-    text-align: start;
 }
 
 #logo
@@ -76,4 +77,24 @@ nav .dropdown-item
     width: 5em;
 }
 /* END Nav */
+
+/* Media queries */
+@media (max-width : 992px)
+{
+    .nav-link 
+    {
+        font-size: 1.2em;
+    }
+
+    .nav-item
+    {
+        margin: 5px 0;
+    }
+
+    #logo
+    {
+        width: 4em;
+        height: 4em;
+    }
+}
 
