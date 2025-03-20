@@ -35,8 +35,8 @@
                 <div class="container mw-100">
                     <div class="row">
                         <div class="col-md-12 part1 position-relative">
-                            <div class="my-5">
-                                <h3 class="text-center my-5">KENKO-HO</h3>
+                            <div class="">
+                                <h3 class="text-center kenkoTitles my-5">KENKO-HO</h3>
                             </div>
                             <div class="card rounded-4 bg-grey p-3 position-absolute top-50 start-50 translate-middle" style="width: 30rem;">
                                 <img src="./assets/img/services/Kenko-Ho/kenko-ho.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
@@ -52,7 +52,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 part2 position-relative">
-                            <h3 class="text-center my-5">KENKO-WEB</h3>
+                            <div class="">
+                                <h3 class="text-center kenkoTitles my-5">KENKO-WEB</h3>
+                            </div>
                             <div class="card rounded-4 bg-blue p-3 position-absolute top-50 start-50 translate-middle" style="width: 30rem;">
                                 <img src="./assets/img/services/Kenko-Web/KenkoWeb.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
                                 <div class="card-body d-flex flex-column">
