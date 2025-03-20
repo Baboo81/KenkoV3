@@ -175,6 +175,11 @@ h1:after
     background-position: center;
 }
 
+.mainSection .kenkoTitles
+{
+    margin-top: 7%;
+}
+
 .mainSection .card
 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -283,7 +288,7 @@ h1:after
 {
     .mainSection .kenkoTitles
     {
-        font-size: 5em;
+        font-size: .8em;
     }
 }
 
@@ -291,7 +296,7 @@ h1:after
 {
     .mainSection .kenkoTitles
     {
-        font-size: 4em;
+        font-size: .6em;
     }
 }
 
@@ -299,14 +304,22 @@ h1:after
 {
     .mainSection .kenkoTitles
     {
-        font-size: 3em;
+        font-size: .5em;
     }
 }
 
-@media only screen and (min-width : 0px) and (max-width : 504px)
+@media only screen and (min-width : 470px) and (max-width : 504px)
 {
     .card
     {
         width: 27rem !important;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 470px)
+{
+    .card
+    {
+        width: 25rem !important;
     }
 }
