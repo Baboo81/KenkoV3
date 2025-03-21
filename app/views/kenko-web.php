@@ -234,6 +234,16 @@
         </div>
     </div>
   </section>
+  <section class="maintenanceSection">
+    <div class="container">
+        <div class="row">
+            <div class="my-5">
+                <h1 class="text-center my-5 fs-1 fontBlack">Service de maintenance</h1>
+            </div>
+
+        </div>
+    </div>
+  </section>
   <section class="trustSection">
         <div class="container">
             <div class="row align-items-center">
