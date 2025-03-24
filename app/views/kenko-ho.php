@@ -95,7 +95,7 @@
                                                 <div class="content">
                                                     <article class="text-center">
                                                         <h1 class="homeTitle p-5">Kenko-Ho</h1>
-                                                        <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
+                                                        <p class="homeDesc p-5">Retrouvez </p>
                                                     </article>
                                                 </div>
                                             </div>
@@ -110,15 +110,15 @@
                                             </div>
                                             <div class="item box4">
                                                 <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <div class="name">La menthe poivrée</div>
+                                                    <div class="description">Pour retouver son énergie.</div>
                                                     <button type="button" class="btn btn-outline-success">See more</button>
                                                 </div>
                                             </div>
                                             <div class="item box5">
                                                 <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
+                                                    <div class="name">Les agrumes</div>
+                                                    <div class="description">Retrouvez joie et bonne humeur avec les agrumes</div>
                                                     <button type="button" class="btn btn-outline-success">See more</button>
                                                 </div>
                                             </div>
