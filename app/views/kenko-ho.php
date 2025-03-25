@@ -83,27 +83,29 @@
                                     <div class="sliderContent w-100">
                                         <div class="slide">
                                             <div class="item box1">
-                                                <div class="content">
-                                                    <div class="name fontGreen text-center">Les agrumes</div>
-                                                    <div class="description fontGreen text-center">Retrouvez joie et bonne humeur avec les agrumes, aromatisez vos boissons en y ajoutant une goutte de ces merveilleuses huiles pour bénéficier de leurs bienfaits</div>
-                                                    <div class="text-center">
-                                                        <button type="button" class="btn btn-outline-success">Plus d'infos</button>
+                                                <div class="content text-center">
+                                                    <div class="name fontGreen my-5">Les agrumes</div>
+                                                    <div class="description fontGreen">Retrouvez joie et bonne humeur avec les agrumes, aromatisez vos boissons en y ajoutant une goutte de ces merveilleuses huiles pour bénéficier de leurs bienfaits</div>
+                                                    <div class="my-5">
+                                                        <button type="button" class="button">Plus d'infos</button>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="item box2">
-                                                <div class="content">
-                                                    <div class="name fontOrange my-3">MetaPWR</div>
+                                                <div class="content text-center">
+                                                    <div class="name fontOrange my-5">MetaPWR</div>
                                                     <div class="description fontOrange">Pour améliorer l'activité métabolique.</div>
-                                                    <button type="button" class="btn btn-outline-success my-3">Plus d'infos</button>
+                                                    <div class="my-5">
+                                                        <button type="button" class="button my-3">Plus d'infos</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box3">
-                                                <div class="content">
-                                                    <div class="name my-3">Les nutriments</div>
-                                                    <div class="description">retrouver son plein potentiel en établissant des bases solides</div>
-                                                    <div class="text-center">
-                                                        <button type="button" class="btn btn-outline-success">Plus d'infos</button>
+                                                <div class="content text-center">
+                                                    <div class="name fontBeige my-5">Les nutriments</div>
+                                                    <div class="description fontBeige">retrouver son plein potentiel en établissant des bases solides</div>
+                                                    <div class="my-5">
+                                                        <button type="button" class="button">Plus d'infos</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,7 +114,7 @@
                                                     <div class="name fontBeige">Incorporez la magie des huiles à vos plats</div>
                                                     <div class="description fontBeige">Ajoutez de la saveur à vos plats tout en bénéficiant des bienfaits des huiles.</div>
                                                     <div class="text-center">
-                                                        <button type="button" class="btn btn-outline-success">Plus d'infos</button>
+                                                        <button type="button" class="button">Plus d'infos</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,7 +122,7 @@
                                                 <div class="content">
                                                     <div class="name">Les agrumes</div>
                                                     <div class="description">Retrouvez joie et bonne humeur avec les agrumes</div>
-                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                    <button type="button" class="button">See more</button>
                                                 </div>
                                             </div>
                                             <div class="item box6">
@@ -128,7 +130,7 @@
                                                     <div class="name fontGrey">Retrouver calme & sérénité</div>
                                                     <div class="description fontGrey">Retrouver calme et sérénité.</div>
                                                     <div class="text-center">
-                                                        <button type="button" class="btn btn-outline-success">See more</button>
+                                                        <button type="button" class="button">See more</button>
                                                     </div>
                                                 </div>
                                             </div>
