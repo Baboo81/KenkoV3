@@ -30,9 +30,9 @@
                             <section class="d-flex myself">
                                 <article class="col-md-6 my-5">
                                     <div class="box rounded-5 p-5">
-                                        <p class="text-muted">Grâce à votre adhésion à dōTERRA vous bénéficierez d'une ristourne de 25% sur les produits ainsi que d'un suivi personnalisé.<br />Mon but est de vous aider à retrouver votre énergie en construisant de nouvelles bases et en installant certaines routines.</p>
+                                        <p class="text-muted">Mon objectif est de vous aider à améliorer votre bien-être en incorporant les huiles essentielles à votre quotidien, en établissant de nouvelles bases solides grâces aux nutriments et en adoptant des routines saines.</p>
                                         <p class="text-muted my-2">Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaire ainsi que des astuces qui vous guiderons sur la voie de l'autonomie et du bien-être.</p>
-                                        <p class="text-muted my-2">Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
+                                        <p class="text-muted my-2">Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le Reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
                                     </div>
                                 </article>
                                 <div class="col-md-6 mx-5">   
@@ -84,35 +84,36 @@
                                         <div class="slide">
                                             <div class="item box1">
                                                 <div class="content">
-                                                    <h3>L'équilibre intestinal</h3>
-                                                    <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
-                                                    <div class="name">Spider1</div>
-                                                    <div class="description">Dorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                    <div class="name fontGreen text-center">Les agrumes</div>
+                                                    <div class="description fontGreen text-center">Retrouvez joie et bonne humeur avec les agrumes, aromatisez vos boissons en y ajoutant une goutte de ces merveilleuses huiles pour bénéficier de leurs bienfaits</div>
+                                                    <div class="text-center">
+                                                        <button type="button" class="btn btn-outline-success">Plus d'infos</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box2">
                                                 <div class="content">
-                                                    <article class="text-center">
-                                                        <h1 class="homeTitle p-5">Kenko-Ho</h1>
-                                                        <p class="homeDesc p-5">Retrouvez </p>
-                                                    </article>
+                                                    <div class="name fontOrange my-3">MetaPWR</div>
+                                                    <div class="description fontOrange">Pour améliorer l'activité métabolique.</div>
+                                                    <button type="button" class="btn btn-outline-success my-3">Plus d'infos</button>
                                                 </div>
                                             </div>
                                             <div class="item box3">
                                                 <div class="content">
-                                                <h3>L'équilibre cellulaire</h3>
-                                                <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                    <div class="name my-3">Les nutriments</div>
+                                                    <div class="description">retrouver son plein potentiel en établissant des bases solides</div>
+                                                    <div class="text-center">
+                                                        <button type="button" class="btn btn-outline-success">Plus d'infos</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box4">
                                                 <div class="content">
-                                                    <div class="name">La menthe poivrée</div>
-                                                    <div class="description">Pour retouver son énergie.</div>
-                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                    <div class="name fontBeige">Incorporez la magie des huiles à vos plats</div>
+                                                    <div class="description fontBeige">Ajoutez de la saveur à vos plats tout en bénéficiant des bienfaits des huiles.</div>
+                                                    <div class="text-center">
+                                                        <button type="button" class="btn btn-outline-success">Plus d'infos</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box5">
@@ -124,9 +125,11 @@
                                             </div>
                                             <div class="item box6">
                                                 <div class="content">
-                                                    <div class="name">Reiki</div>
-                                                    <div class="description">Lorem ipsum dolor sit amet consectetur.</div>
-                                                    <button type="button" class="btn btn-outline-success">See more</button>
+                                                    <div class="name fontGrey">Retrouver calme & sérénité</div>
+                                                    <div class="description fontGrey">Retrouver calme et sérénité.</div>
+                                                    <div class="text-center">
+                                                        <button type="button" class="btn btn-outline-success">See more</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>  
