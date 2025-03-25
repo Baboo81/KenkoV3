@@ -8,6 +8,7 @@
     --grisF : #8b9cb6;
     --gris : #bfc1c2;
     --beige : #f1efe9;
+    --orange : #ea6d11;
     --brun : #e3c7af;
     --noir : #282828;
 }
@@ -46,6 +47,27 @@ h3
 {
   color: var(--noir);
 }
+
+.fontOrange
+{
+    color: var(--orange);
+}
+
+.fontViolet
+{
+    color: var(--violet);
+}
+
+.fontGreen
+{
+    color: var(--vert);
+}
+
+.fontGrey
+{
+    color: var(--grisF);
+}
+
 
 .bg-grey
 {
@@ -225,7 +247,7 @@ section .overlay
 
 .box6
 {
-    background-image: url(../img/services/Kenko-Ho/slider/Slider6.jpg);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider6.png);
 }
 
 .sliderSection
@@ -240,7 +262,7 @@ section .overlay
 {
     position: relative;
     width: 100% !important;
-    height: 800px;
+    height: 1200px;
     background-image: url(../img/services/Kenko-Ho/slider/Slider9.jpg);
     margin: 0 auto;
 }
@@ -319,7 +341,7 @@ section .overlay
 
 .content .name
 {
-    font-size: 40px;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -328,6 +350,7 @@ section .overlay
 
 .content .description
 {
+    font-size: 2rem;
     margin-top: 10px;
     margin-bottom: 20px;
     opacity: 0;
