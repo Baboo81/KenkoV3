@@ -240,7 +240,16 @@
             <div class="my-5">
                 <h1 class="text-center my-5 fs-1 fontBlack">Service de maintenance</h1>
             </div>
-
+            <div class="box rounded-5 p-5 d-flex align-center justify-items-center">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="/assets/img/services/Kenko-Web/pictos/maintenance.svg" alt="Illustration représentant des personnages qui règlent des engrenages" class="img-fluid w-100" style="object-fit:cover;">
+                </div>
+                <div class="col-md-6">
+                    <article class="fontWhite">
+                        <p>Un site web bien entretenu, c'est un site sécurisé, performant et toujours à jour !<br />Pour éviter les bugs, améliorer le référencement et assurer une expérience fluide à vos visiteurs, je propose un service de maintenance adapté à vos besoins.</p>
+                    </article>
+                </div>
+            </div>
         </div>
     </div>
   </section>
