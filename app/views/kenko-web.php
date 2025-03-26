@@ -246,9 +246,37 @@
                 </div>
                 <div class="col-md-6">
                     <article class="fontWhite">
-                        <p>Un site web bien entretenu, c'est un site sécurisé, performant et toujours à jour !<br />Pour éviter les bugs, améliorer le référencement et assurer une expérience fluide à vos visiteurs, je propose un service de maintenance adapté à vos besoins.</p>
+                        <p>Un site web bien entretenu, c'est un site sécurisé, performant et toujours à jour !<br />Pour éviter les bugs, améliorer le référencement et assurer une expérience fluide à vos visiteurs, je propose un service de maintenance adapté à vos besoins.<br />Je propose des interventions ponctuelles ou au forfait mensuel selon vos besoins.</p>
+                        <h4 class="my-3">Types de maintenances</h4>
+                        <ul class="mx-3 my-4">
+                            <h5>Maintenance technique</h5>
+                            <li class="my-2">1. Corrections de bugs et optimisation des performances</li>
+                            <li class="my-2">2. Sauvegardes régulières</li>
+                            <li class="my-2">3. Surveillance de la sécurité</li>
+                        </ul>
+                        <ul class="mx-3 my-4">
+                            <h5>Maintenance évolutive</h5>
+                            <li class="my-2">1. Ajouts ou modification de pages</li>
+                            <li class="my-2">2. Changement de design ou d'éléments graphiques</li>
+                            <li class="my-2">3. Mise en conformité RGPD (cookies, mentions légales ...)</li>
+                        </ul>
+                        <ul class="mx-3 my-4">
+                            <h5>Mise à jour du contenu</h5>
+                            <li class="my-2">1. Modification de textes, d'images, de photos</li>
+                            <li class="my-2">2. Mise à jour des tarifs et fiches de produits</li>
+                            <li class="my-2">3. Ajout d'articles de blog</li>
+                        </ul>
                     </article>
                 </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="hebergementSection">
+    <div class="container">
+        <div class="row">
+            <div class="my-5">
+                <h1 class="text-center my-5 fs-1 fontBlack">Hebergement</h1>
             </div>
         </div>
     </div>
