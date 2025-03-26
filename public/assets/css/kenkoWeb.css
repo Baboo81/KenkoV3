@@ -36,6 +36,18 @@ h3
     font-size: 6em;
 }
 
+h4
+{
+    color: var(--vert);
+    font-size: 1.8em;
+}
+
+h5
+{
+    color: var(--brun);
+    font-size: 1.6em;
+}
+
 .fontBeige
 {
     color: var(--beige);
@@ -300,6 +312,11 @@ section .atoutsContent
 {
     background-color: var(--grisF);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+article li
+{
+    font-size: 1.2em;
 }
 /*  END Section : maintenance */
 
