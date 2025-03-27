@@ -278,6 +278,28 @@
             <div class="my-5">
                 <h1 class="text-center my-5 fs-1 fontBlack">Hebergement</h1>
             </div>
+            <div class="box rounded-5 p-5 d-flex align-center justify-items-center">
+                <div class="col-md-6">
+                    <article class="fontWhite">
+                        <p>Pour vous assurer une tranquilité d'esprit totale, je prends en charge l'hébergement de votre site web.<br />Votre site sera hébergé sur un serveur performant et sécurisé, garantissant un accès rapide et fluide à vos visiteurs.</p>
+                        <div class="my-3">
+                            <h5 class="my-2">Gestion du domaine et du certificat SSL</h5>
+                            <p>Si vous n'avez pas encore de nom de domaine, je peux m'occuper de son achat et de son renouvellement.<br />Le certificat SSL est inclus pour sécuriser les échanges de données sur votre site.</p>
+                        </div>
+                        <div class="my-3">
+                            <h5 class="my-2">Sécurité et maintenance</h5>
+                            <p>Je veille au bon fonctionnement du serveur, aux mises à jour de sécurité et à la protection contre les cyberattaques.</p>
+                        </div>
+                        <div class="my-3">
+                            <h5 class="my-2">Un forfait adapté à vos besoins</h5>
+                            <p>Les frais d'hébergement seront intégrés dans un forfait choisi par vos soins. Je peux également proposer une offre personnalisée selon vos besoins spécifiques.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="/assets/img/services/Kenko-Web/pictos/miseEnLigne.svg" alt="Illustration représentant un personnage asssis sur un server" class="img-fluid w-100" style="object-fit:cover;">
+                </div>
+            </div>
         </div>
     </div>
   </section>
