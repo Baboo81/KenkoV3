@@ -238,6 +238,7 @@ section .overlay
 .box4
 {
     background-image: url(../img/services/Kenko-Ho/slider/Slider4.jpg);
+    filter: brightness(80%);
 }
 
 .box5
@@ -247,7 +248,7 @@ section .overlay
 
 .box6
 {
-    background-image: url(../img/services/Kenko-Ho/slider/Slider6.png);
+    background-image: url(../img/services/Kenko-Ho/slider/Slider6.jpg);
 }
 
 .sliderSection
