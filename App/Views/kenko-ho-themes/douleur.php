@@ -17,18 +17,19 @@
                     <div class="box rounded-5 p-4 my-5">
                         <div class="row">
                             <article class="col-md-6">
-                                <p class="text-muted">Les huiles essentielles sont de véritables alliées pour nous permettre de retrouver notre centrage ainsi que nous réconforter ou nous redonner confiance en nous même.<br  />Les huiles essentielles couvrent un large panel d'action au niveau émotionnel.</p>
+                                <p class="text-muted">La douleur est une expérience sensorielle et émotionnelle désagréable, elle peut affecter considérablement la qualité de vie.</p>
+                                <p class="text-muted">Comprendre la douleur et trouver des moyens efficace de la soulager est essentiel pour : améliorer le bien-être et favoriser la guérison. Il est évident qu'il faut consulter son médecin en cas de douleur persistante.</p>
                                 <div class="text-center my-4">
-                                    <h3>Guide des huiles essentielles pour gérer les émotions</h3>
+                                    <h3>Guide des huiles essentielles pour gérer la douleur</h3>
                                 </div>
-                                <p class="text-muted">Téléchargez notre guide sur les émotions et les huilles essentielles.</p>
+                                <p class="text-muted">Téléchargez notre guide sur la douleur et les huiles essentielles.</p>
                             </article>
                             <div class="col-md-6">
                                 <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageDouleurs/douleur.jpg" alt="Image représantant une personne en souffrance" style="width: 30em;">
                             </div>
                         </div>
                         <div class="text-center my-5">
-                            <a href="/../assets/pdf/pageEmotions/émotions.pdf" download="Les HE & les émotions.pdf">
+                            <a href="/../assets/pdf/pageDouleurs/douleurs.pdf" download="La douleur et les HE">
                                 <button class="button">Télécharger le PDF</button>
                             </a>
                         </div>
