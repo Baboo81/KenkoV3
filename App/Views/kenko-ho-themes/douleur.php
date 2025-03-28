@@ -24,7 +24,7 @@
                                 <p class="text-muted">Téléchargez notre guide sur les émotions et les huilles essentielles.</p>
                             </article>
                             <div class="col-md-6">
-                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageEmotions/émotions.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageDouleurs/douleur.jpg" alt="Image représantant une personne en souffrance" style="width: 30em;">
                             </div>
                         </div>
                         <div class="text-center my-5">
