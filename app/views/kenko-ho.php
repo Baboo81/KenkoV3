@@ -59,7 +59,7 @@
                                     <button onclick="window.location.href='../kenko-ho-themes/sommeil';"  class="button">Le sommeil & les HE</button>
                                     <button onclick="window.location.href='../kenko-ho-themes/peau';"  class="button">La peau & les HE</button>
                                     <button onclick="window.location.href='../kenko-ho-themes/douleur';"  class="button">La douleur & les HE</button>
-                                    <button  class="button">Établir de bonnes bases</button>
+                                    <button onclick="window.location.href='../kenko-ho-themes/nutriments';"   class="button">Établir des bonnes bases</button>
                                 </div>
                             </section>
                         </div>
