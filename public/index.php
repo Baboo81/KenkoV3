@@ -26,6 +26,7 @@ use App\Controllers\LoginController;
 use App\Controllers\LogoutController;
 use App\Controllers\Cookies\PolitiquesCookiesController;
 use App\Controllers\KenkoHoThemes\DouleurController;
+use App\Controllers\KenkoHoThemes\NutrimentsController;
 use App\Controllers\QuiSuisJeController;
 use App\Controllers\SettingsController;
 use App\Controllers\SignupController;
@@ -47,6 +48,7 @@ $router->get('/kenko-ho-themes/sommeil', [SommeilController::class, 'show']);
 $router->get('/kenko-ho-themes/enfants', [EnfantsController::class, 'show']);
 $router->get('/kenko-ho-themes/peau', [PeauController::class, 'show']);
 $router->get('/kenko-ho-themes/microbiome', [MicrobiomeController::class, 'show']);
+$router->get('/kenko-ho-themes/nutriments', [NutrimentsController::class, 'show']);
 $router->get('/foireAuxQuestions', [FoireAuxQuestionsController::class, 'show']);
 
 //Formulaire contact
