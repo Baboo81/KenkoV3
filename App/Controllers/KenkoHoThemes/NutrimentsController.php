@@ -10,7 +10,7 @@ class NutrimentsController extends Controller {
         //Définir le titre de la page
         $title = "Établir de bonnes bases";
         //Joindre les styles
-        $resectCss = 'reset.css';
+        $resetCss = 'reset.css';
         $css = 'nutriments.css';
         
         //Charger le vue et passer le titre et les styles

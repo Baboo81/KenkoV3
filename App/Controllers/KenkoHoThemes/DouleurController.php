@@ -10,7 +10,7 @@ class DouleurController extends Controller {
         //Définir le titre de la page
         $title = "La douleur & les huiles essentielles";
         //Joindre les styles
-        $resectCss = 'reset.css';
+        $resetCss = 'reset.css';
         $css = 'douleur&HE.css';
         
         //Charger le vue et passer le titre et les styles
