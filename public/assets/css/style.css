@@ -51,6 +51,11 @@ h5
   color: var(--noir);
 }
 
+.fontGreen
+{
+  color: var(--vert);
+}
+
 .bg-grey
 {
     background-color: var(--gris);

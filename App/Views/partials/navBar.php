@@ -23,7 +23,7 @@
                                         <a class="nav-link <?= ($currentPage == '' || $currentPage == 'index') ? 'active' : '' ?>"  href="/">Accueil</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link <?= ($currentPage == 'kenko-ho') ? 'active' : '' ?>"  href="/kenko-ho">Kenko-Ho</a>
+                                        <a class="nav-link <?= ($currentPage == 'kenko-ho') ? 'active' : '' ?>"  href="/kenko-ho" data-bs-toggle="modal" data-bs-target="#kenkoHoModal">Kenko-Ho</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link <?= ($currentPage == 'kenko-web') ? 'active' : '' ?>" href="/kenko-web">Kenko-Web</a>
@@ -82,3 +82,20 @@
                     </div>
                 </div>
             </header>
+            <!-- Modale Bootstrap -->
+            <div class="modal fade" id="kenkoHoModal" tabindex="-1" aria-labelledby="kenkoHoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="kenkoHoModalLabel">Accès réservé</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            Espace réservé aux clients dōTERRA. Pour plus d’infos, contactez-moi 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
