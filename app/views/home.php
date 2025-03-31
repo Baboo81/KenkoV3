@@ -43,9 +43,7 @@
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fs-2 text-center mb-5">Envie d'améliorer votre bien-être ?</h5>
                                     <p class="card-text">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
-                                    <div class="text-center mt-auto">
-                                        <button onclick="window.location.href='/kenko-ho';" class="button">Visiter Kenko-Ho</button>
-                                    </div>
+                                    <p class="fontGreen">Cet espace est réservé aux clients ! Pour avoir plus d'informations à ce sujet contactez-moi</p>
                                 </div>
                             </div>
                         </div>
