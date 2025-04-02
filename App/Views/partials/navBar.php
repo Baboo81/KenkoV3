@@ -91,10 +91,16 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                            Espace réservé aux clients dōTERRA. Pour plus d’infos, contactez-moi 
-                        </div>
+                                <p class="text-muted">Espace réservé aux clients dōTERRA. Pour plus d’infos, contactez-moi via le formulaire de contact sur la page : contact ou par téléphone</p>
+                                <p class="text-muted">Si vous possédez un code d'accès, veuillez l'introduire ci-dessous :</p>
+                                <div class="my-3">
+                                    <input type="password" id="accessCode" class="form-control" placeholder="Entrez le code ici">
+                                    <p id="error-message" class="text-danger mt-2" style="display: none;">❌ Code incorrect</p>
+                                </div>
+                            </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-primary" onclick="checkAccess()">Valider</button>
                         </div>
                     </div>
                 </div>
