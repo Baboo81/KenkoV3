@@ -43,7 +43,7 @@
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fs-2 text-center mb-5">Envie d'améliorer votre bien-être ?</h5>
                                     <p class="card-text">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
-                                    <p class="fontGreen">Cet espace est réservé aux clients ! Pour avoir plus d'informations à ce sujet contactez-moi</p>
+                                    <p class="fontGreen fw-bold my-3">Cet espace est réservé aux clients dōTERRA ! Pour avoir plus d'informations à ce sujet contactez-moi via le formulaire de contact se trouvant sur la page : contact accessible dans le menu de la navigation ou bien par email et par téléphone aussi.</p>
                                 </div>
                             </div>
                         </div>
