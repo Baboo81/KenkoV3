@@ -23,7 +23,7 @@ body
 
 p
 {
-    font-size: 1.3em;
+    font-size: 1.3em !important;
     line-height: 1.3em;
 }
 
