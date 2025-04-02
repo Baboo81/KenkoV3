@@ -1,5 +1,5 @@
 <?php
-    $currentPage = basename($_SERVER['PHP_SELF'], ".php"); //Récupère le nom de la page san l'extension .php
+    $currentPage = basename($_SERVER['PHP_SELF'], ".php"); //Récupère le nom de la page sans l'extension .php
 ?>
  
  <!-- Header -->
@@ -95,13 +95,54 @@
                                 <p class="text-muted">Si vous possédez un code d'accès, veuillez l'introduire ci-dessous :</p>
                                 <div class="my-3">
                                     <input type="password" id="accessCode" class="form-control" placeholder="Entrez le code ici">
+                                    <button class="btn btn-outline-secondary my-3" type="button" onclick="togglePassword()">
+                                        <i id="eyeIcon" class="bi bi-eye"></i>
+                                    </button>
                                     <p id="error-message" class="text-danger mt-2" style="display: none;">❌ Code incorrect</p>
                                 </div>
                             </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary" onclick="checkAccess()">Valider</button>
+                            <button type="button" class="button" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="button" onclick="checkAccess()">Valider</button>
                         </div>
                     </div>
                 </div>
             </div>
+                            
+            <script>
+                // Fonction pour afficher/masquer le code
+                function togglePassword() {
+                    let input = document.getElementById("accessCode");
+                    let eyeIcon = document.getElementById("eyeIcon");
+
+                    if (input.type === "password") {
+                        input.type = "text";
+                        eyeIcon.classList.remove("bi-eye");
+                        eyeIcon.classList.add("bi-eye-slash");
+                    } else {
+                        input.type = "password";
+                        eyeIcon.classList.remove("bi-eye-slash");
+                        eyeIcon.classList.add("bi-eye");
+                    }
+                }
+
+                // Vérifier le code avec PHP
+                function checkAccess() {
+                    let codeSaisi = document.getElementById("accessCode").value;
+                    let messageErreur = document.getElementById("error-message");
+
+                    fetch("check_access.php", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: "code=" + encodeURIComponent(codeSaisi)
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        if (data === "success") {
+                            window.location.href = "kenko-ho"; // Redirection si OK
+                        } else {
+                            messageErreur.style.display = "block"; // Afficher erreur si code faux
+                        }
+                    });
+                }
+            </script>
