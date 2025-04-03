@@ -126,12 +126,12 @@
                         </div>
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Comment accéder à la plateforme Kenko-Ho ?
+                                    <h2 class="accordion-header" id="headingOneBis">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBis" aria-expanded="true" aria-controls="collapseOneBis">
+                                        <h4> Comment accéder à la plateforme Kenko-Ho ?</h4> 
                                         </button>
                                     </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div id="collapseOneBis" class="accordion-collapse collapse" aria-labelledby="headingOneBis" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                        <p>Pour accéder à la plateforme Kenko-Ho, il faut être suivi par un <strong>dōTERRA et plus précisement par Christel Rodriguez Perez</strong>. Pour plus d'informations à ce sujet, contactez-moi via le formulaire de contact se trouvant sur la page : contact ou par email et par téléphone aussi, toutes les coordonnées se trouvent en-bas de chaque pages du site.</p>
                                     </div>
