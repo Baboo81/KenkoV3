@@ -25,8 +25,8 @@ html, body
 
 p
 {
-    font-size: 1.3em;
-    line-height: 1.3em;
+    font-size: 1.5em !important;
+    line-height: 1.4em !important;
     color: white;
 }
 
@@ -84,7 +84,7 @@ main .mainTitle
 
 main .secondTitle 
 {
-    font-size: 4rem;
+    font-size: 4rem !important;
     width: 100%;
 }
 
