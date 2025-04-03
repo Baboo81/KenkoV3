@@ -138,26 +138,26 @@
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Accordion Item #2
+                                <h2 class="accordion-header" id="headingTwoBis">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBis" aria-expanded="false" aria-controls="collapseTwoBis">
+                                       <h4>Que propose la plateforme Kenko-Ho ?</h4>
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div id="collapseTwoBis" class="accordion-collapse collapse" aria-labelledby="headingTwoBis" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        <p>La plateforme Kenko-Ho, donne une multitude d'information téléchargeable pour permettre aux clients qui suivent un coaching auprès de leur conseillère d'apprendre à devenir autonome au niveau de leur santé.<br />Les informations que vous y trouverez traîtent : des huiles essentielles, des nutriments, de l'alimentation, du Reiki, ...</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Accordion Item #3
+                                <h2 class="accordion-header" id="headingThreeBis">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBis" aria-expanded="false" aria-controls="collapseThreeBis">
+                                        <h4>Est-ce que l'accès est payant ?</h4>
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div id="collapseThreeBis" class="accordion-collapse collapse" aria-labelledby="headingThreeBis" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        <p>L'accès est gratuit, la seule restriction est d'être client auprès de votre conseillère dōTERRA (Christel Rodriguez Perez).</p>
                                     </div>
                                 </div>
                             </div>
