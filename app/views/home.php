@@ -35,30 +35,30 @@
                 <div class="container mw-100">
                     <div class="row">
                         <div class="col-md-12 part1 position-relative">
-                            <div class="kenkoTitles">
-                                <h3 class="text-center my-5">KENKO-HO</h3>
-                            </div>
-                            <div class="card rounded-4 bg-grey p-3 position-absolute top-50 start-50 translate-middle" style="width: 30rem;">
+                            <div class="card rounded-4 bg-grey p-3 position-absolute top-50 start-50 translate-middle" style="width: 55rem;">
+                                <div class="kenkoTitles">
+                                    <h3 class="text-center my-5">KENKO-HO</h3>
+                                </div>
                                 <img src="./assets/img/services/Kenko-Ho/kenko-ho.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fs-2 text-center mb-5">Envie d'améliorer votre bien-être ?</h5>
-                                    <p class="card-text">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
-                                    <p class="fontGreen fw-bold my-3">Cet espace est réservé aux clients dōTERRA ! Pour avoir plus d'informations à ce sujet contactez-moi via le formulaire de contact se trouvant sur la page : contact accessible dans le menu de la navigation ou bien par email et par téléphone aussi.</p>
+                                    <h5 class="card-title fs-1 text-center mb-5">Envie d'améliorer votre bien-être ?</h5>
+                                    <p class="card-text text-center">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
+                                    <p class="fontGreen text-center fw-bold my-3">Cet espace est réservé aux clients dōTERRA ! Pour avoir plus d'informations à ce sujet contactez-moi via le formulaire de contact se trouvant sur la page : contact accessible dans le menu de la navigation ou bien par email et par téléphone aussi.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 part2 position-relative">
-                            <div class="kenkoTitles">
-                                <h3 class="text-center my-5">KENKO-WEB</h3>
-                            </div>
-                            <div class="card rounded-4 bg-blue p-3 position-absolute top-50 start-50 translate-middle" style="width: 30rem;">
+                            <div class="card rounded-4 bg-blue p-3 position-absolute top-50 start-50 translate-middle" style="width: 55rem;">
+                                <div class="kenkoTitles">
+                                    <h3 class="text-center my-5">KENKO-WEB</h3>
+                                </div>
                                 <img src="./assets/img/services/Kenko-Web/KenkoWeb.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
                                 <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fs-2 text-center mb-5">Besoin d'un site web professionnel ?</h5>
-                                    <p class="card-text">Vos compétences, votre expertise ainsi que vos valeurs seront mis en avant grâce à votre communication digitale.<br />Votre <strong>webmaster</strong> vous proposera un site sur mesure afin de satisfaire vos besoins.</p>
-                                    <div class="text-center mt-auto">
+                                    <h5 class="card-title fs-1 text-center mb-5">Besoin d'un site web professionnel ?</h5>
+                                    <p class="card-text text-center">Vos compétences, votre expertise ainsi que vos valeurs seront mis en avant grâce à votre communication digitale.<br />Votre <strong>webmaster</strong> vous proposera un site sur mesure afin de satisfaire vos besoins.</p>
+                                    <div class="text-center my-5">
                                         <button onclick="window.location.href='/kenko-web';" class="button">Visiter Kenko-Web</button>
                                     </div>
                                 </div>

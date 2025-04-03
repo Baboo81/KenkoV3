@@ -36,10 +36,10 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="container mw-100">
+            <section class="my-5">
+                <div class="container mw-100 my-5">
                     <div class="row">
-                        <div class="sectionFormules"></div>
+                        <div class="sectionFormules my-5"></div>
                         <div class="my-5">
                             <h1 class="text-center my-5 fs-1 fontBlack">Les offres personnalisables sur devis</h1>
                         </div>
@@ -53,7 +53,7 @@
                             <div class="card rounded-4">
                                 <img src="/assets/img/services/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
                                 <div class="card-body d-flex flex-column text-center">
-                                  <h5 class="card-title text-center fs-3 my-4">Site simple</h5>
+                                  <h5 class="card-title text-center fs-3 my-3">Site simple</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 750€</h6>
                                   <p class="card-text">Un site simple est constitué d'une page sur laquelle figurera une présentation de vos prestations, tarifs, informations pratiques. SEO inclus.</p>
                                   <div class="button-container mt-auto justify-content-center">
@@ -246,8 +246,8 @@
                 </div>
                 <div class="col-md-6">
                     <article class="fontWhite">
-                        <p>Un site web bien entretenu, c'est un site sécurisé, performant et toujours à jour !<br />Pour éviter les bugs, améliorer le référencement et assurer une expérience fluide à vos visiteurs, je propose un service de maintenance adapté à vos besoins.<br />Je propose des interventions ponctuelles ou au forfait mensuel selon vos besoins.</p>
-                        <h4 class="my-3">Types de maintenances</h4>
+                        <p class="text-center">Un site web bien entretenu, c'est un site sécurisé, performant et toujours à jour !<br />Pour éviter les bugs, améliorer le référencement et assurer une expérience fluide à vos visiteurs, je propose un service de maintenance adapté à vos besoins.<br />Je propose des interventions ponctuelles ou au forfait mensuel selon vos besoins.</p>
+                        <h4 class="text-center my-3">Types de maintenances</h4>
                         <ul class="mx-3 my-4">
                             <h5>Maintenance technique</h5>
                             <li class="my-2">1. Corrections de bugs et optimisation des performances</li>
@@ -281,7 +281,7 @@
             <div class="box rounded-5 p-5 d-flex align-center justify-items-center">
                 <div class="col-md-6">
                     <article class="fontWhite">
-                        <p>Pour vous assurer une tranquilité d'esprit totale, je prends en charge l'hébergement de votre site web.<br />Votre site sera hébergé sur un serveur performant et sécurisé, garantissant un accès rapide et fluide à vos visiteurs.</p>
+                        <p class="text-center">Pour vous assurer une tranquilité d'esprit totale, je prends en charge l'hébergement de votre site web.<br />Votre site sera hébergé sur un serveur performant et sécurisé, garantissant un accès rapide et fluide à vos visiteurs.</p>
                         <div class="my-3">
                             <h5 class="my-2">Gestion du domaine et du certificat SSL</h5>
                             <p>Si vous n'avez pas encore de nom de domaine, je peux m'occuper de son achat et de son renouvellement.<br />Le certificat SSL est inclus pour sécuriser les échanges de données sur votre site.</p>
