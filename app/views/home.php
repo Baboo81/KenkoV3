@@ -34,8 +34,8 @@
             <section class="mainSection">
                 <div class="container mw-100">
                     <div class="row">
-                        <div class="col-md-12 part1 position-relative">
-                            <div class="card rounded-4 bg-grey p-3 position-absolute top-50 start-50 translate-middle" style="width: 55rem;">
+                        <div class="col-md-12 part1">
+                            <div class="card rounded-4 bg-grey p-3" style="max-width: 55rem;">
                                 <div class="kenkoTitles">
                                     <h3 class="text-center my-5">KENKO-HO</h3>
                                 </div>
@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 part2 position-relative">
-                            <div class="card rounded-4 bg-blue p-3 position-absolute top-50 start-50 translate-middle" style="width: 55rem;">
+                        <div class="col-md-12 part2">
+                            <div class="card rounded-4 bg-blue p-3" style="max-width: 55rem;">
                                 <div class="kenkoTitles">
                                     <h3 class="text-center my-5">KENKO-WEB</h3>
                                 </div>
