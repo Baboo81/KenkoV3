@@ -49,7 +49,7 @@
             <section>
                 <div class="container">
                     <div class="row gy-3 my-5">
-                        <div class="col-md-4">
+                        <div class="col-xl-4 col-xxl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card rounded-4">
                                 <img src="/assets/img/services/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
                                 <div class="card-body d-flex flex-column text-center">
@@ -80,7 +80,7 @@
                                 <!-- Conteneur pop-up1 END -->
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xl-4 col-xxl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card rounded-4">
                                 <img src="/assets/img/services/Kenko-Web/siteVitrine.jpg" class="card-img-top rounded-top-4" alt="Image représentant une vitrine de boulangerie">
                                 <div class="card-body d-flex flex-column text-center">
@@ -109,7 +109,7 @@
                                 <!-- Conteneur pop-up2 END -->
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xl-4 col-xxl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card rounded-4 text">
                                 <img src="/assets/img/services/Kenko-Web/siteXXL2.jpg" class="card-img-top rounded-top-4" alt="Image représentant des buissons">
                                 <div class="card-body d-flex flex-column text-center">
