@@ -133,7 +133,7 @@
                                     </h2>
                                 <div id="collapseOneBis" class="accordion-collapse collapse" aria-labelledby="headingOneBis" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                       <p>Pour accéder à la plateforme Kenko-Ho, il faut être suivi par un <strong>dōTERRA et plus précisement par Christel Rodriguez Perez</strong>. Pour plus d'informations à ce sujet, contactez-moi via le formulaire de contact se trouvant sur la page : contact ou par email et par téléphone aussi, toutes les coordonnées se trouvent en-bas de chaque pages du site.</p>
+                                       <p>Pour accéder à la plateforme Kenko-Ho, il faut être suivi par <strong>un conseiller dōTERRA et plus précisement par Christel Rodriguez Perez</strong>. Pour plus d'informations à ce sujet, contactez-moi via le formulaire de contact se trouvant sur la page : contact ou par email et par téléphone aussi, toutes les coordonnées se trouvent en-bas de chaque pages du site.</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,6 +158,30 @@
                                 <div id="collapseThreeBis" class="accordion-collapse collapse" aria-labelledby="headingThreeBis" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>L'accès est gratuit, la seule restriction est d'être client auprès de votre conseillère dōTERRA (Christel Rodriguez Perez).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFourBis">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBis" aria-expanded="false" aria-controls="collapseFourBis">
+                                        <h4>Que vous propose votre conseillère ?</h4>
+                                    </button>
+                                </h2>
+                                <div id="collapseFourBis" class="accordion-collapse collapse" aria-labelledby="headingFourBis" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Mon but est de vous aider à retrouver votre bien-être, pour se faire je vous ferai découvrir le monde des huiles essentielles qui regorge de richesses.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFiveBis">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveBis" aria-expanded="false" aria-controls="collapseFiveBis">
+                                        <h4>Quelles huiles essentielles utilisez-vous ?</h4>
+                                    </button>
+                                </h2>
+                                <div id="collapseFiveBis" class="accordion-collapse collapse" aria-labelledby="headingFiveBis" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>J'utilise les huiles essentielles de la marque dōTERRA, se sont des huiles essentielles de haute qualité 100% pures de grade thérapeutique certifiées CPTG.</p>
                                     </div>
                                 </div>
                             </div>
