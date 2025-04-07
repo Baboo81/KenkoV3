@@ -37,7 +37,7 @@
                 </div>
             </section>
             <section class="my-5">
-                <div class="container mw-100 my-5">
+                <div class="mw-100 my-5">
                     <div class="row">
                         <div class="sectionFormules my-5"></div>
                         <div class="my-5">
@@ -145,7 +145,7 @@
         <div class="container blocAtouts">
             <div class="row align-items-center"> 
                 <!-- Image -->
-                <div class="col-md-6">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
                     <img src="/assets/img/services/Kenko-Web/pictos/atouts.svg" class="pictoAtoutsPerso" alt="Picto représentant deux personnages tenant un panneau">
                 </div>
                 <!-- Bloc articles -->
