@@ -16,7 +16,7 @@
                 <div class="overlay">
                     <div class="container">
                         <div class="homeContent">
-                            <h1 class="homeTitle text-muted p-5">Kenko-Ho</h1>
+                            <h1 class="homeTitle p-5">Kenko-Ho</h1>
                             <p class="homeDesc text-muted p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                                     <div class="line"><span></span></div>
                                 </div>
                             </div>
-                            <section class="d-flex myself">
+                            <section class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-center myself">
                                 <article class="col-md-6 my-5">
                                     <div class="box rounded-5 p-5">
                                         <p class="text-muted">Mon objectif est de vous aider à améliorer votre bien-être en incorporant les huiles essentielles à votre quotidien, en établissant de nouvelles bases solides grâces aux nutriments et en adoptant des routines saines.</p>
@@ -45,7 +45,7 @@
                                         <p class="text-muted my-2">Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le Reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
                                     </div>
                                 </article>
-                                <div class="col-md-6 mx-5">   
+                                <div class="col-md-6 mx-5 my-3">   
                                     <img src="/assets/img/services/Kenko-Ho/Chris.jpg" alt="Photo de moi-même dans un labyrinthe de maîs" class="img-fluid rounded-5">
                                 </div>
                             </section>
