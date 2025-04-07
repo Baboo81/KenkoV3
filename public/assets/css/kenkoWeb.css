@@ -129,8 +129,7 @@ section .overlay
 /* SectionFormule */
 section .sectionFormules
 {
-    min-width: 100%;
-    height: 1200px;
+    height: 50rem;
     width: 100%;
     background-image: url(/assets/img/services/Kenko-Web/pictos/informatique.svg);
     background-size: cover;
@@ -246,7 +245,7 @@ button:hover
 
 .pictoAtoutsPerso
 {
-    height: 30em;
+    width: 100%;
 }
 
 section .atoutsContent
@@ -376,19 +375,28 @@ section .trustBox
 /* media queries */
 
 
-/* Ajustement pour les petits écrans */
-@media (max-width: 768px) {
-    section .sectionFormules {
-        height: 600px; /* Réduit la hauteur sur les écrans plus petits */
-        background-position: top; /* Positionne l'image en haut pour mieux la voir */
+/* Responsive tweaks */
+@media (min-width: 768px) 
+{
+    .sectionFormules 
+    {
+        height: 800px;
     }
 }
 
-/* Ajustement pour les très petits écrans */
-@media (max-width: 480px) {
-    section .sectionFormules {
-        height: 400px; /* Réduit davantage la hauteur sur les écrans très petits */
-        background-position: top center; /* Garde l'image centrée en haut */
+@media (min-width: 992px) 
+{
+    .sectionFormules 
+    {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 1200px) 
+{
+    .sectionFormules 
+    {
+        height: 1200px;
     }
 }
 

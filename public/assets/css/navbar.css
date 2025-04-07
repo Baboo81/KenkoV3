@@ -90,7 +90,7 @@ nav .dropdown-menu.show
 /* END Nav */
 
 /* Media queries */
-@media only screen and (min-width : 992px) and (max-width : 1285px)
+@media only screen and (min-width : 1121px) and (max-width : 1285px)
 {
     .nav-link 
     {
@@ -106,6 +106,25 @@ nav .dropdown-menu.show
     {
         width: 4em;
         height: 4em;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1121px)
+{
+    .nav-link 
+    {
+        font-size: 1em !important;
+    }
+
+    .nav-item
+    {
+        margin: 1px 0;
+    }
+
+    #logo
+    {
+        width: 3em;
+        height: 3em;
     }
 }
 
