@@ -19,6 +19,8 @@ body
     width: 100% !important;
     overflow-x: hidden;
     font-family: "Bodoni Moda", serif;
+    min-height: 500px;
+    min-width: 320px;
 }
 
 p
@@ -109,7 +111,7 @@ section .overlay
 
 .home
 {
-    height: 1200px;
+    height: 1300px;
     background-size: cover;
     background-image: url(../img/services/Kenko-Ho/kenko-ho.svg);
     background-position: center;
@@ -120,11 +122,12 @@ section .overlay
 {
     font-size: 8em;
     font-family: "Bodoni Moda", serif;
+    color: var(--vert);
 }
 
 .home .homeDesc
 {
-    font-size: 2em;
+    font-size: 2.2em !important;
     line-height: 1.2em;
     font-family: "Bodoni Moda", serif;
     font-weight: bold;
@@ -206,6 +209,7 @@ section .overlay
 {
     margin-top: 15%;
     margin-bottom: 15%;
+    width: 100%;
 }
 
 .mainSection .btnBloc
@@ -448,3 +452,32 @@ section .overlay
     margin-top: 10px;
 }
 /* END Section : testimonials */
+
+/* Media Queries */
+
+/*  Section : myself */
+@media only screen and (min-width : 0px) and (max-width : 1258px)
+{
+    main .myself
+    {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1399px)
+{
+    .mainSectionTitle
+    {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width : 0px) and (max-width : 1200px)
+{
+    .mainSectionTitle
+    {
+        font-size: 1.8em;
+    }
+}
+

@@ -13,6 +13,11 @@
     --noir : #282828;
 }
 
+html
+{
+    min-width: 320px;
+}
+
 body
 {
     background-color: var(--beige);
@@ -409,3 +414,66 @@ section .trustBox
         flex-direction: column;
     }
 }
+
+/* Section : time-line  */
+
+@media screen and (max-width: 767px) 
+{
+    .timeline::after 
+    {
+      left: 8px; /* on décale la ligne pour qu'elle n'empiète pas le contenu */
+    }
+  
+    .timeline-item 
+    {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 15px;
+      margin-bottom: 40px;
+    }
+  
+    .timeline-item,
+    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd) {
+      left: 0 !important;
+      text-align: left !important;
+    }
+  
+    .timeline-content 
+    {
+      text-align: left;
+    }
+  
+    .timeline-content img 
+    {
+      margin-left: 0 !important;
+      margin-right: 1rem;
+    }
+  }
+
+  /*  END Section : time-line  */
+
+  /* Section : maintenance */
+
+  @media screen and (max-width: 575px) 
+  {
+    .maintenanceSection .box 
+    {
+      width: 95%;
+      margin-left: 13px;
+    }
+  }
+/* END Section : maintenance */
+
+ /* Section : hébergement */
+
+ @media screen and (max-width: 575px) 
+ {
+   .hebergementSection .box 
+   {
+     width: 95%;
+     margin-left: 13px;
+   }
+ }
+/* END Section : hébergement */
+
