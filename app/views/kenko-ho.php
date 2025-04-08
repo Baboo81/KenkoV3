@@ -96,54 +96,36 @@
                                                 <div class="content text-center">
                                                     <div class="name fontGreen my-5">Les agrumes</div>
                                                     <div class="description fontGreen">Retrouvez joie et bonne humeur avec les agrumes, aromatisez vos boissons en y ajoutant une goutte de ces merveilleuses huiles pour bénéficier de leurs bienfaits</div>
-                                                    <div class="text-center">
-                                                        <button type="button" class="button">Plus d'infos</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box2">
                                                 <div class="content text-center">
                                                     <div class="name fontOrange my-5">MetaPWR</div>
                                                     <div class="description fontOrange">Pour améliorer l'activité métabolique.</div>
-                                                    <div class="text-center my-5">
-                                                        <button type="button" class="button">Plus d'infos</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box3">
                                                 <div class="content text-center">
                                                     <div class="name fontBeige my-5">Les bases</div>
                                                     <div class="description fontBeige">retrouver son plein potentiel avec les nutriments, les anti-oxydants et les acides-gras</div>
-                                                    <div class="text-center my-5">
-                                                        <button type="button" class="button">Plus d'infos</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box4">
                                                 <div class="content text-center">
                                                     <div class="name fontWhite my-5">Les huiles en cuisine</div>
                                                     <div class="description fontWhite">Ajoutez de la saveur à vos plats tout en bénéficiant des bienfaits des huiles</div>
-                                                    <div class="text-center my-5">
-                                                        <button type="button" class="button">Plus d'infos</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box5">
                                                 <div class="content text-center">
                                                     <div class="name fontGreen my-5">La digestion</div>
                                                     <div class="description fontGreen">Améliorer son confort digestif</div>
-                                                    <div class="text-center my-5">
-                                                        <button type="button" class="button">Plus d'infos</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="item box6">
                                                 <div class="content text-center">
                                                     <div class="name fontWhite my-5">Retrouver calme & sérénité</div>
                                                     <div class="description fontWhite">Retrouver calme et sérénité.</div>
-                                                    <div class="text-center my-5">
-                                                        <button type="button" class="button">Plus d'infos</button>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>  
