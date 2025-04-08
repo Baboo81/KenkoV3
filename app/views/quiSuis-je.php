@@ -7,7 +7,7 @@
                     <div class="row justify-content-center">
                        <div class="col-md-12">
                             <div class="blob-container mx-auto">
-                                <img src="/assets/img/services/quiSuis-je/QuiSuisJe.png" alt="Photo me représentant" class="img-fluid">
+                                <img src="/assets/img/services/quiSuis-je/quiSuisJe.svg" alt="Photo me représentant" class="img-fluid">
                             </div>
                        </div>
                     </div>
