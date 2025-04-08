@@ -42,8 +42,8 @@
                                 <img src="./assets/img/services/Kenko-Ho/kenko-ho.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fs-1 text-center mb-5">Envie d'améliorer votre bien-être ?</h5>
-                                    <p class="card-text text-center">Votre <strong>conséillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser differentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
-                                    <p class="fontGreen text-center fw-bold my-3">Cet espace est réservé aux clients dōTERRA ! Pour avoir plus d'informations à ce sujet contactez-moi via le formulaire de contact se trouvant sur la page : contact accessible dans le menu de la navigation ou bien par email et par téléphone aussi.</p>
+                                    <p class="card-text text-center">Votre <strong>conseillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser différentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
+                                    <p class="fontGreen text-center fw-bold my-3">Cet espace est réservé aux clients dōTERRA ! Pour avoir plus d'informations à ce sujet, contactez-moi via le formulaire se trouvant sur la page "Contact" accessible dans le menu de la navigation ou bien par email et par téléphone aussi.</p>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                 <img src="./assets/img/services/Kenko-Web/KenkoWeb.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fs-1 text-center mb-5">Besoin d'un site web professionnel ?</h5>
-                                    <p class="card-text text-center">Vos compétences, votre expertise ainsi que vos valeurs seront mis en avant grâce à votre communication digitale.<br />Votre <strong>webmaster</strong> vous proposera un site sur mesure afin de satisfaire vos besoins.</p>
+                                    <p class="card-text text-center">Vos compétences, votre expertise ainsi que vos valeurs seront mises en avant grâce à votre communication digitale.<br />Votre <strong>webmaster</strong> vous proposera un site sur mesure afin de satisfaire vos besoins.</p>
                                     <div class="text-center my-5">
                                         <button onclick="window.location.href='/kenko-web';" class="button">Visiter Kenko-Web</button>
                                     </div>

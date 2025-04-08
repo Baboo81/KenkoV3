@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="bloc1 my-5">
                             <div class="mainTitleContent">
-                                <h2 class="mainSectionTitle text-muted text-center p-5">Que vous propose votre conséillère dōTERRA ?</h2>
+                                <h2 class="mainSectionTitle text-muted text-center p-5">Que vous propose votre conseillère dōTERRA ?</h2>
                                 <div class="underLine">   
                                     <div class="line"><span></span></div>
                                 </div>
@@ -41,8 +41,8 @@
                                 <article class="col-md-6 my-5">
                                     <div class="box rounded-5 p-5">
                                         <p class="text-muted">Mon objectif est de vous aider à améliorer votre bien-être en incorporant les huiles essentielles à votre quotidien, en établissant de nouvelles bases solides grâces aux nutriments et en adoptant des routines saines.</p>
-                                        <p class="text-muted my-2">Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaire ainsi que des astuces qui vous guiderons sur la voie de l'autonomie et du bien-être.</p>
-                                        <p class="text-muted my-2">Avec le Reiki je pourrais équilibrer la sphère énergétique de votre être, le Reiki est un art de soigner mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIX e siècle.</p>
+                                        <p class="text-muted my-2">Ce suivi va vous permettre d'apprendre à utiliser et connaître les différentes huiles essentielles en toute simplicité, je serai là pour vous donner toutes les informations nécessaires ainsi que des astuces qui vous guideront sur la voie de l'autonomie et du bien-être.</p>
+                                        <p class="text-muted my-2">Avec le Reiki, je pourrai équilibrer la sphère énergétique de votre être, le Reiki est un art mais aussi une philosophie de vie qui a vu le jour au Japon à la fin du XIXe siècle.</p>
                                     </div>
                                 </article>
                                 <div class="col-md-6 mx-5 my-3">   
@@ -107,7 +107,7 @@
                                             <div class="item box3">
                                                 <div class="content text-center">
                                                     <div class="name fontBeige my-5">Les bases</div>
-                                                    <div class="description fontBeige">retrouver son plein potentiel avec les nutriments, les anti-oxydants et les acides-gras</div>
+                                                    <div class="description fontBeige">Retrouvez votre plein potentiel avec les nutriments, les anti-oxydants et les acides gras</div>
                                                 </div>
                                             </div>
                                             <div class="item box4">
@@ -119,13 +119,13 @@
                                             <div class="item box5">
                                                 <div class="content text-center">
                                                     <div class="name fontGreen my-5">La digestion</div>
-                                                    <div class="description fontGreen">Améliorer son confort digestif</div>
+                                                    <div class="description fontGreen">Améliorez votre confort digestif</div>
                                                 </div>
                                             </div>
                                             <div class="item box6">
                                                 <div class="content text-center">
                                                     <div class="name fontWhite my-5">Retrouver calme & sérénité</div>
-                                                    <div class="description fontWhite">Retrouver calme et sérénité.</div>
+                                                    <div class="description fontWhite">Profitez des bienfaits des huiles spécifiques, reconnues pour leurs fonctions apaisantes et relaxantes !</div>
                                                 </div>
                                             </div>
                                         </div>  
