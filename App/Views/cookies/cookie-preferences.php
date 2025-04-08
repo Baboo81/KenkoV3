@@ -34,7 +34,7 @@ if (isset($_SESSION['user_id'])) {
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 <?php endif; ?>
-                <h1 class="text-center text-muted my-5">Gérer mes préférences pour les cookies </h1>
+                <h1 id="mainTitle" class="text-center text-muted my-5">Gérer mes préférences pour les cookies </h1>
                 <div class="col-md-12 my-5">
                     <form class="rounded-5 p-5 d-flex align-center justify-items-center" action="/cookies/cookie-preferences/save" method="post" autocomplete="off">
                         <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']; ?>">

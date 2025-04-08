@@ -463,6 +463,12 @@ section .overlay
         display: flex !important;
         flex-direction: column !important;
     }
+
+    main .myself > .col-md-6
+    {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 @media only screen and (min-width : 1200px) and (max-width : 1399px)
@@ -480,4 +486,14 @@ section .overlay
         font-size: 1.8em;
     }
 }
+/* END Section : myself */
 
+/* Section : Slider */
+
+@media only screen and (min-width: 0) and (max-width : 960px)
+{
+    .item .content
+    {
+        display: none !important;
+    }
+}
