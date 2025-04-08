@@ -7,7 +7,7 @@
                       <i class="fas fa-gem me-3"></i>Adresse
                     </p>
                     <p class="fontWhite fs-4 my-5">
-                        Rue champ rodange 14, Waterloo 1410
+                        Rue Champ Rodange 14, Waterloo 1410
                     </p>
                     <div id="mapid" class="container-fluid rounded-5 my-3"></div>
                   </div>
