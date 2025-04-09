@@ -3,13 +3,11 @@
 
         <main>
             <section class="whoIam">
-                <div class="container text-center mt-5">
-                    <div class="row justify-content-center">
-                       <div class="col-md-12">
-                            <div class="blob-container mx-auto">
-                                <img src="/assets/img/services/quiSuis-je/quiSuisJe.svg" alt="Photo me représentant" class="img-fluid">
-                            </div>
-                       </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-items-center justify-content-center">
+                            <img src="/assets/img/services/quiSuis-je/quiSuisJe.svg" alt="Photo me représentant" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -61,9 +59,9 @@
             </section>
             <section>
                 <div class="container">
-                    <div class="row">
-                        <h1 class="text-center fs-1 fontBlack my-5 p-5">Mon parcours en quelques mots</h1>
-                        <article class="col-md-8 my-5 p-5">
+                <h1 class="text-center fs-1 fontBlack my-5 p-5">Mon parcours en quelques mots</h1>
+                    <div class="row flex-column-reverse flex-md-row">
+                        <article class="col-md-8 col-12 my-5 p-5">
                             <div class="box rounded-5 p-5">
                                 <p class="fontWhite mb-3">Après 15 années passées en pharmacie, j'ai décidé de réorienter ma carrière professionnelle pour aller vers une passion de longue date; l'informatique.<br />Après m'être formée au développement web, j'ai décidé de me lancer comme webmaster freelance.</p>
                                 <p class="fontWhite mb-3">La découverte de dōTERRA il y a quelques années m'a permis de m'orienter vers une autre passion, et cette passion c'est la santé. Avec ce grand interêt que je nourris pour la santé j'avais envie d'aider les personnes à améliorer leur bien-être avec d'une part les huiles essentielles mais aussi en partageant ce que j'ai pu experimenter au niveau de ma santé.</p>
