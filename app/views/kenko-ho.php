@@ -17,7 +17,7 @@
                     <div class="container">
                         <div class="homeContent">
                             <h1 class="homeTitle p-5">Kenko-Ho</h1>
-                            <p class="homeDesc text-muted p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
+                            <p class="homeDesc p-5">Retrouvez la voie de l'équilibre grâce aux huiles essentielles et au Reiki</p>
                         </div>
                     </div>
                 </div>
@@ -129,12 +129,16 @@
                                                 </div>
                                             </div>
                                         </div>  
-                                       <div class="btn-prev-next justify-content-center">
-                                            <div class="mx-5">
-                                                <button class="button prev"><</button>
+                                       <div class="btn-prev-next justify-content-center d-flex flex-wrap">
+                                            <div class="mx-2 mx-md-5">
+                                                <button class="button prev">
+                                                    <i data-lucide="chevron-left" class="me-2" style="width: 34px; height: 34px"></i>
+                                                </button>
                                             </div>
-                                            <div class="mx-5">
-                                                <button class="button next">></button>
+                                            <div class="mx-2 mx-md-5">
+                                                <button class="button next">
+                                                    <i data-lucide="chevron-right" class="me-2" style="width: 34px; height: 34px"></i>
+                                                </button>
                                             </div>
                                        </div>
                                     </div>
