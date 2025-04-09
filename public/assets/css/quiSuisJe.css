@@ -152,16 +152,18 @@ button:hover
 .whoIam
 {
     margin-top: 10%;
-    height: 900px;
+    min-height: 100vh !important;
     background-size: cover;
     background-position: center;
+    position: relative; /*pour les ajustements*/
 }
 
-.blob-container
+.whoIam img
 {
-    width: 100%;
-    max-height: 400px;
+    max-width: 100%;
+    height: 80Vh;
 }
+/* END section qui suis-je ?*/
 
 article img
 {
@@ -179,4 +181,14 @@ section .box
     background-color: var(--grisF);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-size: 1.3em;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) 
+{
+    .whoIam 
+    {
+        margin-top: 5%; /* Réduit la marge supérieure pour les petits écrans */
+        padding: 2rem 0; /* Ajoute un peu de padding sur le dessus et le dessous */
+    }
 }
