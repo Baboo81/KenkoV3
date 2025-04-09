@@ -21,7 +21,7 @@
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/form/contact.svg" alt="Illustration contact" class="img-fluid w-100" style="object-fit:cover;">
                         </div>
-                            <div class="col-md-6 my-5">  
+                            <div class="col-md-6 col-12 my-5">  
                                 <div class="mb-3">
                                     <label for="name" class="form-label mb-3">Nom</label>
                                     <input type="text" class="form-control" id="name" name="name" required>

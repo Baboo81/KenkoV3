@@ -19,6 +19,8 @@ body
     width: 100% !important;
     overflow-x: hidden;
     font-family: "Bodoni Moda", serif;
+    min-height: 500px;
+    min-width: 320px;
 }
 
 p

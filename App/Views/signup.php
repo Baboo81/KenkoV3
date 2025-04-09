@@ -19,7 +19,7 @@
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/form/signup.svg" alt="Illustration contact" class="img-fluid w-100" style="object-fit:cover;">
                         </div>
-                        <div class="col-md-6 my-5">
+                        <div class="col-md-6 col-12 my-5">
                             <section class="my-5">
                                 <div class="mb-4">
                                     <label for="username" class="form-label mb-3">Nom d'utilisateur :</label>
