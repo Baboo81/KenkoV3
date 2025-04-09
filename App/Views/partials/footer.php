@@ -16,11 +16,7 @@
                       Horaires
                     </p>
                     <div class="text-center fontWhite fs-4">
-                        <p class="mb-3">Lundi    09h00 - 17h00</p>
-                        <p class="mb-3">Mardi    09h00 - 17h00</p>
-                        <p class="mb-3">Mercredi 09h00 - 17h00</p>
-                        <p class="mb-3">Jeudi    09h00 - 17h00</p>
-                        <p>Vendredi 09h00 - 17h00</p>
+                        <p class="mb-3">Du lundi au vendredi  de  09h00 à 17h00</p>
                     </div>
                   </div>
                   <div class="col-md-12 col-xs-12 text-center mb-4">

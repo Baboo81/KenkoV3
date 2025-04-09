@@ -102,16 +102,20 @@ h3
 section .overlay
 {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.1);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
 }
 
 .home
 {
-    height: 1300px;
+    min-height: 100vh;
     background-size: cover;
     background-image: url(../img/services/Kenko-Ho/kenko-ho.svg);
     background-position: center;
@@ -120,22 +124,18 @@ section .overlay
 
 .home .homeTitle
 {
-    font-size: 8em;
+    font-size: clamp(2.5rem, 8vh, 8em);
     font-family: "Bodoni Moda", serif;
-    color: var(--vert);
+    color: var(--beige);
 }
 
 .home .homeDesc
 {
-    font-size: 2.2em !important;
-    line-height: 1.2em;
+    font-size: clamp(1.2rem, 4vh, 2.2em);
+    line-height: 1.4em;
     font-family: "Bodoni Moda", serif;
     font-weight: bold;
-}
-
-.homeContent
-{
-    margin-top: 10%;
+    color: var(--beige);
 }
 /* END section Home */
 
@@ -352,7 +352,6 @@ section .overlay
 .content .name
 {
     font-size: 4rem;
-    text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
     animation: animate 1s ease-in-out 1 forwards;
@@ -455,6 +454,23 @@ section .overlay
 
 /* Media Queries */
 
+/* Section : home */
+
+/* END Section : home */
+@media screen and (max-width: 768px) 
+{
+    .home .homeTitle 
+    {
+      font-size: 3rem;
+      white-space: nowrap;
+    }
+  
+    .home .homeDesc 
+    {
+      font-size: 1.5rem;
+    }
+}
+
 /*  Section : myself */
 @media only screen and (min-width : 0px) and (max-width : 1258px)
 {
@@ -497,3 +513,4 @@ section .overlay
         display: none !important;
     }
 }
+
