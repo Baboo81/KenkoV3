@@ -44,5 +44,8 @@
                     <p>&copy; Kenko - 2025</p>
                 </div>
           </footer>
+            <script>
+              lucide.createIcons();
+            </script>
     </body>
 </html>
