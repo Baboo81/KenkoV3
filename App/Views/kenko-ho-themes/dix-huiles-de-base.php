@@ -1,5 +1,6 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
 <?php include __DIR__ . '/../partials/navBar.php'; ?>
+<?php include __DIR__ . '/../data/huiles_base.php'; ?>
 
 <main>
     <section class="mainSection">
@@ -36,7 +37,7 @@
                                 </div>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Air.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" style="object-fit: cover;" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Air.jpg" alt="Image représantant une personne qui cuisine">
                             </div>
                         </div>
                         <div class="row d-flex align-items-center mb-5">
