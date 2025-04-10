@@ -66,7 +66,10 @@ return [
                      En interne, 2 gttes dans de l\'eau chaude en dessous de 60°C pour améliorer la digestion après un repas copieux ou trop arrosé.',
         'img' =>  './public/assets/img/services/Kenko-Ho/pageDixHuiles/ZenGest.jpg'
     ],
-    
+    'lavande' => [
+        'nom' => 'La Lavande',
+        'usages' => 'En topique : 1 à 2 gttes dans un gel d\'aloé-véra'
+    ]
 ]
 
 ?>
