@@ -29,6 +29,44 @@ return [
                      En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie',
         'img' => './public/assets/img/services/Kenko-Ho/pageDixHuiles/MenthePoivrée.jpg'
     ],
+    'onguard' => [
+        'nom' => 'Le mélange OnGuard',
+        'composition' => 'Orange sauvage, 
+                          Clou de girofle,
+                          Cannelle de Chine,
+                          Eucalyptus,
+                          Romarin.',
+        'usages' => 'Soutien des défenses immunitaires,
+                     Sur le plan émotionnel, ce mélange va aider à poser ses limites afin de protéger votre espace personnel des énergies négatives,
+                     En diffusion pour assainir l\'air,
+                     En massage dilué dans une HV quand le corps faiblit,
+                     Photosensibilisant, dermocaustique.',
+        'img' => './public/assets/img/services/Kenko-Ho/pageDixHuiles/OnGuard.jpg'
+    ],
+    'origan' => [
+        'nom' => 'L\'Origan',
+        'usages' => 'Soutien puissant du système immunitaire,
+                     En diffusion, elle renforce le sentiment de sécurité,
+                     En cuisine pour aromatiser une sauce, trempez une pointe de cure dent dans le flacon et ensuite dans la sauce,
+                     En topique : antifongique, virucide,
+                     Dermocaustique à diluer impérativement.',
+        'img' => './public/assets/img/services/Kenko-Ho/pageDixHuiles/Origan.jpg'
+    ],
+    'zengest' => [
+        'nom' => 'Le mélange ZenGest',
+        'composition' => 'Gingembre, 
+                          Menthe poivrée,
+                          Estragon,
+                          Cumin,
+                          Coriandre,
+                          Anis.',
+        'usages' => 'C\'est le mélange qui va soutenir la sphère digestive à tous les niveaux,
+                     En massage sur le ventre pour soulager les crampes et les ballonnements,
+                     Sur le plan émotionnel, il aide à digérer les expériences de la vie,
+                     En interne, 2 gttes dans de l\'eau chaude en dessous de 60°C pour améliorer la digestion après un repas copieux ou trop arrosé.',
+        'img' =>  './public/assets/img/services/Kenko-Ho/pageDixHuiles/ZenGest.jpg'
+    ],
+    
 ]
 
 ?>
