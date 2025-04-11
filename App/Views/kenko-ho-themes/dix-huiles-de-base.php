@@ -1,6 +1,9 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
 <?php include __DIR__ . '/../partials/navBar.php'; ?>
-<?php include __DIR__ . '/../data/huiles_base.php'; ?>
+
+<?php 
+$huiles = include __DIR__ . '/../data/huiles_base.php'; 
+?>
 
 <main>
     <section class="mainSection">
