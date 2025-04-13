@@ -98,7 +98,20 @@ return [
     ],
     'tea_tree' => [
         'nom' => 'Le Teau-Tree',
-        'usages' => ''
+        'usages' => 'Le Tea-Tree est très efficace contre les maux de    gorge et oreilles ou dans le cadre de souci        bucco-dentaire.  
+                    En topique : acné, boutons.
+                    Soutien les défenses naturelles.
+                    En diffusion : à proscrire en présence de chats.',
+        'img' => './public/assets/img/services/Kenko-Ho/pageDixHuiles/TeaTree.jpg'  
+    ],
+    'citron' => [
+        'nom' => 'Le Citron',
+        'usages' => 'Soutien les défenses naturelles, action détox sur le métabolisme,
+                     Stimulant digestif,
+                     En topique : 1 gtte dans de l\'H.V en massage sur les lobes d\'oreilles pour un effet décongestionnant nasal.
+                     En diffusion : donne un de fouet avec la menthe poivrée.
+                     Photosensibilisant.',
+        'img' => './public/assets/img/services/Kenko-Ho/pageDixHuiles/Citron.jpg'  
     ]
 ]
 
