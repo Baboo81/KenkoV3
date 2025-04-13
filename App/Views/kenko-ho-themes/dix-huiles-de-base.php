@@ -2,7 +2,7 @@
 <?php include __DIR__ . '/../partials/navBar.php'; ?>
 
 <?php 
-$huiles = include __DIR__ . '/../data/huiles_base.php'; 
+    $huiles = include __DIR__ . '/../data/huiles_base.php'; 
 ?>
 
 <main>
@@ -16,18 +16,19 @@ $huiles = include __DIR__ . '/../data/huiles_base.php';
                     </div>
                 </div>
             </div>
+            <?php foreach ($huiles as $huile): ?>
             <div class="row">
                 <div class="my-5">
                     <div class="box rounded-5 p-4 my-5">
                         <div class="row d-flex align-items-center">
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>Le mélange : Air</h3>
+                                    <h3><?php echo $huile['nom']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
                                     <h4>Composition :</h4>
                                 </div>
-                                <p class="text-muted">Laurier (feuille), Menthe poivrée, Eucalyptus, Tea-tree, Citron, Ravintsara, Cardamome.</p>
+                                <p class="text-muted"><?php echo ['composition']; ?></p>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i></h4>
                                 </div>
