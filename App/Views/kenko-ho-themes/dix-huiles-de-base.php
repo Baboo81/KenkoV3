@@ -1,8 +1,10 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
-<?php include __DIR__ . '/../partials/navBar.php'; ?>
+
 
 <?php 
-    $huiles = include __DIR__ . '/../data/huiles_base.php'; 
+use App\data;
+
+    $huiles = include __DIR__ . '/../../data/huiles_base.php'; 
 ?>
 
 <main>
@@ -16,41 +18,41 @@
                     </div>
                 </div>
             </div>
-            <?php foreach ($huiles as $huile): ?>
             <div class="row">
                 <div class="my-5">
                     <div class="box rounded-5 p-4 my-5">
+                    <?php foreach ($huiles as $key => $huile): ?>
                         <div class="row d-flex align-items-center">
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3><?php echo $huile['nom']; ?></h3>
+                                    <h3><?php echo $huile['title_air']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
                                     <h4>Composition :</h4>
                                 </div>
-                                <p class="text-muted"><?php echo ['composition']; ?></p>
+                                <p class="text-muted"><?php echo $huile['composition_air']; ?></p>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien de la sphère O.R.L.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Assainissant atmosphérique.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique, diluer avec une huile végétale (HV) sur le torse pour ouvrir les voies respiratoires, atténuer la toux, déboucher le nez.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Masque sec : 1 goutte (gtte) dans les mains puis placez les mains sur le nez et inhalez.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; Photosensibilisant.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_1_air']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_2_air']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_3_air']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_4_air']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; <?php echo $huile['usage_5_air']; ?></p>
                                 </div>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" style="object-fit: cover;" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Air.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" style="object-fit: cover;" src="<?php echo $huile['img_air']; ?>" alt="Image représantant une personne qui cuisine">
                             </div>
                         </div>
                         <div class="row d-flex align-items-center mb-5">
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/MenthePoivrée.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $huile['img_mentheP']; ?>" alt="Image représantant une personne qui cuisine">
                             </div>
                             <article class="col-md-8 text-md-end">
                                 <div class="text-center mb-5">
-                                    <h3>La Menthe Poivrée</h3>
+                                    <h3><?php echo $huile['title_mentheP']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
@@ -232,6 +234,7 @@
                                 <button class="button">Télécharger le PDF</button>
                             </a>
                         </div>
+                        <?php endforeach; ?>
                     </div>
                     <div class="text-center mt-auto">
                         <button onclick="window.location.href='/kenko-ho';" class="button">Retourner vers Kenko-Ho</button>
