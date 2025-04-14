@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
-
+<?php include __DIR__ . '/../partials/navBar.php'; ?>
 
 <?php 
 use App\data;
@@ -52,16 +52,16 @@ use App\data;
                             </div>
                             <article class="col-md-8 text-md-end">
                                 <div class="text-center mb-5">
-                                    <h3><?php echo $huile['title_mentheP']; ?></h3>
+                                    <h3><?php echo $huile ['title_mentheP']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="text-start mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Pour donner un coup de fouet : 1 gtte directement sur le palais.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Pour soulager les maux de tête : 1 gtte en massage sur les tempes, le front et la nuque.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En cas d'inconfort digestif : 1 à 2 gttes dans de l'eau.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_1_mentheP']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_2_mentheP']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_3_mentheP']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_4_mentheP']; ?></p>
                                 </div>
                             </article>
                         </div>

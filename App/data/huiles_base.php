@@ -23,10 +23,10 @@ return [
     ],
     'menthe_poivrée' => [
         'title_mentheP' => 'La Menthe Poivrée',
-        'usages_mentheP' => 'Pour donner un coup de fouet : 1 gtte directement sur le palais, 
-                     Pour soulager les maux de têtes : 1 gtte en massage sur les tempes, le front et la nuque,
-                     En cas de d\'inconfort digestif : 1 à 2 gttes dans de l\'eau,
-                     En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie',
+        'usages_1_mentheP' => 'Pour donner un coup de fouet : 1 gtte directement sur le palais', 
+        'usages_2_mentheP' => 'Pour soulager les maux de têtes : 1 gtte en massage sur les tempes, le front et la nuque',
+        'usages_3_mentheP' => 'En cas de d\'inconfort digestif : 1 à 2 gttes dans de l\'eau',
+        'usages_4_mentheP' => 'En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie',
         'img_mentheP' => '/assets/img/services/Kenko-Ho/pageDixHuiles/MenthePoivrée.jpg'
     ],
     'onguard' => [
