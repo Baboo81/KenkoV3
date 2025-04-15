@@ -6,6 +6,8 @@ use App\data;
 
     $air = include __DIR__ . '/../../data/air.php'; 
     $mentheP = include __DIR__ . '/../../data/mentheP.php';
+    $onGuard = include __DIR__ . '/../../data/onGuard.php';
+    $deepBlue = include __DIR__ . '/../../data/deepBlue.php';
 ?>
 
 <main>
@@ -70,14 +72,15 @@ use App\data;
                             <?php endforeach; ?> 
                         </div>
                         <div class="row d-flex align-items-center">
+                            <?php foreach ($onGuard as $key2 => $onGuardTemp): ?> 
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>Le mélange : OnGuard</h3>
+                                    <h3><?php echo $onGuardTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
                                     <h4>Composition :</h4>
                                 </div>
-                                <p class="text-muted">Orange sauvage, Clou de girofle, Cannelle de Chine, Eucalyptus, Romarin.</p>
+                                <p class="text-muted"><?php echo $onGuardTemp['composition']; ?></p>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
@@ -92,6 +95,7 @@ use App\data;
                             <div class="col-md-4 text-center">
                                 <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/OnGuard.jpg" alt="Image représantant une personne qui cuisine">
                             </div>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center">
                             <div class="col-md-4 text-center">

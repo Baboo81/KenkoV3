@@ -12,6 +12,6 @@ return [
         'usages_4' => 'En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie',
         'img' => '/assets/img/services/Kenko-Ho/pageDixHuiles/MenthePoivrée.jpg'
     ],
-]
+];
 
 ?>

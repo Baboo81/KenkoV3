@@ -20,6 +20,6 @@ return [
                      Á éviter s\'il y a des allergies aux salicylés (aspirine).',
         'img' =>  './public/assets/img/services/Kenko-Ho/pageDixHuiles/DeepBlue.jpg'
     ],
-]
+];
 
 ?>

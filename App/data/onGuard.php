@@ -5,7 +5,7 @@ namespace App\data;
 //Tableau assoc : OnGuard
 return [
     'onguard' => [
-        'nom' => 'Le mélange OnGuard',
+        'title' => 'Le mélange OnGuard',
         'composition' => 'Orange sauvage, 
                           Clou de girofle,
                           Cannelle de Chine,
@@ -18,6 +18,6 @@ return [
                      Photosensibilisant, dermocaustique.',
         'img' => './public/assets/img/services/Kenko-Ho/pageDixHuiles/OnGuard.jpg'
     ],
-]
+];
 
 ?>
