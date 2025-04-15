@@ -9,7 +9,11 @@ use App\data;
     $onGuard = include __DIR__ . '/../../data/onGuard.php';
     $origan = include __DIR__ . '/../../data/origan.php';
     $zenGest = include __DIR__ . '/../../data/zenGest.php';
+    $lavande = include __DIR__ . '/../../data/lavande.php';
     $deepBlue = include __DIR__ . '/../../data/deepBlue.php';
+    $encens = include __DIR__ . '/../../data/encens.php';
+    $teaTree = include __DIR__ . '/../../data/teaTree.php';
+    $citron = include __DIR__ . '/../../data/citron.php';
 ?>
 
 <main>
@@ -146,102 +150,112 @@ use App\data;
                             <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center">
+                            <?php foreach ($lavande as $key5 => $lavandeTemp): ?>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Lavande.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $lavandeTemp['img']; ?>" alt="Image représantant un flacon de lavande">
                             </div>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>La Lavande</h3>
+                                    <h3><?php echo $lavandeTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : 1 à 2 gttes dans un gel d'aloé-véra pour soulager les coups de soleil ou les piqûres d'insectes.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion, la lavande est calmante, relaxante.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Efficace contre les inconforts saisonniers en association avec la menthe poivrée et le citron.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Efficace pour calmer les irritations de la peau.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $lavandeTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $lavandeTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $lavandeTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $lavandeTemp['usage_4']; ?></p>
                                 </div>
                             </article>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center mt-5">
+                            <?php foreach ($deepBlue as $key6 => $deepBlueTemp): ?>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>Le mélange : Deep Blue</h3>
+                                    <h3><?php echo $deepBlueTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
                                     <h4>Composition :</h4>
                                 </div>
-                                <p class="text-muted">Gaulthérie (Wintergreen), Camphrier, Menthe poivrée, Ylang Ylang, Tanaisie annuelle (Blue Tansy), Camomille Matricaire, Hélichryse, Osmanthus.</p>
+                                <p class="text-muted"><?php echo $deepBlueTemp['composition']; ?></p>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleT mx-2">T</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Ce mélange est idéal pour soulager les tensions musculaires ou les articulations capricieuses.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En massage : 1 à 2 gttes dans une HV puis appliquez localement.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Idéale pour préparer les muscles des jambes avant le sport.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; Á éviter s'il y a des allergies aux salicylés (aspirine).</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $deepBlueTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $deepBlueTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $deepBlueTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0;<?php echo $deepBlueTemp['danger']; ?></p>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/DeepBlue.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $deepBlueTemp['img']; ?>" alt="Image représantant une partie de la gamme DeepBlue">
                             </div>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center">
+                            <?php foreach ($encens as $key6 => $encensTemp): ?>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Encen.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $encensTemp['img']; ?>" alt="Image représantant un flacon d'encens">
                             </div>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>L'Encens</h3>
+                                    <h3><?php echo $encensTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien cellulaire et des défenses naturelles.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion, elle se marie bien avec toutes les huiles et procure un effet anxiolytique.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique dans une crème, elle permet d'éliminer les tâches, anti-rides (anti-oxydant).</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En interne : 1 gtte en bouche pour un effet relaxant.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $encensTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $encensTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $encensTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $encensTemp['usage_4']; ?></p>
                                 </div>
                             </article>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center mt-5">
+                            <?php foreach ($teaTree as $key6 => $teaTreeTemp): ?>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>Le Tea-Tree</h3>
+                                    <h3><?php echo $teaTreeTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Le Trea-Tree est très efficace contre les maux de gorge et oreilles ou dans le cadre de souci bucco-dentaire.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : acné, boutons.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien les défenses naturelles.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; En diffusion : à éviter en présence de chats.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $teaTreeTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $teaTreeTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $teaTreeTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0;<?php echo $teaTreeTemp['danger']; ?></p>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/TeaTree.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $teaTreeTemp['img']; ?>" alt="Image représantant un flacon de Tea-Tree">
                             </div>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center">
+                            <?php foreach ($citron as $key7 => $citronTemp): ?>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Citron.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $citronTemp['img']; ?>" alt="Image représantant deux flacons de Citron">
                             </div>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>Le Citron</h3>
+                                    <h3><?php echo $citronTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien les défenses naturelles, action détox sur le métabolisme.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Stimulant digestif.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : 1 gtte dans de l'HV en massage sur les lobes d'oreilles pour un effet décongestionnant nasal.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion : donne un coup de fouet avec la menthe poivrée.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; Photosensibilisant, dermocaustique.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $citronTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $citronTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $citronTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $citronTemp['usage_4']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788<?php echo $citronTemp['danger']; ?></p>
                                 </div>
                             </article>
+                            <?php endforeach; ?>
                         </div>
                         <div class="text-center my-5">
                             <a href="/../assets/pdf/pageDixHuilesDeBase/kitFamille.pdf" download="kitFamille.pdf">
