@@ -5,7 +5,7 @@
 use App\data;
 
     $air = include __DIR__ . '/../../data/air.php'; 
-    $mentheP = include __DIR__ . '/../../data/menthP.php';
+    $mentheP = include __DIR__ . '/../../data/mentheP.php';
 ?>
 
 <main>
@@ -55,16 +55,16 @@ use App\data;
                             </div>
                             <article class="col-md-8 text-md-end">
                                 <div class="text-center mb-5">
-                                    <h3><?php echo $mentheP ['title']; ?></h3>
+                                    <h3><?php echo $menthePTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="text-start mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $menthePTemp['usages_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $menthePTemp['usages_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $menthePTemp['usages_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $menthePTemp['usages_4']; ?></p>
                                 </div>
                             </article>
                             <?php endforeach; ?> 
