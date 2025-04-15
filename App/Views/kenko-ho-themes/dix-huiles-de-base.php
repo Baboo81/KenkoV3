@@ -7,6 +7,8 @@ use App\data;
     $air = include __DIR__ . '/../../data/air.php'; 
     $mentheP = include __DIR__ . '/../../data/mentheP.php';
     $onGuard = include __DIR__ . '/../../data/onGuard.php';
+    $origan = include __DIR__ . '/../../data/origan.php';
+    $zenGest = include __DIR__ . '/../../data/zenGest.php';
     $deepBlue = include __DIR__ . '/../../data/deepBlue.php';
 ?>
 
@@ -46,14 +48,14 @@ use App\data;
                                 </div>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" style="object-fit: cover;" src="<?php echo $airTemp['img']; ?>" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" style="object-fit: cover;" src="<?php echo $airTemp['img']; ?>" alt="Image représantant une personne tenant un flacon de Air">
                             </div>
                             <?php endforeach; ?> 
                         </div>
                         <div class="row d-flex align-items-center mb-5">
                             <?php foreach ($mentheP as $key1 => $menthePTemp): ?>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="<?php echo $menthePTemp['img']; ?>" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $menthePTemp['img']; ?>" alt="Image représantant un un flacon de menthe poivrée">
                             </div>
                             <article class="col-md-8 text-md-end">
                                 <div class="text-center mb-5">
@@ -85,59 +87,63 @@ use App\data;
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien les défenses immunitaires.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Sur le plan émotionnel, ce mélange va aider à poser ses limites afin de protéger votre espace personnel des énergies négatives.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion pour assainir l'air.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En massage dilué dans une HV quand le corps faiblit.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; Photosensibilisant, dermocaustique.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $onGuardTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $onGuardTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $onGuardTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $onGuardTemp['usage_4']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; <?php echo $onGuardTemp['danger']; ?></p>
                                 </div>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/OnGuard.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $onGuardTemp['img']; ?>" alt="Image représantant une partie de la gamme OnGuard">
                             </div>
                             <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center">
+                            <?php foreach ($origan as $key3 => $origanTemp): ?>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/Origan.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $origanTemp['img']; ?>" alt="Image représantant un flacon d'origan">
                             </div>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>L'Origan</h3>
+                                    <h3><?php echo $origanTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Soutien puissant du système immunitaire.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En diffusion, elle renforce le sentiment de sécurité.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En cuisine pour aromatiser une sauce, trempez une pointe de cure dent dans le flacon et ensuite dans la sauce.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En topique : antifongique, virucide.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; Dermocaustique à diluer impérativement.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $origanTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $origanTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $origanTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $origanTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0;<?php echo $origanTemp['danger']; ?></p>
                                 </div>
                             </article>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center mt-5">
+                            <?php foreach ($zenGest as $key4 => $zenGestTemp): ?>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3>Le mélange : ZenGest</h3>
+                                    <h3><?php echo $zenGestTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
                                     <h4>Composition :</h4>
                                 </div>
-                                <p class="text-muted">Gingembre, Menthe poivrée, Estragon, Cumin, Coriandre, Anis.</p>
+                                <p class="text-muted"><?php echo $zenGestTemp['composition']; ?></p>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>C'est le mélange qui va soutenir la sphère digestive à tous les niveaux.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En massage sur le ventre pour soulager les crampes et les ballonnements.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>Sur le plan émotionnel, il aide à digérer les expériences de la vie.</p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>En interne, 2 gttes dans de l'eau chaude en dessous de 60°C pour améliorer la digestion après un repas copieux ou trop arrosé.</p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $zenGestTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $zenGestTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $zenGestTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $zenGestTemp['usage_4']; ?></p>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="/../assets/img/services/Kenko-Ho/pageDixHuiles/ZenGest.jpg" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $zenGestTemp['img']; ?>" alt="Image représantant un flacon de ZenGest">
                             </div>
+                            <?php endforeach; ?>
                         </div>
                         <div class="row d-flex align-items-center">
                             <div class="col-md-4 text-center">
