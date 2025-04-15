@@ -4,7 +4,8 @@
 <?php 
 use App\data;
 
-    $huiles = include __DIR__ . '/../../data/huiles_base.php'; 
+    $air = include __DIR__ . '/../../data/air.php'; 
+    $mentheP = include __DIR__ . '/../../data/menthP.php';
 ?>
 
 <main>
@@ -21,49 +22,52 @@ use App\data;
             <div class="row">
                 <div class="my-5">
                     <div class="box rounded-5 p-4 my-5">
-                    <?php foreach ($huiles as $key => $huile): ?>
                         <div class="row d-flex align-items-center">
+                        <?php foreach ($air as $key => $airTemp): ?>
                             <article class="col-md-8">
                                 <div class="text-center mb-5">
-                                    <h3><?php echo $huile['title_air']; ?></h3>
+                                    <h3><?php echo $airTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
                                     <h4>Composition :</h4>
                                 </div>
-                                <p class="text-muted"><?php echo $huile['composition_air']; ?></p>
+                                <p class="text-muted"><?php echo $airTemp['composition']; ?></p>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i></h4>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_1_air']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_2_air']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_3_air']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usage_4_air']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; <?php echo $huile['usage_5_air']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $airTemp['usage_1']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $airTemp['usage_2']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $airTemp['usage_3']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $airTemp['usage_4']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i>&#x26A0; &#9788; <?php echo $airTemp['usage_5']; ?></p>
                                 </div>
                             </article>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" style="object-fit: cover;" src="<?php echo $huile['img_air']; ?>" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" style="object-fit: cover;" src="<?php echo $airTemp['img']; ?>" alt="Image représantant une personne qui cuisine">
                             </div>
+                            <?php endforeach; ?> 
                         </div>
                         <div class="row d-flex align-items-center mb-5">
+                            <?php foreach ($mentheP as $key1 => $menthePTemp): ?>
                             <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="<?php echo $huile['img_mentheP']; ?>" alt="Image représantant une personne qui cuisine">
+                                <img class="img-fluid" src="<?php echo $menthePTemp['img']; ?>" alt="Image représantant une personne qui cuisine">
                             </div>
                             <article class="col-md-8 text-md-end">
                                 <div class="text-center mb-5">
-                                    <h3><?php echo $huile ['title_mentheP']; ?></h3>
+                                    <h3><?php echo $mentheP ['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
                                     <h4>Usages :<i class="circleA mx-3">A</i><i class="circleT mx-2">T</i><i class="circleI mx-2">I</i></h4>
                                 </div>
                                 <div class="text-start mb-5">
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_1_mentheP']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_2_mentheP']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_3_mentheP']; ?></p>
-                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i><?php echo $huile['usages_4_mentheP']; ?></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
+                                    <p class="text-muted my-1"><i class="mx-3">&#8226;</i></p>
                                 </div>
                             </article>
+                            <?php endforeach; ?> 
                         </div>
                         <div class="row d-flex align-items-center">
                             <article class="col-md-8">
@@ -234,7 +238,6 @@ use App\data;
                                 <button class="button">Télécharger le PDF</button>
                             </a>
                         </div>
-                        <?php endforeach; ?>
                     </div>
                     <div class="text-center mt-auto">
                         <button onclick="window.location.href='/kenko-ho';" class="button">Retourner vers Kenko-Ho</button>

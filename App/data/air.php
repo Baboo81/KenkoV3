@@ -2,33 +2,26 @@
 
 namespace App\data;
 
-//Tableau assoc des huiles essentielles de base
+//Tableau assoc : Air
 return [
     'air' => [
-        'title_air' => 'Le mélange : Air',
-        'composition_air' => 'Laurier (feuille), 
+        'title' => 'Le mélange : Air',
+        'composition' => 'Laurier (feuille), 
                           Menthe poivrée, 
                           Eucalyptus, 
                           Tea-tree, 
                           Citron,
                           Ravintsara
                           Cardamome.',
-        'usage_1_air' => 'Soutien la sphère O.R.L.',
-        'usage_2_air' => 'Assainissant atmosphérique',
-        'usage_3_air' => 'En topique, diluer avec une huile végétale (HV) et appliquer sur le torse pour ouvrir les voies respiratoires,
+        'usage_1' => 'Soutien la sphère O.R.L.',
+        'usage_2' => 'Assainissant atmosphérique',
+        'usage_3' => 'En topique, diluer avec une huile végétale (HV) et appliquer sur le torse pour ouvrir les voies respiratoires,
                      atténuer la toux, déboucher le nez.',
-        'usage_4_air' => 'Faire un masque sec avec les mains : 1 goutte (gtte) sur la paume, frotter les mains et ensuite placer les mains sur le nez et inhaler.',
-        'usage_5_air' => 'Photosensibilisant.',
-        'img_air' => '/assets/img/services/Kenko-Ho/pageDixHuiles/Air.jpg'
+        'usage_4' => 'Faire un masque sec avec les mains : 1 goutte (gtte) sur la paume, frotter les mains et ensuite placer les mains sur le nez et inhaler.',
+        'usage_5' => 'Photosensibilisant.',
+        'img' => '/assets/img/services/Kenko-Ho/pageDixHuiles/Air.jpg'
     ],
-    'menthe_poivrée' => [
-        'title_mentheP' => 'La Menthe Poivrée',
-        'usages_1_mentheP' => 'Pour donner un coup de fouet : 1 gtte directement sur le palais', 
-        'usages_2_mentheP' => 'Pour soulager les maux de têtes : 1 gtte en massage sur les tempes, le front et la nuque',
-        'usages_3_mentheP' => 'En cas de d\'inconfort digestif : 1 à 2 gttes dans de l\'eau',
-        'usages_4_mentheP' => 'En diffusion : 2 gttes pour retrouver optimisme, vivacité et joie',
-        'img_mentheP' => '/assets/img/services/Kenko-Ho/pageDixHuiles/MenthePoivrée.jpg'
-    ],
+    
     'onguard' => [
         'nom' => 'Le mélange OnGuard',
         'composition' => 'Orange sauvage, 
