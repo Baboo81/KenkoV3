@@ -1,6 +1,6 @@
 <?php
 
-namespace App\data;
+namespace App\data\KenkoHo\thématiques;
 
 //Tableau assoc : Menthe Poivrée
 return [

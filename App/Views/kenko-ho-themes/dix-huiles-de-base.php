@@ -4,16 +4,16 @@
 <?php 
 use App\data;
 
-    $air = include __DIR__ . '/../../data/air.php'; 
-    $mentheP = include __DIR__ . '/../../data/mentheP.php';
-    $onGuard = include __DIR__ . '/../../data/onGuard.php';
-    $origan = include __DIR__ . '/../../data/origan.php';
-    $zenGest = include __DIR__ . '/../../data/zenGest.php';
-    $lavande = include __DIR__ . '/../../data/lavande.php';
-    $deepBlue = include __DIR__ . '/../../data/deepBlue.php';
-    $encens = include __DIR__ . '/../../data/encens.php';
-    $teaTree = include __DIR__ . '/../../data/teaTree.php';
-    $citron = include __DIR__ . '/../../data/citron.php';
+    $air = include __DIR__ . '/../../data/KenkoHo/thématiques/air.php'; 
+    $mentheP = include __DIR__ . '/../../data/KenkoHo/thématiques/mentheP.php';
+    $onGuard = include __DIR__ . '/../../data/KenkoHo/thématiques/onGuard.php';
+    $origan = include __DIR__ . '/../../data/KenkoHo/thématiques/origan.php';
+    $zenGest = include __DIR__ . '/../../data/KenkoHo/thématiques/zenGest.php';
+    $lavande = include __DIR__ . '/../../data/KenkoHo/thématiques/lavande.php';
+    $deepBlue = include __DIR__ . '/../../data/KenkoHo/thématiques/deepBlue.php';
+    $encens = include __DIR__ . '/../../data/KenkoHo/thématiques/encens.php';
+    $teaTree = include __DIR__ . '/../../data/KenkoHo/thématiques/teaTree.php';
+    $citron = include __DIR__ . '/../../data/KenkoHo/thématiques/citron.php';
 ?>
 
 <main>
