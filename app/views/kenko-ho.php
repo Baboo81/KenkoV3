@@ -149,7 +149,7 @@
                     </div>
                 </div>
             </section>
-            <section class="my-5 commentsBox">
+            <section class="my-5 commentsBox px-3 px-sm-5">
                 <div class="container my-5" id="testimonials">
                    <div class="row">
                         <div class="col-md-8 mx-auto">
