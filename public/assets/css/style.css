@@ -118,12 +118,13 @@ h1:after
     font-family: "Bodoni Moda", serif;
     font-size: 16rem;
     color: var(--noir);
+    margin-bottom: 50px;
 }
 
 .mainContent .secondTitle
 {
     font-family: "Bodoni Moda", serif;
-    font-size: 4rem !important;
+    font-size: 4rem;
     color: var(--noir);
 }
 
