@@ -76,19 +76,7 @@ main .home
     text-align: center;
 }
 
-main .mainTitle 
-{
-    font-size: 15rem; /* Ajuste la taille du titre */
-    width: 100%;
-}
-
-main .secondTitle 
-{
-    font-size: 4rem !important;
-    width: 100%;
-}
-
- /* Animation mainTitle */
+/* Animation mainTitle */
 h1:after
 {
     content: "";
@@ -135,16 +123,23 @@ h1:after
 .mainContent .secondTitle
 {
     font-family: "Bodoni Moda", serif;
-    font-size: 4rem;
+    font-size: 4rem !important;
     color: var(--noir);
+}
+
+.mainTitle,
+.secondTitle
+{
+    position: relative;
+    z-index: 2;
 }
 
     /* Logo animation */
 #logoAnimation
 {
     position: absolute;
-    width: 600px;
-    z-index: -50;
+    width: 300px;
+    z-index: 1;
     animation: fadeIn 1.5s infinite;
 }
 
