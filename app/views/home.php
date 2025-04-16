@@ -25,7 +25,7 @@
                     <div class="row">
                         <div class="col-md-6 mainContent">
                             <h1 class="mainTitle"></h1>
-                            <p class="secondTitle mt-5 text-nowrap">Bienvenue dans deux univers ...</p>
+                            <span class="secondTitle text-nowrap">Bienvenue dans deux univers ...</span>
                             <img src="./assets/img/logo/logoAnimate.svg" alt="Logo animé" id="logoAnimation">
                         </div>
                     </div>
