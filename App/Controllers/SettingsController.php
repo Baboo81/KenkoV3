@@ -90,7 +90,7 @@ class SettingsController extends Controller {
         }
 
         //Requête SQL 
-        $stmt = $db->prepare("UPDATE user_settings SET lastname = ?, firstname = ?, address = ?, city = ?, postal_code = ?, email = ?, country = ?, avatar = ? WHERE user_id = ?");
+        $stmt = $db->prepare("UPDATE user_settings SET lastname = ?, firstname = ?, address = ?, city = ?, postal_code = ?, email = ?, country = ?, avatar = ? WHERE userId = ?");
         $stmt->execute([$lastname, $firstname, $address, $city, $postal_code, $email, $country, $avatar, $userId]);
 
         // Gestion de l'upload de l'avatar
