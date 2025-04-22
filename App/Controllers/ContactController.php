@@ -71,7 +71,7 @@ class ContactController extends Controller {
             }
 
             // Insérer les données avec une requête préparée
-            $stmt = $db->prepare("INSERT INTO contacts (name, first_name, email, message, created_at) VALUES (?, ?, ?, ?, NOW())");
+            $stmt = $db->prepare("INSERT INTO contact (name, first_name, email, message, created_at) VALUES (?, ?, ?, ?, NOW())");
             $result = $stmt->execute([$name, $firstName, $email, $message]);
 
             if ($result) {
@@ -127,7 +127,7 @@ class ContactController extends Controller {
         $db = Database::getInstance();
 
         // Récupérer les messages de la base de données
-        $stmt = $db->query("SELECT * FROM contacts ORDER BY created_at DESC");
+        $stmt = $db->query("SELECT * FROM contact ORDER BY created_at DESC");
         $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         // Définir les variables pour la vue

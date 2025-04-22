@@ -13,7 +13,7 @@
 
 
 
-<?php include 'partials/headerWithModifiedNav.php'; ?>
+<?php include 'partials/header.php'; ?>
 
 <?php if (isset($_SESSION['message'])): ?>
     <div class="alert alert-<?= $_SESSION['message']['type']; ?> alert-dismissible fade show text-center" role="alert">
