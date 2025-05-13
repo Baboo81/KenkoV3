@@ -1,6 +1,13 @@
 <?php include 'partials/header.php' ?>
 <?php include 'partials/navBar.php' ?>
 
+<?php
+    use App\data;
+    
+    $cardsData = include __DIR__ . '/../../data/home.php';
+    $cards = $cardsData['cards'];
+?>
+
 <!-- Affichage des messages de succès ou d'erreur -->
 <?php if (isset($_SESSION['message'])): ?>
     <div class="alert alert-<?= $_SESSION['message']['type']; ?> alert-dismissible fade show text-center" role="alert">
