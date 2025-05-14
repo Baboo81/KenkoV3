@@ -1,15 +1,8 @@
 <?php include 'partials/header.php'; ?>
 <?php include 'partials/navBar.php'; ?>
+<?php include_once __DIR__ . '/../utils/checkAccess.php'; ?>
 
-<?php
-
-    //Vérifie si l'utilisateur a bien entré le code
-    if (!isset($_SESSION['kenko_access']) || $_SESSION['kenko_access'] !== true) {
-        header("Location: home"); //redirection vers la page d'accueil
-        exit();
-    }
-
-?>    
+  
         
         <main>
             <section class="sections home text-center">
