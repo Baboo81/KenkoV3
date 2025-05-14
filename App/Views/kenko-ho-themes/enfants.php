@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mainTitleContent mb-5">
+                    <div class="mainTitleContent my-5">
                         <h2 class="text-muted text-center mb-5">Les enfants & les huiles essentielles</h2>
                         <div class="line"><span></span></div>
                     </div>
@@ -21,7 +21,7 @@
                                 <div class="text-center my-4">
                                     <h3>Guide des huiles essentielles pour améliorer son sommeil</h3>
                                 </div>
-                                <p class="text-muted">Téléchargez notre guide sur les enfants et les huilles essentielles.</p>
+                                <p class="text-muted mb-3">Téléchargez notre guide sur les enfants et les huilles essentielles.</p>
                             </article>
                             <div class="col-md-6">
                                 <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageEnfants/enfants.jpg" alt="Image représantant une personne qui cuisine">

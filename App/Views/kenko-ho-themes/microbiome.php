@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mainTitleContent mb-5">
+                    <div class="mainTitleContent my-5">
                         <h2 class="text-muted text-center mb-5">Le Microbiome</h2>
                         <div class="line"><span></span></div>
                     </div>
@@ -16,7 +16,7 @@
                 <div class="col-md-12 my-5">
                     <div class="box rounded-5 p-4 my-5">
                         <div class="row">
-                            <article class="col-md-6">
+                            <article class="col-md-6 mb-3">
                                 <p class="text-muted">Le microbiote est un ensemble de micro organismes vivant en symbiose avec nous. Ce microbiote se compose de virus, de bactéries, de levures, ...</p>
                                 <p class="text-muted">Par exemple avoir un microbiote intestinal bien équilibré contribue au bon fonctionnement du système immunitaire, le microbiote influence aussi nos émotions et donc notre système nerveux.<br />Nos différents micriobiotes forme un réseau interconnecté entre intestins, poumons, peau, bouche, voies urinaires et génitales.
                                 </p>

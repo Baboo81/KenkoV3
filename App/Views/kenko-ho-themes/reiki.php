@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mainTitleContent mb-5">
+                    <div class="mainTitleContent my-5">
                         <h2 class="text-muted text-center mb-5">Le Reiki & ses bienfaits</h2>
                         <div class="line"><span></span></div>
                     </div>
@@ -23,9 +23,9 @@
                                 </p>
                                 <ul>
                                     <li>Juste pour aujourd'hui, je me libère de toute préocupation,</li>
-                                    <li>Juste pour aujourd'hui, je me libère de toute colère,</li>
-                                    <li>Juste pour aujourd'hui, je rends grâce pour mes nombreuses bénédictions, j'honore mes parents, mes professeurs et mes aïeux,</li>
-                                    <li>Juste pour aujourd'hui, je vis ma vie honnêtement,</li>
+                                    <li class="my-2">Juste pour aujourd'hui, je me libère de toute colère,</li>
+                                    <li class="my-2">Juste pour aujourd'hui, je rends grâce pour mes nombreuses bénédictions, j'honore mes parents, mes professeurs et mes aïeux,</li>
+                                    <li class="my-2">Juste pour aujourd'hui, je vis ma vie honnêtement,</li>
                                     <li>Juste pour aujourd'hui, je respecte la vie sous toute ses formes.</li>
                                 </ul>
                                 <div class="text-center my-4">
@@ -49,7 +49,7 @@
                                 <div class="text-center my-4">
                                     <h3>Tarifs</h3>
                                 </div>
-                                <p class="text-muted text-center">60.00 €/séance</p>
+                                <p class="text-muted text-center mb-3">60.00 €/séance</p>
                             </article>
                             <div class="col-md-6">
                                 <img class="img-fluid rounded-4" src="/../assets/img/services/Kenko-Ho/pageReiki/Reiki.jpg" alt="Image représantant une personne qui reçoit un soin Reiki">
