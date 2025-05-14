@@ -4,7 +4,7 @@
 <?php
     use App\data;
     
-    $cardsData = include __DIR__ . '/../../data/home.php';
+    $cardsData = include __DIR__ . '/../data/home.php';
     $cards = $cardsData['cards'];
 ?>
 
@@ -41,36 +41,29 @@
             <section class="mainSection">
                 <div class="container mw-100">
                     <div class="row">
-                        <div class="col-md-12 part1">
-                            <div class="card rounded-4 bg-grey p-3" style="max-width: 55rem;">
-                                <div class="kenkoTitles">
-                                    <h3 class="text-center my-5">KENKO-HO</h3>
-                                </div>
-                                <img src="./assets/img/services/Kenko-Ho/kenko-ho.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fs-1 text-center mb-5">Envie d'améliorer votre bien-être ?</h5>
-                                    <p class="card-text text-center">Votre <strong>conseillère bien-être dōTERRA</strong>  vous proposera d'améliorer votre quotidien en intégrant des huiles essentielles de haute qualité. Grâce à un suivi personnalisé et régulier, vous apprendrez à utiliser différentes <strong>huiles essentielles</strong>  en fonction de vos besoins ainsi que des besoins de votre famille.</p>
-                                    <p class="fontGreen text-center fw-bold my-3">Cet espace est réservé aux clients dōTERRA ! Pour avoir plus d'informations à ce sujet, contactez-moi via le formulaire se trouvant sur la page "Contact" accessible dans le menu de la navigation ou bien par email et par téléphone aussi.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 part2">
-                            <div class="card rounded-4 bg-blue p-3" style="max-width: 55rem;">
-                                <div class="kenkoTitles">
-                                    <h3 class="text-center my-5">KENKO-WEB</h3>
-                                </div>
-                                <img src="./assets/img/services/Kenko-Web/KenkoWeb.svg" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title fs-1 text-center mb-5">Besoin d'un site web professionnel ?</h5>
-                                    <p class="card-text text-center">Vos compétences, votre expertise ainsi que vos valeurs seront mises en avant grâce à votre communication digitale.<br />Votre <strong>webmaster</strong> vous proposera un site sur mesure afin de satisfaire vos besoins.</p>
-                                    <div class="text-center my-5">
-                                        <button onclick="window.location.href='/kenko-web';" class="button">Visiter Kenko-Web</button>
+                        <?php foreach ($cards as $card): ?>
+                            <div class="col-md-12 <?= $card['title'] === 'KENKO-HO' ? 'part1' : 'part2'; ?>">
+                                <div class="card rounded-4 <?= $card['title'] === 'KENKO-HO' ? 'bg-grey' : 'bg-blue'; ?> p-3" style="max-width: 55rem;">
+                                    <div class="kenkoTitles">
+                                        <h3 class="text-center my-5"><?= htmlspecialchars($card['title']) ?></h3>
+                                    </div>
+                                    <img src="<?= htmlspecialchars($card['img']) ?>" class="card-img-top rounded-3" alt="Image représentant un jardin zen">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title fs-1 text-center mb-5"><?= $card['title2'] ?></h5>
+                                        <p class="card-text text-center"><?= $card['p1'] ?></p>
+                                        <?php if (!empty($card['p2'])): ?>
+                                            <p class="fontGreen text-center fw-bold my-3"><?= $card['p2'] ?></p>
+                                        <?php endif; ?>
+
+                                        <?php if ($card['title'] === 'KENKO-WEB'): ?>
+                                            <div class="text-center my-5">
+                                                <button onclick="window.location.href='/kenko-web';" class="button">Visiter Kenko-Web</button>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </section>
