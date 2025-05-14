@@ -1,6 +1,7 @@
 <?php include __DIR__ . '/../partials/header.php'; ?>
 <?php include __DIR__ . '/../partials/navBar.php'; ?>
 
+
 <main>
     <section class="mainSection">
         <div class="container">

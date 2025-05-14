@@ -1,5 +1,7 @@
+
 <?php include __DIR__ . '/../partials/header.php'; ?>
 <?php include __DIR__ . '/../partials/navBar.php'; ?>
+<?php include_once __DIR__ . '/../../utils/checkAccess.php'; ?>
 
 <?php 
 use App\data;
@@ -15,6 +17,7 @@ use App\data;
     $teaTree = include __DIR__ . '/../../data/KenkoHo/thématiques/teaTree.php';
     $citron = include __DIR__ . '/../../data/KenkoHo/thématiques/citron.php';
 ?>
+
 
 <main>
     <section class="mainSection">
