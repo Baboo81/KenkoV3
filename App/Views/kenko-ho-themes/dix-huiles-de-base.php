@@ -30,10 +30,10 @@ use App\data;
             <div class="row">
                 <div class="my-5">
                     <div class="box rounded-5 p-4 my-5">
-                        <div class="row d-flex align-items-center">
+                        <div class="row flex-column-reverse flex-md-row d-flex align-items-center">
                         <?php foreach ($air as $key => $airTemp): ?>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $airTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
@@ -62,7 +62,7 @@ use App\data;
                                 <img class="img-fluid" src="<?php echo $menthePTemp['img']; ?>" alt="Image représantant un un flacon de menthe poivrée">
                             </div>
                             <article class="col-md-8 text-md-end">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $menthePTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
@@ -77,10 +77,10 @@ use App\data;
                             </article>
                             <?php endforeach; ?> 
                         </div>
-                        <div class="row d-flex align-items-center">
+                        <div class="row flex-column-reverse flex-md-row d-flex align-items-center">
                             <?php foreach ($onGuard as $key2 => $onGuardTemp): ?> 
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $onGuardTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
@@ -109,7 +109,7 @@ use App\data;
                                 <img class="img-fluid" src="<?php echo $origanTemp['img']; ?>" alt="Image représantant un flacon d'origan">
                             </div>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $origanTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
@@ -125,10 +125,10 @@ use App\data;
                             </article>
                             <?php endforeach; ?>
                         </div>
-                        <div class="row d-flex align-items-center mt-5">
+                        <div class="row flex-column-reverse flex-md-row d-flex align-items-center mt-5">
                             <?php foreach ($zenGest as $key4 => $zenGestTemp): ?>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $zenGestTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
@@ -155,7 +155,7 @@ use App\data;
                                 <img class="img-fluid" src="<?php echo $lavandeTemp['img']; ?>" alt="Image représantant un flacon de lavande">
                             </div>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $lavandeTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
@@ -170,10 +170,10 @@ use App\data;
                             </article>
                             <?php endforeach; ?>
                         </div>
-                        <div class="row d-flex align-items-center mt-5">
+                        <div class="row flex-column-reverse flex-md-row d-flex align-items-center mt-5">
                             <?php foreach ($deepBlue as $key6 => $deepBlueTemp): ?>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $deepBlueTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start mb-3">
@@ -200,7 +200,7 @@ use App\data;
                                 <img class="img-fluid" src="<?php echo $encensTemp['img']; ?>" alt="Image représantant un flacon d'encens">
                             </div>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $encensTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
@@ -215,10 +215,10 @@ use App\data;
                             </article>
                             <?php endforeach; ?>
                         </div>
-                        <div class="row d-flex align-items-center mt-5">
+                        <div class="row flex-column-reverse flex-md-row d-flex align-items-center mt-5">
                             <?php foreach ($teaTree as $key6 => $teaTreeTemp): ?>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $teaTreeTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">
@@ -241,7 +241,7 @@ use App\data;
                                 <img class="img-fluid" src="<?php echo $citronTemp['img']; ?>" alt="Image représantant deux flacons de Citron">
                             </div>
                             <article class="col-md-8">
-                                <div class="text-center mb-5">
+                                <div class="text-center my-5">
                                     <h3><?php echo $citronTemp['title']; ?></h3>
                                 </div>
                                 <div class="text-start my-3">

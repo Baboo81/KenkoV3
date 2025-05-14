@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="mainTitleContent mb-5">
-                        <h2 class="text-muted text-center mb-5">Les émotions & les huiles essentielles</h2>
+                    <div class="mainTitleContent my-5">
+                        <h2 class="text-muted text-center my-5">Les émotions & les huiles essentielles</h2>
                         <div class="line"><span></span></div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
  <!-- Header -->
         <header>
             <div class="container">
-                <div class="row">
+                <div class="row my-5">
                     <nav class="navbar navbar-expand-lg fixed-top">
                         <div class="container-fluid d-flex align-items-center justify-content-between">
                             <!--  Logo  -->
