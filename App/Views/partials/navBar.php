@@ -70,7 +70,7 @@
                                                     </li>
                                                     <!-- Afficher le nom du user connecté  -->
                                                     <li class="dropdown-item">
-                                                        <i class="bi bi-person-circle"></i><p class="user-name"><?= $_SESSION['user'] ?></p>
+                                                        <i class="bi bi-person-circle"></i><a class="user-name mx-2"><?= $_SESSION['user'] ?></a>
                                                     </li>
                                                 <?php endif; ?>
                                             </ul>
