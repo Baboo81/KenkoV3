@@ -15,6 +15,7 @@
                                 <li>
                                     <strong>Nom:</strong><?php echo $msg['name']; ?><br />
                                     <strong>Prénom:</strong><?php echo $msg['first_name']; ?><br />
+                                    <strong>Téléphone:</strong><?php echo $msg['tel']; ?><br />
                                     <strong>Email:</strong><?php echo $msg['email']; ?><br />
                                     <strong>Message:</strong><?php echo $msg['message']; ?><br />
                                     <strong>Date:</strong><?php echo $msg['created_at']; ?>

@@ -31,6 +31,13 @@
                                     <input type="text" class="form-control" id="firstName" name="firstName" required>
                                 </div>
                                 <div class="mb-3">
+                                    <label for="tel" class="form-label mb-3">Téléphone</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="Votre numéro de téléphone" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
                                     <label for="email" class="form-label mb-3">Email</label>
                                     <input type="email" class="form-control" id="email" name="email" required> 
                                 </div>

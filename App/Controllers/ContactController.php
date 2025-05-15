@@ -51,6 +51,7 @@ class ContactController extends Controller {
             // Récupération et assainissement des données
             $name = trim(strip_tags($_POST['name'] ?? ''));
             $firstName = trim(strip_tags($_POST['firstName'] ?? ''));
+            $tel = trim(strip_tags($_POST['tel'] ?? ''));
             $email = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
             $message = trim(strip_tags($_POST['message'] ?? ''));
 
@@ -60,7 +61,7 @@ class ContactController extends Controller {
             }
 
             // Vérification que les champs ne sont pas vides
-            if (empty($name) || empty($firstName) || empty($email) || empty($message)) {
+            if (empty($name) || empty($firstName) || empty($tel) || empty($email) || empty($message)) {
                 die("Tous les champs doivent être remplis !");
             }
 
@@ -71,8 +72,8 @@ class ContactController extends Controller {
             }
 
             // Insérer les données avec une requête préparée
-            $stmt = $db->prepare("INSERT INTO contact (name, first_name, email, message, created_at) VALUES (?, ?, ?, ?, NOW())");
-            $result = $stmt->execute([$name, $firstName, $email, $message]);
+            $stmt = $db->prepare("INSERT INTO contact (name, first_name, tel, email, message, created_at) VALUES (?, ?, ?, ?, ?, NOW())");
+            $result = $stmt->execute([$name, $firstName, $tel, $email, $message]);
 
             if ($result) {
                 header("Location: /message");
