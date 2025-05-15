@@ -1,3 +1,4 @@
+
 <?php include 'partials/header.php'; ?>
 <?php include 'partials/navBar.php'; ?>
 <?php include_once __DIR__ . '/../utils/checkAccess.php'; ?>
