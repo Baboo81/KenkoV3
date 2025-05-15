@@ -29,7 +29,6 @@ p
     line-height: 1.4em !important;
 }
 
-
 h3
 {
     color: white;
@@ -84,12 +83,6 @@ nav .nav-link
     transition: padding-bottom .4s ease-in-out, border-color .3s ease;
 }
 
-nav .nav-link:hover
-{
-    padding-bottom: 20px;
-    border-bottom-color: var(--bleu);
-}
-
 nav .dropdown-menu
 {
     display: block;
@@ -109,11 +102,6 @@ nav .dropdown-menu.show
 {
     max-height: 500px;
     opacity: 1;
-}
-
-nav .dropdown-item
-{
-    color: var(--beige);
 }
 
 #logo
