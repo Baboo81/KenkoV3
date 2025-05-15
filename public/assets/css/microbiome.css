@@ -26,8 +26,8 @@ body
 
 p
 {
-    font-size: 1.3em;
-    line-height: 1.3em;
+    font-size: clamp(1rem, 1.1rem + 0.5vw, 1.6rem) !important;
+    line-height: 1.3em !important;
 }
 
 h1
