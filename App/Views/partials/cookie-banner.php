@@ -7,14 +7,16 @@
             </div>
             <article class="my-5">
                 <p class="text-muted">Nous utilisons des cookies pour améliorer votre expérience sur notre site !</p>
-                <p class="text-muted">En poursuivant votre navigation, vous acceptez notre <a href="cookies/politiquesCookies" classe="
-                text-decoration-underline">politiques de cookies</a>.</p>
+                <p class="text-muted">En poursuivant votre navigation, vous acceptez notre 
+                    <a href="cookies/politiquesCookies" class="text-decoration-underline">politique de cookies</a>.
+                </p>
             </article>
             <div>
                 <button id="accept-cookies" class="button">Accepter</button>
-                <button onclick="window.location.href='cookies/cookie-preferences';"  class="button">Gérer mes préférences</button>
+                <button onclick="window.location.href='cookies/cookie-preferences';" class="button">Gérer mes préférences</button>
             </div>
         </div>
         <?php endif; ?>
     </div>
 </div>
+

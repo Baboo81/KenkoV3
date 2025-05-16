@@ -21,27 +21,28 @@ html, body
     align-items: center;
     justify-content: space-between;
     max-width: 80%; /* Ajuste la largeur de la bannière */
-    z-index: 999;
-  }
+    z-index: 999999999 !important;
+    pointer-events: auto !important;
+}
   
-  .cookie-icon-container 
-  {
-    position: absolute;
-  }
+.cookie-icon-container 
+{
+  position: absolute;
+}
   
-  .cookie-icon 
-  {
-    left: -60% !important; /* Icône qui dépasse sur la gauche */
-    top: 80% !important;
-  }
+.cookie-icon 
+{
+  left: -60% !important; /* Icône qui dépasse sur la gauche */
+  top: 80% !important;
+}
   
-  article 
-  {
-    margin-left: 60px; /* Pour faire de la place pour l'icône */
-  }
+article 
+{
+  margin-left: 60px; /* Pour faire de la place pour l'icône */
+}
   
-  button 
-  {
-    margin-top: 10px;
-  }
+button 
+{
+  margin-top: 10px;
+}
   

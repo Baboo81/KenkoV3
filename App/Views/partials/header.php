@@ -29,5 +29,10 @@
         <script src="/assets/js/main.js" defer></script>
         <title><?= $title; ?></title>
     </head>
-    <body>
+    <!-- Gestion cookies : neutralisation du scroll -->
+    <?php
+        // Appliquer la classe no-scroll si l'utilisateur n'a pas encore fait de choix
+        $bodyClass = !isset($_COOKIE['cookie-preferences']) ? 'no-scroll' : '';
+    ?>   
+    <body class="<?= $bodyClass ?>">
     

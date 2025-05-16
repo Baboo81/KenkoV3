@@ -42,11 +42,13 @@ document.addEventListener("DOMContentLoaded", function() {
     let logos = document.querySelectorAll(".logo");
     let index = 0;
 
-    setInterval(() => {
-        logos[index].classList.remove("active"); // Masquer le logo actuel
-        index = (index + 1) % logos.length; // Passer au suivant
-        logos[index].classList.add("active"); // Afficher le nouveau logo
-    }, 3000); // Changement toutes les 3 secondes
+        if (logos.length > 0) {
+            setInterval(() => {
+            logos[index].classList.remove("active"); // Masquer le logo actuel
+            index = (index + 1) % logos.length; // Passer au suivant
+            logos[index].classList.add("active"); // Afficher le nouveau logo
+        }, 3000); // Changement toutes les 3 secondes
+    }
 });
 
 ////////////////////////////// END /////////////////////////
@@ -111,7 +113,22 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').appendChild(items[0])
 }, 3000);
-
 ////////////////////////////// END /////////////////////////
+document.addEventListener('DOMContentLoaded', () => {
+    const acceptBtn = document.getElementById('accept-cookies');
+    const banner = document.getElementById('cookie-banner');
+
+    function handleCookieAcceptance() {
+        document.cookie = "cookie-preferences=accepted; path=/; max-age=31536000";
+        banner.style.display = "none";
+        document.body.classList.remove('no-scroll');
+    }
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener('click', handleCookieAcceptance);
+    }
+});
+
+
 
 
