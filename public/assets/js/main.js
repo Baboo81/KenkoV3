@@ -24,6 +24,11 @@ if (logo) {
     //Création de la fct pour afficher le pop-up :
     function showPopup(popupId) {
         document.getElementById(popupId).style.display = "flex";
+
+        let popup = document.getElementById(popupId);
+        if (popup) {
+            popup.style.display = "flex";
+        }
     }
 
     //Création de la fct pour fermer le pop-up :
@@ -98,8 +103,15 @@ next.addEventListener('click', function(){
 
 prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-})
+    document.querySelector('.slide').prepend(items[items.length - 1])
+});
+
+//Auto run:
+ setInterval(() => {
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+}, 3000);
+
 ////////////////////////////// END /////////////////////////
 
 

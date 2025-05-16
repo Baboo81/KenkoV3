@@ -32,7 +32,7 @@ p
 h3
 {
     color: var(--vert);
-    font-size: 3em;
+    font-size: clamp(1.8rem, 2vw + 1rem, 3rem);
 }
 
 .fontBeige
@@ -273,7 +273,6 @@ section .overlay
     position: relative;
     width: 100% !important;
     height: 1200px;
-    background-image: url(../img/services/Kenko-Ho/slider/Slider9.jpg);
     margin: 0 auto;
 }
 
