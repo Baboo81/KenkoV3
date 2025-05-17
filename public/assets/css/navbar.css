@@ -41,6 +41,13 @@ nav
     padding: 10px 20px;
 }
 
+.disabled-navbar 
+{
+    pointer-events: none;
+    opacity: 0.4;
+    filter: blur(1px);
+}
+
 nav .nav-item
 {
     margin: 0 15px;/* Réduction des marges sur mobile */

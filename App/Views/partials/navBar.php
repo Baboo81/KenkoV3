@@ -6,7 +6,7 @@
         <header>
             <div class="container">
                 <div class="row my-5">
-                    <nav class="navbar navbar-expand-lg fixed-top">
+                    <nav class="navbar navbar-expand-lg fixed-top <?= !isset($_COOKIE['cookie-preferences']) ? 'disabled-navbar' : '' ?>"<?= !isset($_COOKIE['cookie-preferences']) ? 'title="Veuillez accepter les cookies pour utiliser la navigation."' : '' ?>>
                         <div class="container-fluid d-flex align-items-center justify-content-between">
                             <!--  Logo  -->
                             <a class="navbar-brand" href="/">

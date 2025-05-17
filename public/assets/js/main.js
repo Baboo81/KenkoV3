@@ -117,17 +117,29 @@ prev.addEventListener('click', function(){
 document.addEventListener('DOMContentLoaded', () => {
     const acceptBtn = document.getElementById('accept-cookies');
     const banner = document.getElementById('cookie-banner');
+    const navBar = document.querySelector('nav');
+
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Lax`;
+    }
 
     function handleCookieAcceptance() {
-        document.cookie = "cookie-preferences=accepted; path=/; max-age=31536000";
-        banner.style.display = "none";
-        document.body.classList.remove('no-scroll');
+        setCookie('cookie-preferences', 'accepted', 365);
+        console.log('Cookie set: ', document.cookie);
+        alert("HandleCookieAcceptance appelée !");
+        window.location.href = window.location.href; // recharge pour que le PHP capte le cookie
     }
 
     if (acceptBtn) {
         acceptBtn.addEventListener('click', handleCookieAcceptance);
     }
 });
+
+
+
 
 
 
