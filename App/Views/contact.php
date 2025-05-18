@@ -47,14 +47,14 @@
                                     <label for="email" class="form-label mb-3">Email</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" class="form-control" id="email" name="email" required> 
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse mail" required> 
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="form-label mb-3">Message</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-chat-text"></i></span>
-                                        <textarea class="form-control" id="message" name="message" required></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Laissez-moi votre message" required></textarea>
                                     </div>
                                 </div>
                                 <div class="text-center my-5">
