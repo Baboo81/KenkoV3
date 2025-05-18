@@ -55,7 +55,7 @@
                                 <div class="card-body d-flex flex-column text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site simple</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 750€</h6>
-                                  <p class="card-text">Un site simple est constitué d'une page sur laquelle figurera une présentation de vos prestations, tarifs, informations pratiques. SEO inclus.</p>
+                                  <p class="card-text">Un site simple est constitué d'une page sur laquelle figurera une présentation de vos prestations, tarifs, informations pratiques (SEO inclus).</p>
                                   <div class="button-container mt-auto justify-content-center">
                                     <button onclick="showPopup('popup1')" class="my-3">Á qui s'adresse cette offre ?</button>
                                   </div>
@@ -86,7 +86,7 @@
                                 <div class="card-body d-flex flex-column text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site vitrine</h5>
                                   <h6 class="fontBolded fs-5 my-3">Á partir de 1550€</h6>
-                                  <p class="card-text">Un site vitrine comprend 5 à 7 pages grâce auxquelles les internautes pourront découvrir votre activité.<br />Avec un site vitrine vous dévoilerez plus de détails sur les différentes facettes de votre activité.</p>
+                                  <p class="card-text">Un site vitrine comprend 5 à 7 pages grâce auxquelles les internautes pourront découvrir votre activité.<br />Avec un site vitrine, vous dévoilerez plus de détails sur les différentes facettes de votre activité.</p>
                                   <div class="button-container mt-auto justify-content-center">
                                     <button onclick="showPopup('popup2')" class="my-3">Á qui s'adresse cette offre ?</button>
                                   </div>

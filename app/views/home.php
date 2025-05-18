@@ -1,6 +1,14 @@
 <?php include 'partials/header.php' ?>
 <?php include 'partials/navBar.php' ?>
 
+<?php if (!isset($_COOKIE['cookie-preferences'])): ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('no-scroll');
+        });
+    </script>
+<?php endif; ?>
+
 <?php
     use App\data;
     
