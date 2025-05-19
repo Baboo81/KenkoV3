@@ -195,10 +195,13 @@
                                <div class="col-md-12">
                                     <div class="my-4">
                                         <label for="userName" class="form-label mb-3">Votre Nom</label>
-                                        <input type="text" class="form-control" id="userName" name="userName" required>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                            <input type="text" class="form-control" id="userName" name="userName" placeholder="Inscrivez votre nom" required>
+                                        </div>
                                     </div>
                                     <div class="my-4">
-                                        <label class="form-label mb-3">Votre Note</label>
+                                        <label class="form-label mb-3">Votre Note : cliquez sur un rond, pour évaluer mon service !</label>
                                         <div class="rating">
                                             <!-- Étoiles cliquables -->
                                             <input type="radio" id="star1" name="rating" value="1" required>
@@ -215,7 +218,10 @@
                                     </div>
                                     <div class="my-4">
                                         <label for="testimonialMessage" class="form-label mb-3">Votre Témoignage</label>
-                                        <textarea class="form-control" id="testimonialMessage" name="testimonialsMessage" rows="3" required></textarea>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-chat-text"></i></span>
+                                            <textarea class="form-control" id="testimonialMessage" name="testimonialsMessage" rows="3" placeholder="Laissez-moi un commentaire" required></textarea>
+                                        </div>
                                     </div>
                                     <div class="my-5">
                                         <button type="submit" class="button w-100">Envoyer</button>
