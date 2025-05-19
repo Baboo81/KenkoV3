@@ -16,7 +16,7 @@
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-center text-muted mb-5">Formulaire de contact</h1>
                 <div class="col-md-12">
-                    <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/contact" method="POST">
+                    <form class="rounded-5 p-5 d-flex align-center justify-items-center" action="/contact" method="POST">
                         <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/form/contact.svg" alt="Illustration contact" class="img-fluid w-100" style="object-fit:cover;">
@@ -26,28 +26,28 @@
                                     <label for="name" class="form-label mb-3">Nom</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom de famille" required>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Veuillez indiquer votre nom de famille" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="firstName" class="form-label mb-3">Prénom</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Veuillez indiquer votre nom de famille" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="tel" class="form-label mb-3">Téléphone</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="Votre numéro de téléphone" required>
+                                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="Veuillez indiquer votre numéro de téléphone" required>
                                     </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label mb-3">Email</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse mail" required> 
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Veuillez indiquer votre adresse mail" required> 
                                     </div>
                                 </div>
                                 <div class="mb-3">
