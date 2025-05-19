@@ -14,7 +14,7 @@
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-center text-muted mb-5">Login</h1>
                 <div class="col-md-12 my-5">
-                    <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/login" method="post">
+                    <form class="rounded-5 p-5 d-flex align-center justify-items-center" action="/login" method="post">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/form/login.svg" alt="Illustration contact" class="img-fluid w-100" style="object-fit:cover;">
                         </div>

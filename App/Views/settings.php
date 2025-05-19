@@ -29,7 +29,7 @@
             <div class="row justify-content-center align-items-center">
                 <h1 class="text-center text-muted my-5">Paramètres du compte</h1>
                 <div class="col-md-12 my-5">
-                    <form class="border rounded-5 p-5 d-flex align-center justify-items-center" action="/settings" method="post" enctype="multipart/form-data" autocomplete="off">
+                    <form class="rounded-5 p-5 d-flex align-center justify-items-center" action="/settings" method="post" enctype="multipart/form-data" autocomplete="off">
                             <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']; ?>">
                             <div class="col-md-6 d-flex align-items-center justify-content-center">
                                 <img src="/assets/img/form/paramètres.svg" alt="Illustration contact" class="img-fluid w-100" style="object-fit:cover;">
@@ -39,49 +39,49 @@
                                     <label for="lastname" class="form-label mb-3">Nom :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="lastname" name="lastname" value="<?= $_SESSION['user']['lastname'] ?? ''; ?>" required>
+                                        <input type="text" class="form-control" id="lastname" name="lastname" value="<?= $_SESSION['user']['lastname'] ?? ''; ?>" placeholder="Veuillez indiquer votre nom de famille" required>
                                     </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="firstname" class="form-label mb-3">Prénom :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="firstname" name="firstname" value="<?= $_SESSION['user']['firstname'] ?? ''; ?>" required>
+                                        <input type="text" class="form-control" id="firstname" name="firstname" value="<?= $_SESSION['user']['firstname'] ?? ''; ?>" placeholder="Veuillez indiquer votre prénom" required>
                                     </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="email" class="form-label mb-3">Adresse email:</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" class="form-control" id="email" name="email" value="<?= $_SESSION['user']['email'] ?? ''; ?>" required>
+                                        <input type="email" class="form-control" id="email" name="email" value="<?= $_SESSION['user']['email'] ?? ''; ?>" placeholder="Veuillez indiquer votre adresse mail" required>
                                     </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="address" class="form-label mb-3">Adresse :</label> <!-- Changement ici -->
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-house-door"></i></span>
-                                        <input type="text" class="form-control" id="address" name="address" value="<?= $_SESSION['user']['address'] ?? ''; ?>" required> <!-- Changement ici -->
+                                        <input type="text" class="form-control" id="address" name="address" value="<?= $_SESSION['user']['address'] ?? ''; ?>" placeholder="Veuillez indiquer votre adresse" required> <!-- Changement ici -->
                                     </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="city" class="form-label mb-3">Ville :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-buildings"></i></span>
-                                        <input type="text" class="form-control" id="city" name="city" value="<?= $_SESSION['user']['city'] ?? ''; ?>" required>
+                                        <input type="text" class="form-control" id="city" name="city" value="<?= $_SESSION['user']['city'] ?? ''; ?>" placeholder="Veuillez indiquer le nom de la ville dans laquelle vous vivez" required>
                                     </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="postal_code" class="form-label mb-3">Code Postal :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-123"></i></span>
-                                        <input type="text" class="form-control" id="postal_code" name="postal_code" value="<?= $_SESSION['user']['postal_code'] ?? ''; ?>" required> <!-- Correction ici -->
+                                        <input type="text" class="form-control" id="postal_code" name="postal_code" value="<?= $_SESSION['user']['postal_code'] ?? ''; ?>" placeholder="Veuillez indiquer votre code postal" required> <!-- Correction ici -->
                                     </div>
                                 </div>
                                 <div class="mb-5">
                                     <label for="country" class="form-label mb-3">Pays :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-globe"></i></span>
-                                        <input type="text" class="form-control" id="country" name="country" value="<?= $_SESSION['user']['country'] ?? ''; ?>" required>
+                                        <input type="text" class="form-control" id="country" name="country" value="<?= $_SESSION['user']['country'] ?? ''; ?>" placeholder="Veuillez indiquer le nom du pays dans lequel vous vivez" required>
                                     </div>
                                 </div>
                                 <div class="mb-5">

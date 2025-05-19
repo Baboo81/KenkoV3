@@ -25,21 +25,21 @@
                                     <label for="username" class="form-label mb-3">Nom d'utilisateur :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                        <input type="text" class="form-control" id="username" name="username" autocomplete="off" required>
+                                        <input type="text" class="form-control" id="username" name="username" autocomplete="off" placeholder="Veuillez indiquer votre nom" required>
                                     </div>
                                 </div>
                                 <div class="mb-4">
                                     <label for="password" class="form-label mb-3">Mot de passe :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                        <input type="password" class="form-control" id="password" name="password" autocomplete="off" required>
+                                        <input type="password" class="form-control" id="password" name="password" autocomplete="off" placeholder="Veuillez indiquer votre mot de passe" required>
                                     </div>
                                 </div>
                                 <div class="mb-4">
                                     <label for="email" class="form-label mb-3">Email :</label>
                                     <div class="input-group">
                                         <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                        <input type="email" class="form-control" id="email" name="email" autocomplete="off" required>
+                                        <input type="email" class="form-control" id="email" name="email" autocomplete="off" placeholder="Veuillez indiquer votre adresse mail" required>
                                     </div>
                                 </div>
                                 <div class="text-center">
