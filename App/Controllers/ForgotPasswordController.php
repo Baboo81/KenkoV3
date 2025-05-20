@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Core\Controller;
+
 class ForgotPasswordController extends Controller {
     public function show() {
 
@@ -12,6 +14,6 @@ class ForgotPasswordController extends Controller {
         $css = 'forgotPassword.css';
 
         //Charge le vue et passe le titre, css
-        $this->View('forgotPassword', compact('title', 'resetCss', 'css'));
+        $this->View('forgot-password', compact('title', 'resetCss', 'css'));
     }
 }

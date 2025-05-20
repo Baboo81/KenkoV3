@@ -1,5 +1,5 @@
 <?php 
-    include 'partials/hender.php';
+    include 'partials/header.php';
 ?>
 
 <main>
@@ -34,7 +34,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="button">Envoyer un lien/button>
+                                    <button type="submit" class="button">Envoyer un lien<button>
                                 </div>
                             </section>
                         </div>
