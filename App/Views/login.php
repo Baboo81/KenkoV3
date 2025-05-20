@@ -37,6 +37,9 @@
                                 <div class="text-center">
                                     <button type="submit" class="button">Se connecter</button>
                                 </div>
+                                <div class="my-5 text-center">
+                                    <a href="/forgot-password" class="text-muted">Mot de passe oublié ?</a>
+                                </div>
                             </section>
                         </div>
                     </form>

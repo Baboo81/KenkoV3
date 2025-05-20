@@ -95,9 +95,6 @@
                                     <?php endif; ?>
                                 </div>
 
-                                <div class="mb-3 text-center">
-                                    <a href="/forgot-password" class="text-muted">Mot de passe oublié ?</a>
-                                </div>
                                 <div class="text-center my-5">
                                     <button type="submit" class="button">Sauvegarder</button>
                                 </div>
