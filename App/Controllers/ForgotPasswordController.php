@@ -16,4 +16,19 @@ class ForgotPasswordController extends Controller {
         //Charge le vue et passe le titre, css
         $this->View('forgot-password', compact('title', 'resetCss', 'css'));
     }
+
+    public function send() {
+        //Méthode qui sera appelée lorsque le form "Mot de passe oublié" sera soumis
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATION_EMAIL);
+
+            if ($email) {
+                header('Location: /forgot-password?success=1');
+                exit;
+            } else {
+                header('Location: /forgot-password,erroe=1');
+                exit;
+            }
+        }
+    }
 }

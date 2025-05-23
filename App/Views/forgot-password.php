@@ -9,7 +9,7 @@
                 <h1 class="text-center text-muted my-5">Mot de passe oublié</h1>
                 <section>
                     <?php if (isset($_GET['success'])): ?>
-                        <div class="alert alert-seccess">
+                        <div class="alert alert-success">
                             <p>Si l'adresse email existe, un lien de réinitialisation vous à été envoyé !</p>
                         </div>
                     <?php elseif (isset($_GET['error'])): ?>
