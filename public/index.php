@@ -64,6 +64,7 @@ $router->post('/signup', [SignupController::class, 'register']);
 
 //Mot de passe oublié
 $router->get('/forgot-password', [ForgotPasswordController::class, 'show']);
+$router->post('/forgot-password', [ForgotPasswordController::class, 'send']);
 
 //Routes pour la page de connexion
 $router->get('/login', [LoginController::class, 'show']);
