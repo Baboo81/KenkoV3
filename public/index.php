@@ -8,6 +8,7 @@ require_once '../vendor/autoload.php';
 // Inclusion des classes nécessaires
 
 use App\Controllers\ForgotPasswordController;
+use App\Controllers\ResetPasswordController;
 use App\Controllers\ContactController;
 use App\Controllers\CookieController;
 use App\Controllers\Cookies\CookiePreferencesController;
@@ -65,6 +66,11 @@ $router->post('/signup', [SignupController::class, 'register']);
 //Mot de passe oublié
 $router->get('/forgot-password', [ForgotPasswordController::class, 'show']);
 $router->post('/forgot-password', [ForgotPasswordController::class, 'send']);
+
+//Reset password
+$router->post('/reset-password', [ResetPasswordController::class, 'show']);
+$router->get('/reset-password', [ResetPasswordController::class, 'reset']);
+
 
 //Routes pour la page de connexion
 $router->get('/login', [LoginController::class, 'show']);
