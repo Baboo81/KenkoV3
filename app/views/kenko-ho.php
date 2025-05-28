@@ -201,7 +201,7 @@
                                         </div>
                                     </div>
                                     <div class="my-4">
-                                        <label class="form-label mb-3">Votre Note : cliquez sur un rond, pour évaluer mon service !</label>
+                                        <label class="form-label mb-3">Votre Note : cliquez sur l'un des ronds, pour évaluer mon service !</label>
                                         <div class="rating">
                                             <!-- Étoiles cliquables -->
                                             <input type="radio" id="star1" name="rating" value="1" required>
