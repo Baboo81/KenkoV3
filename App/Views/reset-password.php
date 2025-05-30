@@ -16,7 +16,7 @@
                 </section>
                 <div class="col-md-12 my-5">
                     <form class="rounded-5 p-5 d-flex align-center justify-items-center" action="/reset-password" method="post" autocomplete="off">
-                        <input type="hidden" name="csrf_token" value="<?=$_SESSION['csrf_token']; ?>">
+                        <input type="hidden" name="token" value="<?=htmlspecialchars($token ?? '') ?>">
                         <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <img src="/assets/img/form/forgotPassword.svg" alt="Illustration mot de passe oublié" class="img-fluid w-100" style="object-fit:cover;">
                         </div>
