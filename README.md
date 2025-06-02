@@ -1,1 +1,1 @@
-#Créer la fenêtre pour les cookies,
+#Envoie mail, en cas d'oubli du mot de passe
