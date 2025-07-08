@@ -137,6 +137,7 @@ section .sectionFormules
 {
     height: 50rem;
     width: 100%;
+    object-fit: cover;
     background-image: url(/assets/img/services/Kenko-Web/pictos/informatique.svg);
     background-size: cover;
     background-position: center;
