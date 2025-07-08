@@ -11,14 +11,17 @@ class Mailer {
     public static function sendMail($to, $subject, $htmlBody, $replyTo = null) {
         $mail = new PHPMailer(true);
 
+        $mail->SMTPDebug = 5; // ou 3 pour plus de détails
+        $mail->Debugoutput = 'html';
+
         try {
             // Configuration SMTP Gmail
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'magicbaboo@gmail.com'; // Ton adresse Gmail
-            $mail->Password = 'xxxxx'; // Ton mot de passe ou mot de passe d’application Gmail
-            $mail->SMTPSecure = 'tls';
+            $mail->Password = 'yridntrmkzqwpqwz'; // Ton mot de passe ou mot de passe d’application Gmail
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             $mail->setFrom('magicbaboo@gmail.com', 'Kenko');
@@ -35,7 +38,8 @@ class Mailer {
             $mail->send();
             return true;
         } catch (Exception $e) {
-            return false;
+            echo "Mailer Error: " . $mail->ErrorInfo;
+            exit; 
         }
     }
 }

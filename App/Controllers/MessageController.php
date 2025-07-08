@@ -62,12 +62,11 @@ class MessageController extends Controller {
             $mailSent = Mailer::sendMail($to, $subject, $htmlMessage, $email);
 
             if ($mailSent) {
-                $_SESSION['success'] = "Merci, votre message a bien été envoyé !";
+                echo "Email envoyé avec succès !";
             } else {
-                $_SESSION['error'] = "Le message a été enregistré, mais l'email n'a pas pu être envoyé.";
+                echo "Echec de l'envoi";
             }
 
-            header("Location: /contact");
             exit;
         }
     }
