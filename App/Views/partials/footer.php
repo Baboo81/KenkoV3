@@ -9,7 +9,7 @@
                     <p class="fontWhite fs-4 my-5">
                         Rue Champ Rodange 14, Waterloo 1410
                     </p>
-                    <div id="mapid" class="container-fluid rounded-5 my-3"></div>
+                   <!-- <div id="mapid" class="container-fluid rounded-5 my-3"></div>-->
                   </div>
                   <div class="col-md-12 col-xs-12 text-center mb-5">
                     <p class="text-uppercase text-center fontWhite fw-bold spaceLetter fs-2 mb-5">
