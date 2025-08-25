@@ -66,9 +66,9 @@
                                 <div class="col-md-12 d-flex align-items-center justify-content-center">
                                     <img src="/assets/img/services/quiSuis-Je/parcours.svg" alt="Picto représentant un personnage montant des escaliers" style="height: 30rem;">
                                 </div>  
-                                <p class="fontWhite mb-3">Après 15 années passées en pharmacie, j'ai décidé de réorienter ma carrière professionnelle pour aller vers une passion de longue date; l'informatique.<br />Après m'être formée au développement web, j'ai décidé de me lancer comme webmaster freelance.</p>
+                                <p class="fontWhite mb-3">Après 15 années passées en pharmacie, j'ai décidé de réorienter ma carrière professionnelle pour aller vers une passion de longue date, l'informatique.<br />Après m'être formée au développement web, j'ai décidé de me lancer comme webmaster freelance.</p>
                                 <p class="fontWhite mb-3">La découverte de dōTERRA il y a quelques années m'a permis de m'orienter vers une autre passion, et cette passion c'est la santé. Avec ce grand interêt que je nourris pour la santé j'avais envie d'aider les personnes à améliorer leur bien-être avec d'une part les huiles essentielles mais aussi en partageant ce que j'ai pu experimenter au niveau de ma santé.</p>
-                                <p class="fontWhite">Pour visiter mon portfolio, vous pouvez cliquer sur le boutton ci-dessous :</p>
+                                <p class="fontWhite">Pour visiter mon portfolio, vous pouvez cliquer sur le bouton ci-dessous :</p>
                                 <div class="text-center my-3">
                                     <a href="/">
                                         <button class="button">PortFolio</button>
