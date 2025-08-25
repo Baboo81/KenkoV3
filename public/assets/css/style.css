@@ -23,12 +23,12 @@ html, body
     min-width: 320px;
 }
 
+/*
 body.no-scroll 
 {
     overflow: hidden;
-    position: fixed;
-    width: 100%;
 }
+*/
 
 p
 {

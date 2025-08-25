@@ -1,124 +1,73 @@
 "use strict";
 
-//logo animation :
+// ----------------------------
+// Logo animation
+// ----------------------------
 let logo = document.getElementById('logoAnimation');
 let largeurEcran = window.innerWidth - 50;
 let hauteurEcran = window.innerHeight - 50;
 
 if (logo) {
-
     setInterval(() => {
         const x = Math.random() * largeurEcran;
         const y = Math.random() * hauteurEcran;
         logo.style.left = x + 'px';
         logo.style.top = y + 'px';
-   }, 3000);
+    }, 3000);
+}
 
-};
+// ----------------------------
+// Popups
+// ----------------------------
+function showPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup) popup.style.display = "flex";
+}
 
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup) popup.style.display = "none";
+}
 
-////////////////////////////// END /////////////////////////
-
-//Pop-up :
-
-    //Création de la fct pour afficher le pop-up :
-    function showPopup(popupId) {
-        document.getElementById(popupId).style.display = "flex";
-
-        let popup = document.getElementById(popupId);
-        if (popup) {
-            popup.style.display = "flex";
-        }
-    }
-
-    //Création de la fct pour fermer le pop-up :
-    function closePopup(popupId) {
-        document.getElementById(popupId).style.display = "none";
-    }
-////////////////////////////// END /////////////////////////
-
-//trustSection : logo animation
-document.addEventListener("DOMContentLoaded", function() {
-    let logos = document.querySelectorAll(".logo");
+// ----------------------------
+// Trust Section : logos animation
+// ----------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    const logos = document.querySelectorAll(".logo");
     let index = 0;
-
-        if (logos.length > 0) {
-            setInterval(() => {
-            logos[index].classList.remove("active"); // Masquer le logo actuel
-            index = (index + 1) % logos.length; // Passer au suivant
-            logos[index].classList.add("active"); // Afficher le nouveau logo
-        }, 3000); // Changement toutes les 3 secondes
+    if (logos.length > 0) {
+        setInterval(() => {
+            logos[index].classList.remove("active");
+            index = (index + 1) % logos.length;
+            logos[index].classList.add("active");
+        }, 3000);
     }
 });
 
-////////////////////////////// END /////////////////////////
-
-//Gestion des messages d'erreurs : disparition auto du msg
+// ----------------------------
+// Messages d'alerte auto-disparition
+// ----------------------------
 setTimeout(() => {
     document.querySelectorAll(".alert").forEach(alert => {
-        if (!alert.classList.contains("cookie-banner")) { // Ignore la bannière des cookies
+        if (!alert.classList.contains("cookie-banner")) {
             alert.classList.remove("show");
             alert.classList.add("fade");
-            setTimeout(() => alert.remove(), 500); // Supprime du DOM après le fade
+            setTimeout(() => alert.remove(), 500);
         }
     });
-}, 5000); // Cache les alertes après 5 secondes
-////////////////////////////// END /////////////////////////
+}, 5000);
 
-//Gestion des btn : cookie-banner
-document.addEventListener("DOMContentLoaded", function() {
-    // Vérifie si le cookie existe déjà
-    if (document.cookie.indexOf('cookie-preferences=accepted') !== -1) {
-        document.getElementById('cookie-banner').style.display = 'none'; // Cache la bannière si le cookie existe
-    }
-
-    // Action du bouton "Accepter"
-    document.getElementById('accept-cookies').addEventListener('click', function() {
-        // Crée un cookie pour enregistrer l'acceptation
-        document.cookie = "cookie-preferences=accepted; path=/; max-age=" + 60 * 60 * 24 * 365; // Valable 1 an
-        
-        // Cache la bannière après l'acceptation
-        document.getElementById('cookie-banner').style.display = 'none';
-    });
-});
-
-////////////////////////////// END /////////////////////////
-//Footer; map :
-
-    //Create map:
-    const centroid = [50.71036, 4.36889];
-    const map = L.map('mapid').setView(centroid, 16.4);
-    
-        //Add tiles & marker:
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-    L.marker([50.71036, 4.36889]).addTo(map);
-////////////////////////////// END /////////////////////////
-
-//Slider :
-let next = document.querySelector('.next')
-let prev = document.querySelector('.prev')
-
-next.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-})
-
-prev.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1])
-});
-
-//Auto run:
- setInterval(() => {
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-}, 3000);
-////////////////////////////// END /////////////////////////
+// ----------------------------
+// Gestion cookie-banner : affichage, scroll, flou
+// ----------------------------
 document.addEventListener('DOMContentLoaded', () => {
     const acceptBtn = document.getElementById('accept-cookies');
     const banner = document.getElementById('cookie-banner');
-    const navBar = document.querySelector('nav');
+    const navBar = document.querySelector('nav.disabled-navbar');
+    const dropdown = document.querySelector('ul.dropdown-menu');
+    const map = document.getElementById('mapid');
 
+    // Fonction pour créer cookie
     function setCookie(name, value, days) {
         const date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -126,21 +75,71 @@ document.addEventListener('DOMContentLoaded', () => {
         document.cookie = `${name}=${value}; ${expires}; path=/; SameSite=Lax`;
     }
 
-    function handleCookieAcceptance() {
-        setCookie('cookie-preferences', 'accepted', 365);
-        console.log('Cookie set: ', document.cookie);
-        alert("HandleCookieAcceptance appelée !");
-        window.location.href = window.location.href; // recharge pour que le PHP capte le cookie
+    // Si cookie existant, réinitialiser état
+    if (document.cookie.includes('cookie-preferences=accepted')) {
+        if (banner) banner.style.display = 'none';
+        if (navBar) {
+            navBar.style.filter = 'none';
+            navBar.classList.remove('disabled-navbar');
+        }
+        if (dropdown) dropdown.style.overflow = 'visible';
+        if (map) map.style.overflow = 'visible';
+        document.body.style.overflow = 'auto';
     }
 
+    // Clic sur "Accepter"
     if (acceptBtn) {
-        acceptBtn.addEventListener('click', handleCookieAcceptance);
+        acceptBtn.addEventListener('click', () => {
+            setCookie('cookie-preferences', 'accepted', 365);
+
+            if (banner) banner.style.display = 'none';
+            document.body.style.overflow = 'auto';
+
+            if (navBar) {
+                navBar.style.filter = 'none';
+                navBar.classList.remove('disabled-navbar');
+            }
+
+            if (dropdown) dropdown.style.overflow = 'visible';
+            if (map) map.style.overflow = 'visible';
+        });
+    }
+
+    // Bloquer scroll si cookie non présent
+    if (!document.cookie.includes('cookie-preferences=accepted')) {
+        document.body.style.overflow = 'hidden';
     }
 });
 
+// ----------------------------
+// Footer : Map Leaflet
+// ----------------------------
+const centroid = [50.71036, 4.36889];
+const map = L.map('mapid').setView(centroid, 16.4);
 
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+L.marker([50.71036, 4.36889]).addTo(map);
 
+// ----------------------------
+// Slider manuel et auto
+// ----------------------------
+let next = document.querySelector('.next');
+let prev = document.querySelector('.prev');
 
+if (next && prev) {
+    next.addEventListener('click', () => {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').appendChild(items[0]);
+    });
 
+    prev.addEventListener('click', () => {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').prepend(items[items.length - 1]);
+    });
 
-
+    // Auto run slider
+    setInterval(() => {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').appendChild(items[0]);
+    }, 3000);
+}
