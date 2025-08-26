@@ -17,7 +17,7 @@ class Database {
 
         try {
             $this->pdo = new PDO(
-                "mysql:host={$config['host']}; dbname={$config['dbname']}; charset=utf8",
+                "mysql:host={$config['host']};dbname={$config['dbname']};charset=utf8",
                 $config['user'],
                 $config['password'],
                 [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
