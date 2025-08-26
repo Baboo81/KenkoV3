@@ -55,7 +55,7 @@ class KenkoHoController extends Controller {
     public function submitTestimonials() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            var_dump($_POST);
+            //var_dump($_POST);
            
 
             $db = Database::getInstance();
