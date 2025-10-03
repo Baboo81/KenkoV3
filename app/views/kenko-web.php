@@ -16,7 +16,7 @@
                 <div class="container purposes">
                     <div class="row">
                         <div class="my-5">
-                            <h1 class="text-center my-5 fs-1 fontBlack">Ce que votre webmaster vous propose</h1>
+                            <h1 class="text-center mt-5">Ce que votre webmaster vous propose</h1>
                         </div>
                         <article class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 text-center">
                             <img src="/assets/img/services/Kenko-Web/pictos/accompagnement.svg" alt="">
@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="sectionFormules my-5"></div>
                         <div class="my-5">
-                            <h1 class="text-center my-5 fs-1 fontBlack">Les offres personnalisables sur devis</h1>
+                            <h1 class="text-center my-5">Les offres personnalisables sur devis</h1>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                                 <img src="/assets/img/services/Kenko-Web/siteSimple.jpg" class="card-img-top rounded-top-4" alt="Image représentant une maison au milieu d'un champ">
                                 <div class="card-body d-flex flex-column text-center">
                                   <h5 class="card-title text-center fs-3 my-3">Site simple</h5>
-                                  <h6 class="fontBolded fs-5 my-3">Á partir de 750€</h6>
+                                  <h6 class="fontBolded fs-5 my-3">Á partir de 800€</h6>
                                   <p class="card-text">Un site simple est constitué d'une page sur laquelle figurera une présentation de vos prestations, tarifs, informations pratiques (SEO inclus).</p>
                                   <div class="button-container mt-auto justify-content-center">
                                     <button onclick="showPopup('popup1')" class="my-3">Á qui s'adresse cette offre ?</button>
@@ -170,7 +170,7 @@
     <div class="container">
         <div class="row">
             <div class="my-5">
-                <h1 class="text-center my-5 fs-1 fontBlack">Les étapes de la création de votre site web</h1>
+                <h1 class="text-center my-5">Les étapes de la création de votre site web</h1>
             </div>
             <section class="container py-5">
                 <div class="timeline">
@@ -239,7 +239,7 @@
     <div class="container">
         <div class="row">
             <div class="my-5">
-                <h1 class="text-center my-5 fs-1 fontBlack">Service de maintenance</h1>
+                <h1 class="text-center my-5">Service de maintenance</h1>
             </div>
             <div class="box rounded-5 p-5 d-flex align-center justify-items-center">
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
@@ -277,7 +277,7 @@
     <div class="container">
         <div class="row">
             <div class="my-5">
-                <h1 class="text-center my-5 fs-1 fontBlack">Hebergement</h1>
+                <h1 class="text-center my-5">Hebergement</h1>
             </div>
             <div class="box rounded-5 p-5 d-flex align-center justify-items-center">
                 <div class="col-md-6">
